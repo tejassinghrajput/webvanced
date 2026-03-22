@@ -20,14 +20,14 @@ export function HomeFutureReady() {
 
   return (
     <section className="relative overflow-hidden">
-      <div className="bg-gray-950 pt-32 pb-64 relative">
+      <div className="bg-gray-950 pt-16 pb-44 relative">
         <NetworkBackground />
         <div className="mx-auto w-full px-6 lg:px-12 xl:px-20 relative z-10">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl font-bold tracking-tight text-white sm:text-6xl leading-[1.1] max-w-3xl"
+            className="text-2xl font-bold tracking-tight text-white sm:text-3xl leading-[1.1] max-w-3xl"
           >
             <GlowText>{data.hero.title}</GlowText>
           </motion.h2>
@@ -36,14 +36,14 @@ export function HomeFutureReady() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="mt-6 text-lg text-gray-400 max-w-xl font-medium"
+            className="mt-3 text-sm text-gray-400 max-w-xl font-medium"
           >
             {data.hero.subtitle}
           </motion.p>
         </div>
       </div>
 
-      <div className="mx-auto w-full px-6 lg:px-12 xl:px-20 -mt-48 relative z-20 pb-32">
+        <div className="mx-auto w-full px-6 lg:px-12 xl:px-20 -mt-32 relative z-20 pb-12">
         {/* Desktop Grid Layout */}
         <div className="hidden md:grid grid-cols-2 lg:grid-cols-4 gap-8">
           {data.cards.map((card, idx) => {
@@ -59,7 +59,7 @@ export function HomeFutureReady() {
             const cardVariants = {
               initial: { opacity: 0, y: 40 },
               visible: { opacity: 1, y: 0 },
-              hover: { y: -12, transition: { duration: 0.4, ease: "easeOut" } }
+              hover: { y: -12, transition: { duration: 0.4, ease: "easeOut" as const } }
             };
 
             const neonVariants = {
@@ -68,7 +68,7 @@ export function HomeFutureReady() {
                 opacity: 1, 
                 strokeDashoffset: -301.6, // Full circumference rotation
                 transition: { 
-                  strokeDashoffset: { duration: 0.8, ease: "linear", repeat: Infinity },
+                  strokeDashoffset: { duration: 0.8, ease: "linear" as const, repeat: Infinity },
                   opacity: { duration: 0.3 }
                 }
               }
@@ -83,10 +83,10 @@ export function HomeFutureReady() {
                 whileHover="hover"
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: idx * 0.1 }}
-                className="group relative bg-white p-10 rounded-[2.5rem] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.08)] hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.12)] transition-all duration-500 text-center overflow-hidden"
+                className="group relative bg-white p-6 rounded-[1.5rem] shadow-[0_20px_40px_-10px_rgba(0,0,0,0.08)] hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.12)] transition-all duration-500 text-center overflow-hidden"
               >
                 <ShimmerEffect />
-                <div className="relative mb-10 mx-auto h-28 w-28 flex items-center justify-center">
+                <div className="relative mb-6 mx-auto h-20 w-20 flex items-center justify-center">
                   {/* Loading-Style Glowing Border UI */}
                   <svg className="absolute inset-0 h-full w-full overflow-visible" viewBox="0 0 100 100">
                     {/* Static Base Border (Dim) */}
@@ -139,13 +139,13 @@ export function HomeFutureReady() {
                     />
                   </svg>
                   
-                  <div className="relative z-10 flex h-16 w-16 items-center justify-center rounded-full bg-gray-50 text-gray-900 group-hover:scale-110 group-hover:bg-white transition-all duration-500 shadow-sm">
-                    <IconComponent className={cn("h-8 w-8", colorClass)} />
+                  <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-gray-50 text-gray-900 group-hover:scale-110 group-hover:bg-white transition-all duration-500 shadow-sm">
+                    <IconComponent className={cn("h-6 w-6", colorClass)} />
                   </div>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">{card.title}</h3>
+                <h3 className="text-sm font-bold text-gray-900 mb-2">{card.title}</h3>
                 <p className="text-gray-500 leading-relaxed font-medium text-sm">{card.description}</p>
-                <div className={cn("mt-6 h-1 w-0 group-hover:w-full transition-all duration-700 mx-auto rounded-full bg-current opacity-20", colorClass)} />
+                <div className={cn("mt-4 h-1 w-0 group-hover:w-full transition-all duration-700 mx-auto rounded-full bg-current opacity-20", colorClass)} />
               </motion.div>
             );
           })}

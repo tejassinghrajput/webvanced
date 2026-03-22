@@ -1,0 +1,59 @@
+{
+  "hero": {
+    "badge": "SOCIAL MEDIA MANAGEMENT",
+    "stat": "Social Media is Where We Make the Most of the Situation",
+    "title": "Promoting on Social Media is the New Trend — Stay Ahead.",
+    "description": "In this digital era, gadgets have become our lifelines. Our team of social media marketers are youthful, vibrant, and are up-to-date with the latest trends giving you the edge your business needs."
+  },
+  "intro": "Getting your business optimized and altered according to social media platforms helps attract the attention of your audience and increase your online sales in an efficient manner.",
+  "benefits": [
+    {
+      "title": "Massive Reach",
+      "description": "Social media platforms collectively have billions of active users. Your brand can reach a global audience instantly."
+    },
+    {
+      "title": "Cost-Effective Marketing",
+      "description": "Compared to traditional advertising, social media marketing offers incredibly high ROI at a fraction of the cost."
+    },
+    {
+      "title": "Direct Customer Engagement",
+      "description": "Interact directly with your customers in real-time, building relationships that foster loyalty and trust."
+    },
+    {
+      "title": "Brand Awareness",
+      "description": "Consistent, quality social media presence keeps your brand top-of-mind for your target audience."
+    },
+    {
+      "title": "Drives Website Traffic",
+      "description": "Strategic social media posts and campaigns drive qualified traffic directly to your website and landing pages."
+    },
+    {
+      "title": "Analytics & Insights",
+      "description": "Social media platforms provide rich analytics that help you understand your audience and refine your strategy."
+    }
+  ],
+  "services": [
+    { "title": "Facebook Marketing", "description": "Strategic page management, ad campaigns, and community building on the world's largest social network.", "href": "/services/social-media" },
+    { "title": "Instagram Management", "description": "Visual storytelling, Reels, and Stories that grow your following and drive engagement.", "href": "/services/social-media" },
+    { "title": "LinkedIn Marketing", "description": "Professional B2B content and campaigns that establish your authority and generate business leads.", "href": "/services/social-media" },
+    { "title": "Twitter / X Strategy", "description": "Real-time engagement, trending hashtag campaigns, and brand voice management.", "href": "/services/social-media" },
+    { "title": "YouTube Management", "description": "Channel optimization, video SEO, shorts strategy and audience growth campaigns.", "href": "/services/social-media" },
+    { "title": "TikTok & Pinterest", "description": "Creative short-form video and visual content strategies for younger, highly engaged audiences.", "href": "/services/social-media" }
+  ],
+  "qualities": [
+    { "title": "Trend Aware", "description": "We stay updated with every platform algorithm change and cultural trend." },
+    { "title": "Consistent Posting", "description": "We maintain a consistent posting schedule to keep your audience engaged." },
+    { "title": "Data-Driven", "description": "Every decision is backed by analytics and performance data." },
+    { "title": "Creative Content", "description": "We create original, eye-catching content that resonates with your audience." },
+    { "title": "Community Management", "description": "We respond to comments and messages, nurturing your community." },
+    { "title": "Multi-Platform Expertise", "description": "We manage all major platforms under one unified strategy." }
+  ],
+  "process": [
+    "Identifying needs",
+    "Conceptualizing plans",
+    "Engineering solutions",
+    "Delivering success"
+  ],
+  "platforms": ["Facebook", "Instagram", "Twitter", "LinkedIn", "Pinterest", "YouTube", "TikTok"],
+  "whyUs": "We are the new generation digital marketing agency providing high-end content and exceptional services. We believe in expanding horizons, disrupting industries, creating unforgettable experiences, and entrusting concrete results."
+}

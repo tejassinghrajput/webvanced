@@ -1,99 +1,235 @@
+import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 import data from "@/mockData/homeHero.json";
-import { MeshBackground, FloatingBlobs, GridPattern, DecorativeCircle } from "../ui/VisualDecorations";
 
-import { Sparkles, GlowText, GlitterButton } from "../ui/Sparkles";
+// ── Magnetic particle network ─────────────────────────────────────────────────
+function MagneticField() {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const mouseRef = useRef({ x: -9999, y: -9999 });
 
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+
+    const resize = () => {
+      canvas.width  = canvas.offsetWidth;
+      canvas.height = canvas.offsetHeight;
+    };
+    resize();
+    window.addEventListener("resize", resize);
+
+    // Track mouse at window level so it works through overlay divs
+    const onMove = (e: MouseEvent) => {
+      const rect = canvas.getBoundingClientRect();
+      mouseRef.current = { x: e.clientX - rect.left, y: e.clientY - rect.top };
+    };
+    const onLeave = () => { mouseRef.current = { x: -9999, y: -9999 }; };
+    window.addEventListener("mousemove", onMove);
+    window.addEventListener("mouseleave", onLeave);
+
+    type P = { x: number; y: number; ox: number; oy: number; vx: number; vy: number; r: number; hue: number; a: number; angle: number; angleSpeed: number };
+
+    const W = () => canvas.width, H = () => canvas.height;
+    const COUNT = 90;
+    let pts: P[] = [];
+
+    const spawn = () => {
+      pts = Array.from({ length: COUNT }, () => {
+        const x = Math.random() * W(), y = Math.random() * H();
+        return { x, y, ox: x, oy: y, vx: (Math.random() - 0.5) * 4.5, vy: (Math.random() - 0.5) * 4.5,
+          r: 1 + Math.random() * 1.8,
+          hue: Math.random() < 0.35 ? 255 + Math.random() * 30 : 215 + Math.random() * 50,
+          a: 0.35 + Math.random() * 0.65,
+          angle: Math.random() * Math.PI * 2,
+          angleSpeed: (Math.random() - 0.5) * 0.036 };
+      });
+    };
+    spawn();
+    window.addEventListener("resize", spawn);
+
+    let raf: number;
+    const WANDER   = 0.54;   // autonomous wander force
+    const ATTRACT  = 1.4;
+    const ATTRACT_R = 300;
+    const RETURN   = 0.006;
+    const DAMP     = 0.94;
+    const LINE_R   = 130;
+
+    function tick() {
+      if (!canvas || !ctx) return;
+      const w = W(), h = H();
+      const mx = mouseRef.current.x, my = mouseRef.current.y;
+
+      // Fading trail — never fully clear so particles leave soft motion blur
+      ctx.fillStyle = "rgba(3,7,18,0.22)";
+      ctx.fillRect(0, 0, w, h);
+
+      // Physics
+      for (let i = 0; i < pts.length; i++) {
+        const p = pts[i];
+
+        // Autonomous wander — always moving
+        p.angle += p.angleSpeed;
+        p.vx += Math.cos(p.angle) * WANDER;
+        p.vy += Math.sin(p.angle) * WANDER;
+
+        // Mouse attraction
+        const dx = mx - p.x, dy = my - p.y;
+        const d  = Math.sqrt(dx * dx + dy * dy);
+        if (d < ATTRACT_R && d > 0.5) {
+          const t = 1 - d / ATTRACT_R;
+          const f = t * t * ATTRACT;
+          p.vx += (dx / d) * f;
+          p.vy += (dy / d) * f;
+        }
+
+        // Soft inter-particle repulsion (keep field airy)
+        for (let j = i + 1; j < pts.length; j++) {
+          const q = pts[j];
+          const rx = p.x - q.x, ry = p.y - q.y;
+          const rd = Math.sqrt(rx * rx + ry * ry);
+          if (rd < 40 && rd > 0.3) {
+            const f = (1 - rd / 40) * 0.07;
+            p.vx += (rx / rd) * f; p.vy += (ry / rd) * f;
+            q.vx -= (rx / rd) * f; q.vy -= (ry / rd) * f;
+          }
+        }
+
+        // Drift home
+        p.vx += (p.ox - p.x) * RETURN;
+        p.vy += (p.oy - p.y) * RETURN;
+
+        p.vx *= DAMP; p.vy *= DAMP;
+
+        // Speed cap
+        const sp = Math.sqrt(p.vx * p.vx + p.vy * p.vy);
+        if (sp > 33) { p.vx = (p.vx / sp) * 33; p.vy = (p.vy / sp) * 33; }
+
+        p.x += p.vx; p.y += p.vy;
+      }
+
+      // Connection lines
+      ctx.lineWidth = 0.5;
+      for (let i = 0; i < pts.length; i++) {
+        for (let j = i + 1; j < pts.length; j++) {
+          const p = pts[i], q = pts[j];
+          const dx = p.x - q.x, dy = p.y - q.y;
+          const d  = Math.sqrt(dx * dx + dy * dy);
+          if (d < LINE_R) {
+            ctx.strokeStyle = `hsla(225,70%,75%,${(1 - d / LINE_R) * 0.28})`;
+            ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(q.x, q.y); ctx.stroke();
+          }
+        }
+      }
+
+      // Particles  
+      for (const p of pts) {
+        const g = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.r * 3.5);
+        g.addColorStop(0,   `hsla(${p.hue},90%,85%,${p.a})`);
+        g.addColorStop(0.4, `hsla(${p.hue},80%,62%,${p.a * 0.4})`);
+        g.addColorStop(1,   `hsla(${p.hue},70%,50%,0)`);
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r * 3.5, 0, Math.PI * 2);
+        ctx.fillStyle = g;
+        ctx.fill();
+      }
+
+      // Cursor ripple glow
+      if (mx > 0 && mx < w && my > 0 && my < h) {
+        const cg = ctx.createRadialGradient(mx, my, 0, mx, my, 100);
+        cg.addColorStop(0,   "rgba(99,102,241,0.18)");
+        cg.addColorStop(0.6, "rgba(99,102,241,0.06)");
+        cg.addColorStop(1,   "rgba(99,102,241,0)");
+        ctx.beginPath(); ctx.arc(mx, my, 100, 0, Math.PI * 2);
+        ctx.fillStyle = cg; ctx.fill();
+        ctx.beginPath(); ctx.arc(mx, my, 3.5, 0, Math.PI * 2);
+        ctx.fillStyle = "rgba(165,180,252,0.95)"; ctx.fill();
+      }
+
+      raf = requestAnimationFrame(tick);
+    }
+
+    tick();
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener("resize", resize);
+      window.removeEventListener("resize", spawn);
+      window.removeEventListener("mousemove", onMove);
+      window.removeEventListener("mouseleave", onLeave);
+    };
+  }, []);
+
+  return <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />;
+}
+
+// ── hero ──────────────────────────────────────────────────────────────────────
 export function HomeHero() {
-  const words = data.headline.split(" ");
-  
   return (
-    <section className="relative overflow-hidden bg-white pt-32 md:pt-40 pb-24 md:pb-48">
-      <MeshBackground />
-      <FloatingBlobs />
-      <GridPattern />
-      <Sparkles />
-      <div className="mx-auto w-full px-6 lg:px-12 xl:px-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 md:gap-24 items-center">
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+    <section className="relative overflow-hidden bg-[#03070e] min-h-[65vh] flex items-center pt-14 md:pt-16">
+      <MagneticField />
+
+      {/* Left-side dark fade so text is readable over the particles */}
+      <div
+        className="absolute inset-0 pointer-events-none z-10"
+        style={{ background: "linear-gradient(105deg, rgba(3,7,18,0.97) 0%, rgba(3,7,18,0.80) 38%, rgba(3,7,18,0.15) 65%, transparent 100%)" }}
+      />
+
+      {/* Content */}
+      <div className="relative z-20 w-full px-6 sm:px-10 lg:px-14 xl:px-18 py-10">
+
+        {/* Headline */}
+        <div className="overflow-hidden mb-1">
+          <motion.h1
+            initial={{ y: "105%" }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+            className="text-6xl sm:text-7xl lg:text-8xl font-extrabold tracking-tight text-white leading-[1.0]"
           >
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="mb-6 md:mb-8 inline-flex items-center rounded-full border border-indigo-100 bg-indigo-50/50 backdrop-blur-sm px-4 py-1.5 text-xs md:text-sm font-bold text-indigo-600 uppercase tracking-widest"
-            >
-              <span className="mr-2 h-2 w-2 rounded-full bg-indigo-600 animate-pulse" />
-              {data.badge}
-            </motion.div>
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-gray-900 leading-[1.1] mb-8 md:mb-10">
-              {words.map((word, i) => (
-                <span key={i} className={`text-reveal mr-2 md:mr-4 ${i === 2 ? 'text-indigo-600' : ''}`}>
-                  <motion.span
-                    initial={{ y: "100%" }}
-                    animate={{ y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.3 + i * 0.1, ease: [0.22, 1, 0.36, 1] }}
-                    className="text-reveal-inner"
-                  >
-                    <GlowText>{word}</GlowText>
-                  </motion.span>
-                </span>
-              ))}
-            </h1>
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.8, duration: 1 }}
-              className="mt-6 md:mt-8 text-lg md:text-xl leading-relaxed text-gray-600 max-w-lg font-medium"
-            >
-              {data.subheadline}
-            </motion.p>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1, duration: 0.6 }}
-              className="mt-10 md:mt-14 flex flex-col sm:flex-row items-start sm:items-center gap-6 md:gap-10"
-            >
-              <GlitterButton className="rounded-full w-full sm:w-auto">
-                <Link
-                  to={data.primaryButton.href}
-                  className="block bg-indigo-600 px-8 md:px-10 py-4 md:py-5 text-base md:text-lg font-bold text-white shadow-2xl shadow-indigo-200 hover:bg-indigo-500 transition-all text-center"
-                >
-                  {data.primaryButton.label}
-                </Link>
-              </GlitterButton>
-              <Link
-                to={data.secondaryButton.href}
-                className="text-base md:text-lg font-bold leading-6 text-gray-900 hover:text-indigo-600 group transition-all flex items-center gap-2"
-              >
-                {data.secondaryButton.label} 
-                <span className="inline-block transition-transform group-hover:translate-x-2">→</span>
-              </Link>
-            </motion.div>
-          </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
-            animate={{ opacity: 1, scale: 1, rotate: 0 }}
-            transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-            className="relative hidden lg:block"
-          >
-            <DecorativeCircle className="absolute -top-20 -right-20 h-80 w-80 text-indigo-600" />
-            <div className="aspect-[4/5] rounded-[3rem] bg-gray-100 overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.25)] relative z-10">
-              <img 
-                src="https://picsum.photos/seed/innovation/800/1000" 
-                alt="Innovation" 
-                className="h-full w-full object-cover hover:scale-110 transition-transform duration-1000"
-                referrerPolicy="no-referrer"
-              />
-            </div>
-          </motion.div>
+            From Invisible
+          </motion.h1>
         </div>
+        <div className="overflow-hidden mb-8">
+          <motion.h1
+            initial={{ y: "105%" }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.8, delay: 0.32, ease: [0.22, 1, 0.36, 1] }}
+            className="text-6xl sm:text-7xl lg:text-8xl font-extrabold tracking-tight leading-[1.0]"
+            style={{ background: "linear-gradient(135deg, #a5b4fc 0%, #818cf8 45%, #c084fc 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}
+          >
+            To Inevitable
+          </motion.h1>
+        </div>
+
+        {/* Subheadline */}
+        <motion.p
+          initial={{ opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.55, duration: 0.7 }}
+          className="text-sm sm:text-base text-gray-400 leading-relaxed max-w-2xl"
+        >
+          {data.subheadline}
+        </motion.p>
+
       </div>
+
+      {/* Scroll hint */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.6, duration: 1 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2"
+      >
+        <span className="text-[9px] uppercase tracking-[0.3em] text-gray-600 font-bold">Scroll</span>
+        <motion.div
+          animate={{ y: [0, 6, 0] }}
+          transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
+          className="h-4 w-px bg-gradient-to-b from-gray-600 to-transparent"
+        />
+      </motion.div>
     </section>
   );
 }
+

@@ -1,0 +1,58 @@
+{
+  "hero": {
+    "badge": "IT OUTSOURCING",
+    "stat": "78% of businesses prefer outsourcing to increase in-house efficiency.",
+    "title": "Let Us Engineer Your Dream for You!",
+    "description": "With rapid increase in competition and evolution of disruptive industries, you don't want to fall a step behind. Our well-researched strategies and operational excellence will help you reach for the sky."
+  },
+  "intro": "IT Outsourcing has evolved from a cheaper contractual resource into an extensive sector that fosters innovation and enables business transformation through end-to-end solutions. We locate the bug in your prevalent strategies and provide enhanced integrated solutions.",
+  "benefits": [
+    {
+      "title": "Cost-Effective",
+      "description": "Getting services outsourced effectively cuts down costs and gets expert services at subsidized rates, maximizing your benefits."
+    },
+    {
+      "title": "Increasing In-House Efficiency",
+      "description": "Outsourcing menial services lets your in-house team focus on main projects, increasing overall work efficiency and productivity."
+    },
+    {
+      "title": "Expertise",
+      "description": "The outsourcing team has better knowledge of the domain they work on, detecting errors quickly and providing expert solutions."
+    },
+    {
+      "title": "Promote Growth",
+      "description": "Increased productivity, quality and business values draw clients towards your services. Flexibility and scalability act as the additional charm."
+    },
+    {
+      "title": "Security",
+      "description": "It is better to get IT security outsourced through professionals that keep your sensitive information protected and safe."
+    },
+    {
+      "title": "Run Your Business 24/7",
+      "description": "Outsourced services across different time zones ensure your business is awake around the clock attracting customers globally."
+    }
+  ],
+  "services": [
+    { "title": "Website Development", "description": "Custom websites and web applications tailored to your business needs and user expectations.", "href": "/services/it-outsourcing" },
+    { "title": "Data Services", "description": "Data entry, processing, management and analytics to keep your business information accurate and actionable.", "href": "/services/data-services" },
+    { "title": "Technical Support", "description": "Round-the-clock technical assistance to keep your systems running smoothly.", "href": "/services/it-outsourcing" },
+    { "title": "Photo Editing", "description": "Professional image editing, retouching and enhancement for your digital and print assets.", "href": "/services/it-outsourcing" },
+    { "title": "Testing Services", "description": "Comprehensive software testing to ensure bug-free, optimized applications for your users.", "href": "/services/testing" },
+    { "title": "Mobile App Development", "description": "Native and cross-platform mobile apps that bring your business closer to your customers.", "href": "/services/mobile-app" }
+  ],
+  "qualities": [
+    { "title": "Focus", "description": "Our services help you focus better on more important tasks." },
+    { "title": "Accountability", "description": "We provide creative solutions to increase your business authenticity." },
+    { "title": "Flexibility", "description": "We help promote flexibility and sustainability within an organization." },
+    { "title": "Cost-Effective", "description": "Our services are professional and cost-effective in nature." },
+    { "title": "Professional", "description": "Our delegated services are handled by professionals to provide utmost accuracy." },
+    { "title": "Security", "description": "We ensure full security with a non-disclosure contract." }
+  ],
+  "process": [
+    "Identifying needs",
+    "Conceptualizing plans",
+    "Engineering solutions",
+    "Delivering success"
+  ],
+  "whyUs": "Getting menial and repetitive tasks outsourced is the new trend that almost all big enterprises have adopted to increase the efficiency of their employees."
+}

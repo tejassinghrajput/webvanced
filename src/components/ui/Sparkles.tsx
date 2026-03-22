@@ -1,34 +1,57 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 
+interface Particle {
+  id: number;
+  width: number;
+  height: number;
+  left: number;
+  top: number;
+  opacity: number;
+  duration: number;
+  delay: number;
+}
+
 export function Sparkles() {
+  const particles = useMemo<Particle[]>(
+    () =>
+      Array.from({ length: 20 }, (_, i) => ({
+        id: i,
+        width: Math.random() * 3 + 1,
+        height: Math.random() * 3 + 1,
+        left: Math.random() * 100,
+        top: Math.random() * 100,
+        opacity: Math.random() * 0.5 + 0.3,
+        duration: 2 + Math.random() * 3,
+        delay: Math.random() * 5,
+      })),
+    []
+  );
+
   return (
     <div className="absolute inset-0 pointer-events-none overflow-hidden">
-      {[...Array(40)].map((_, i) => (
+      {particles.map((p) => (
         <motion.div
-          key={i}
+          key={p.id}
           className="absolute bg-white rounded-full"
           style={{
-            width: Math.random() * 3 + 1 + "px",
-            height: Math.random() * 3 + 1 + "px",
-            left: Math.random() * 100 + "%",
-            top: Math.random() * 100 + "%",
+            width: p.width + "px",
+            height: p.height + "px",
+            left: p.left + "%",
+            top: p.top + "%",
           }}
-          initial={{ 
-            scale: 0,
-            opacity: 0 
-          }}
+          initial={{ scale: 0, opacity: 0 }}
           animate={{
             scale: [0, 1.5, 0],
-            opacity: [0, Math.random() * 0.5 + 0.3, 0],
+            opacity: [0, p.opacity, 0],
             y: [0, -20, 0],
           }}
           transition={{
-            duration: 2 + Math.random() * 3,
+            duration: p.duration,
             repeat: Infinity,
-            delay: Math.random() * 5,
-            ease: "easeInOut"
+            delay: p.delay,
+            ease: "easeInOut",
           }}
         />
       ))}

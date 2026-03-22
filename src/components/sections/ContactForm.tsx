@@ -1,59 +1,69 @@
 import { motion } from "motion/react";
-import { ShieldCheck, Send } from "lucide-react";
+import { useState } from "react";
+import { ShieldCheck } from "lucide-react";
 import contactData from "@/mockData/contact.json";
+import {
+  LabelInputContainer,
+  FormInput,
+  FormTextarea,
+  FormSelect,
+} from "@/components/ui/FormInput";
 
 export function ContactForm() {
   const { title, fields, security, submit } = contactData.form;
+  const [serviceValue, setServiceValue] = useState("");
 
   return (
     <motion.div
-      initial={{ opacity: 0, x: 30 }}
-      whileInView={{ opacity: 1, x: 0 }}
+      initial={{ opacity: 0, y: 14 }}
+      whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.8 }}
-      className="rounded-3xl bg-white p-12 shadow-xl ring-1 ring-gray-100"
+      transition={{ duration: 0.45, delay: 0.15 }}
+      className="rounded-2xl border border-gray-200 bg-white p-7 shadow-sm h-full flex flex-col"
     >
-      <h2 className="text-3xl font-bold text-gray-900">{title}</h2>
-      <form className="mt-12 space-y-8" onSubmit={(e) => e.preventDefault()}>
-        <div className="grid gap-8 sm:grid-cols-2">
-          {fields.slice(0, 2).map((field) => (
-            <div key={field.id}>
-              <label htmlFor={field.id} className="block text-xs font-bold tracking-widest text-gray-500 uppercase">{field.label}</label>
-              <input type={field.type} id={field.id} placeholder={field.placeholder} className="mt-2 block w-full rounded-xl border-0 bg-gray-50 py-4 px-5 text-gray-900 ring-1 ring-inset ring-gray-200 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 transition-all" />
-            </div>
+      <h2 className="text-lg font-bold text-neutral-800">{title}</h2>
+      <p className="mt-1 mb-5 text-xs text-gray-400">All fields required. We’ll never share your data.</p>
+
+      <form className="flex flex-col gap-4 flex-1" onSubmit={(e) => e.preventDefault()}>
+        <div className="flex flex-col gap-4 sm:flex-row">
+          {fields.slice(0, 2).map((f) => (
+            <LabelInputContainer key={f.id}>
+              <label htmlFor={f.id} className="text-xs font-semibold text-neutral-600">{f.label}</label>
+              <FormInput id={f.id} type={f.type} placeholder={f.placeholder} />
+            </LabelInputContainer>
           ))}
         </div>
-        <div className="grid gap-8 sm:grid-cols-2">
-          {fields.slice(2, 4).map((field) => (
-            <div key={field.id}>
-              <label htmlFor={field.id} className="block text-xs font-bold tracking-widest text-gray-500 uppercase">{field.label}</label>
-              {field.type === "select" ? (
-                <select id={field.id} className="mt-2 block w-full rounded-xl border-0 bg-gray-50 py-4 px-5 text-gray-900 ring-1 ring-inset ring-gray-200 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 appearance-none transition-all">
-                  {field.options?.map((opt) => <option key={opt}>{opt}</option>)}
-                </select>
-              ) : (
-                <input type={field.type} id={field.id} placeholder={field.placeholder} className="mt-2 block w-full rounded-xl border-0 bg-gray-50 py-4 px-5 text-gray-900 ring-1 ring-inset ring-gray-200 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 transition-all" />
-              )}
-            </div>
-          ))}
+        <div className="flex flex-col gap-4 sm:flex-row">
+          <LabelInputContainer>
+            <label htmlFor={fields[2].id} className="text-xs font-semibold text-neutral-600">{fields[2].label}</label>
+            <FormInput id={fields[2].id} type={fields[2].type} placeholder={fields[2].placeholder} />
+          </LabelInputContainer>
+          <LabelInputContainer>
+            <label htmlFor={fields[3].id} className="text-xs font-semibold text-neutral-600">{fields[3].label}</label>
+            <FormSelect
+              id={fields[3].id}
+              options={fields[3].options ?? []}
+              value={serviceValue}
+              onValueChange={setServiceValue}
+              placeholder="Select a service…"
+            />
+          </LabelInputContainer>
         </div>
-        <div>
-          <label htmlFor={fields[4].id} className="block text-xs font-bold tracking-widest text-gray-500 uppercase">{fields[4].label}</label>
-          <textarea id={fields[4].id} rows={6} placeholder={fields[4].placeholder} className="mt-2 block w-full rounded-xl border-0 bg-gray-50 py-4 px-5 text-gray-900 ring-1 ring-inset ring-gray-200 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 resize-none transition-all" />
-        </div>
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 pt-8 border-t border-gray-100">
-          <div className="flex items-center gap-2 text-sm text-gray-500">
-            <ShieldCheck className="h-5 w-5 text-teal-500" />
+        <LabelInputContainer className="flex-1">
+          <label htmlFor={fields[4].id} className="text-xs font-semibold text-neutral-600">{fields[4].label}</label>
+          <FormTextarea id={fields[4].id} rows={6} placeholder={fields[4].placeholder} className="h-full" />
+        </LabelInputContainer>
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-1 mt-auto">
+          <div className="flex items-center gap-2 text-xs text-gray-400">
+            <ShieldCheck className="h-3.5 w-3.5 text-teal-500 shrink-0" />
             <span>{security}</span>
           </div>
-          <motion.button
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
+          <button
             type="submit"
-            className="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-md bg-indigo-600 px-8 py-4 text-sm font-semibold text-white shadow-sm hover:bg-indigo-700 transition-colors"
+            className="w-full sm:w-auto rounded-md bg-indigo-600 hover:bg-indigo-700 px-8 py-2.5 text-sm font-semibold text-white transition-colors"
           >
-            {submit} <Send className="h-4 w-4" />
-          </motion.button>
+            {submit}
+          </button>
         </div>
       </form>
     </motion.div>

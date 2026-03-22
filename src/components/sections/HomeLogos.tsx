@@ -3,14 +3,14 @@ import data from "@/mockData/homeLogos.json";
 
 export function HomeLogos() {
   return (
-    <section className="bg-gray-50 py-32 border-y border-gray-100">
+    <section className="bg-gray-50 py-12 border-y border-gray-100">
       <div className="mx-auto w-full px-6 lg:px-12 xl:px-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-8"
         >
           <h2 className="text-sm font-bold tracking-[0.3em] text-indigo-600 uppercase">{data.sectionLabel}</h2>
         </motion.div>

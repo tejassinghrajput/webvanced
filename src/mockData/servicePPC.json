@@ -1,0 +1,82 @@
+{
+  "hero": {
+    "badge": "PAY-PER-CLICK",
+    "stat": "PPC drives 93% of website traffic.",
+    "title": "Get Your Click Right with PPC!",
+    "description": "Gone are the days of spending tons of money on offline advertisements people walked past. PPC attracts only interested customers — you pay only when they click."
+  },
+  "intro": "This is that single stone that helps achieve both goals — driving potential and convertible audience to your website at affordable pricing. Stop wasting money on ads nobody sees.",
+  "benefits": [
+    {
+      "title": "Boosts Traffic to Website",
+      "description": "PPC drives traffic more efficiently than any other form of advertising. You pay for every click but your money doesn't go to waste — clickers are genuinely interested."
+    },
+    {
+      "title": "Measurable & Trackable",
+      "description": "PPC helps you measure your rate of returns on investment. It provides a crystal clear picture of the returns your campaigns and ads are generating."
+    },
+    {
+      "title": "Increase Sales",
+      "description": "PPC increases leads, revenue and sales helping your business climb the ladder to success by targeting the correct audience."
+    },
+    {
+      "title": "Increases Brand Awareness",
+      "description": "PPC gives your company better visibility and enhanced exposure leading to a higher number of conversions."
+    },
+    {
+      "title": "Extremely Targeted",
+      "description": "PPC targets audiences in a channelized way that pulls in quality traffic. Your money is not wasted as clickers are genuinely interested in your services."
+    },
+    {
+      "title": "Higher Conversion Rate",
+      "description": "Search traffic has the highest rate of conversions and drives immediate results when a client searches for a specific service."
+    }
+  ],
+  "services": [
+    {
+      "title": "Search Advertising",
+      "description": "Customized campaign strategy, extensive keyword research, ad creation and testing while optimizing and managing your page with full transparency.",
+      "href": "/services/ppc"
+    },
+    {
+      "title": "Google Shopping Ads",
+      "description": "We target the niche and display compelling ads relevant to the target audience, increasing conversion rates and ROI.",
+      "href": "/services/ppc"
+    },
+    {
+      "title": "Email Marketing",
+      "description": "One of the most powerful platforms for advertising. Our PPC experts effectively combine search and display advertising techniques.",
+      "href": "/services/ppc"
+    },
+    {
+      "title": "Remarketing",
+      "description": "We advertise smart by showing ads to audiences who have actually visited your website, showing a high conversion rate.",
+      "href": "/services/ppc"
+    },
+    {
+      "title": "Mobile Advertising",
+      "description": "We understand patterns of mobile users and effectively combine mobile ads with other advertisement forms attracting the relevant audience.",
+      "href": "/services/ppc"
+    },
+    {
+      "title": "Display Advertising",
+      "description": "With visually appealing ads, you can attract a higher amount of audience, measure and track your ROI more easily and efficiently.",
+      "href": "/services/ppc"
+    }
+  ],
+  "qualities": [
+    { "title": "Dedicated Resource", "description": "We dedicate our passion, talent and resources to satisfy your needs." },
+    { "title": "Effective & ROI Ad Support", "description": "Our efficiency reduces your CPC to increase your ROI." },
+    { "title": "Guaranteed Leads", "description": "Our leads give more assurance than a life insurance policy." },
+    { "title": "24/7 Communication Support", "description": "We are the bridge between you and your clients." },
+    { "title": "100% Transparency", "description": "We have nothing to hide as our methods only know success." },
+    { "title": "Campaign Report Management", "description": "We index the right reports to make your business authentic." }
+  ],
+  "process": [
+    "Identifying needs",
+    "Conceptualizing plans",
+    "Engineering solutions",
+    "Delivering success"
+  ],
+  "whyUs": "Our PPC experts do not speculate with your money but come up with a strategic plan to invest in well-researched campaigns and ads that deliver results."
+}

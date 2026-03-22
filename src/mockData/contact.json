@@ -12,8 +12,8 @@
     "channels": {
       "badge": "DIRECT CHANNELS",
       "items": [
-        { "icon": "Mail", "label": "EMAIL US", "value": "hello@webvance.studio" },
-        { "icon": "MessageSquare", "label": "WHATSAPP", "value": "+1 (555) WEB-BLUE" }
+        { "icon": "Mail", "label": "EMAIL US", "value": "webvance.tech@gmail.com" },
+        { "icon": "MessageSquare", "label": "WHATSAPP", "value": "+91 762050611" }
       ]
     },
     "image": "https://img.freepik.com/free-vector/contact-center-abstract-concept_335657-3032.jpg?t=st=1774196628~exp=1774200228~hmac=8010100b61e721bf295a96dc72178bf5e2cc2cb74539dcd39c5522d98552b9dc&w=740"
@@ -33,7 +33,7 @@
   "location": {
     "icon": "MapPin",
     "title": "The Digital Atelier",
-    "description": "Remote-First | Anchored in San Francisco, CA",
+    "description": "Caddie Commercial Tower, Hospitality District, New Delhi 110037",
     "status": { "tz": "GMT-7", "label": "ALWAYS ACTIVE" }
   }
 }

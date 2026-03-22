@@ -1,0 +1,86 @@
+{
+  "hero": {
+    "badge": "DIGITAL MARKETING",
+    "stat": "Louder is the new Good!",
+    "title": "Don't be the politician with a megaphone — be the sophisticated businessman who broadcasts through online sources.",
+    "description": "We live in an age of rapid development where the internet influences the market and dominates the clients. Our team of marketing experts channelize their flair and passion for delivering your business success."
+  },
+  "intro": "We work around the clock with utmost precision. Our aim is to start the revolution of digital marketing by destroying barriers of traditional marketing and equipping your business with the edge over others.",
+  "benefits": [
+    {
+      "title": "Global Reach",
+      "description": "Even small businesses and start-ups get the universe's attention. Breaking geographical barriers helps your business grow and enhance overall brand value."
+    },
+    {
+      "title": "Measurable Results",
+      "description": "Digital Marketing empowers your company with statistics your boss demands, turning your CAN'TS into CANS with reliable optimization."
+    },
+    {
+      "title": "Reach Targeted Customers",
+      "description": "Creative designs assisted by smart advertising help magnify your brand by targeting specific audiences who are interested in your services."
+    },
+    {
+      "title": "Cost-Effective",
+      "description": "Every businessman wants the highest rate of return from the lowest investment. Digital Marketing helps you get sustainable returns."
+    },
+    {
+      "title": "Boosts Sales",
+      "description": "Getting the right audience increases traffic on your website and magnifies your sales, retaining and urging customers to buy your service."
+    },
+    {
+      "title": "Increases Brand Reliability",
+      "description": "Digital marketing on social media delivers immediate customer feedback that positively reflects on your brand's authenticity."
+    }
+  ],
+  "services": [
+    {
+      "title": "SEO",
+      "description": "Our marketing executives help you drive organic traffic to your website. Implementing the correct SEO strategy gets promising customers helping you grow your business.",
+      "href": "/services/seo"
+    },
+    {
+      "title": "Pay-Per-Click (PPC)",
+      "description": "PPC helps your business drive traffic through comprehensive online advertising, paid search, Google ads and online ads to promote your business.",
+      "href": "/services/ppc"
+    },
+    {
+      "title": "Social Media Management",
+      "description": "We are up-to-date with the latest trends giving you the edge your business needs across Facebook, Instagram, Twitter, LinkedIn, and more.",
+      "href": "/services/social-media"
+    },
+    {
+      "title": "Content Writing",
+      "description": "Content marketing services render authenticity to your business, attracting and retaining your audience on social media, website, brochures, and ads.",
+      "href": "/services/content-writing"
+    },
+    {
+      "title": "Graphic Designing",
+      "description": "Our graphic designers create banners, ads, and designs that grab the attention of your clients, because your brain reacts better to pictures.",
+      "href": "/services/graphic-design"
+    },
+    {
+      "title": "Local Search Optimization",
+      "description": "Our originality and innovative design ideas ensure the creation of a stunning online presence ensuring you never miss a local search.",
+      "href": "/services/local-seo"
+    }
+  ],
+  "qualities": [
+    { "title": "Creative", "description": "Our creative juices set the flow of traffic on your website helping you grab your customers' eye." },
+    { "title": "Passionate", "description": "Our passion defines us and we spread our passion into your business." },
+    { "title": "Effective", "description": "Our efficiency provides unparalleled growth and our adept analysis works round the clock." },
+    { "title": "Data Oriented", "description": "We supplement your business with oriented out-of-the-box solutions." },
+    { "title": "Dynamic", "description": "Our dynamic techniques help your business skyrocket through the roof." },
+    { "title": "Versatile", "description": "We work across industries which adds authenticity to your originality." }
+  ],
+  "process": [
+    "Identifying needs",
+    "Conceptualizing plans",
+    "Engineering solutions",
+    "Delivering success"
+  ],
+  "whyUs": "We are the new generation digital marketing agency providing high-end content and exceptional services. We believe in expanding horizons, disrupting industries, creating unforgettable experiences, and entrusting concrete results.",
+  "quote": {
+    "text": "I can't change the direction of the wind, but I can adjust my sails to always reach my destination.",
+    "author": "Jimmy Dean"
+  }
+}

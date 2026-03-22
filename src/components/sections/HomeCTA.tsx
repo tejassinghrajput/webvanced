@@ -5,7 +5,7 @@ import { DecorativeCircle } from "../ui/VisualDecorations";
 
 export function HomeCTA() {
   return (
-    <section className="bg-white py-32 relative overflow-hidden">
+    <section className="bg-white py-12 relative overflow-hidden">
       <DecorativeCircle className="absolute -top-20 -right-20 h-96 w-96 text-indigo-600" />
       <div className="mx-auto w-full px-6 lg:px-12 xl:px-20">
         <motion.div
@@ -13,25 +13,25 @@ export function HomeCTA() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="relative isolate overflow-hidden bg-indigo-600 px-6 py-24 text-center shadow-2xl rounded-[4rem] sm:px-16"
+          className="relative isolate overflow-hidden bg-indigo-600 px-6 py-14 text-center shadow-2xl rounded-[3rem] sm:px-16"
         >
           <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.500),theme(colors.indigo.900))]" />
-          <h2 className="mx-auto max-w-3xl text-5xl font-bold tracking-tight text-white sm:text-7xl leading-[1.1]">
+          <h2 className="mx-auto max-w-3xl text-3xl font-bold tracking-tight text-white sm:text-4xl leading-[1.15]">
             {data.heading}
           </h2>
-          <p className="mx-auto mt-10 max-w-xl text-xl leading-8 text-indigo-100 font-medium">
+          <p className="mx-auto mt-4 max-w-xl text-base leading-7 text-indigo-100 font-medium">
             {data.body}
           </p>
-          <div className="mt-14 flex items-center justify-center gap-x-10">
+          <div className="mt-8 flex items-center justify-center gap-x-8">
             <Link
               to={data.primaryButton.href}
-              className="rounded-full bg-white px-10 py-5 text-lg font-bold text-indigo-600 shadow-xl hover:bg-indigo-50 hover:scale-105 transition-all"
+              className="rounded-full bg-white px-7 py-3 text-sm font-bold text-indigo-600 shadow-xl hover:bg-indigo-50 hover:scale-105 transition-all"
             >
               {data.primaryButton.label}
             </Link>
             <Link
               to={data.secondaryButton.href}
-              className="text-lg font-bold leading-6 text-white hover:text-indigo-200 group transition-all"
+              className="text-sm font-bold leading-6 text-white hover:text-indigo-200 group transition-all"
             >
               {data.secondaryButton.label} 
               <span className="inline-block transition-transform group-hover:translate-x-2">→</span>

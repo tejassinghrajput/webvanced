@@ -1,0 +1,58 @@
+{
+  "hero": {
+    "badge": "GRAPHIC DESIGN",
+    "stat": "Our Brain Reacts Better to Pictures — So We Make Great Ones",
+    "title": "Designs That Grab Attention and Drive Action.",
+    "description": "Our brain reacts better to pictures and graphics as compared to written content. To grab the attention of human clients, your business needs attractive designs that stand out."
+  },
+  "intro": "Our graphic designers are specialists who not only strive to provide success but deliver it. Our team is versatile with the designs they create for banners, ads, brand identities and digital assets.",
+  "benefits": [
+    {
+      "title": "Instant Communication",
+      "description": "A great design communicates your brand message in seconds — faster than any text can."
+    },
+    {
+      "title": "Builds Brand Identity",
+      "description": "Consistent, professional design builds a recognizable brand identity that customers trust and remember."
+    },
+    {
+      "title": "Increases Conversions",
+      "description": "Visually appealing ads, landing pages and social posts lead to significantly higher click and conversion rates."
+    },
+    {
+      "title": "Competitive Advantage",
+      "description": "Outstanding design makes you stand out from competitors and positions your brand as premium and professional."
+    },
+    {
+      "title": "Versatile Usage",
+      "description": "Great design assets can be repurposed across digital and print channels, maximizing your investment."
+    },
+    {
+      "title": "Emotional Connection",
+      "description": "Colours, typography and imagery create emotional responses. We design to evoke the exact feeling you want."
+    }
+  ],
+  "services": [
+    { "title": "Social Media Graphics", "description": "Platform-optimized visuals for posts, stories, covers, and ads across all social platforms.", "href": "/services/graphic-design" },
+    { "title": "Banner & Display Ads", "description": "High-converting banner ads and display creatives designed to capture attention and drive clicks.", "href": "/services/graphic-design" },
+    { "title": "Brand Identity & Logos", "description": "Complete brand identity systems including logos, colour palettes, typography and usage guidelines.", "href": "/services/graphic-design" },
+    { "title": "Brochures & Print Design", "description": "Professional print materials including brochures, flyers, business cards and catalogues.", "href": "/services/graphic-design" },
+    { "title": "Infographics", "description": "Complex data and information transformed into compelling, shareable visual stories.", "href": "/services/graphic-design" },
+    { "title": "Website Visuals", "description": "Custom illustrations, hero images, icons and UI graphics that bring your website to life.", "href": "/services/graphic-design" }
+  ],
+  "qualities": [
+    { "title": "Creative Excellence", "description": "Our designers bring fresh, original ideas to every project." },
+    { "title": "Brand Consistent", "description": "Every design stays true to your brand guidelines and voice." },
+    { "title": "Pixel Perfect", "description": "We deliver precision work with meticulous attention to detail." },
+    { "title": "Fast Turnaround", "description": "We work efficiently without sacrificing quality or creativity." },
+    { "title": "Revision Included", "description": "We iterate until you're completely satisfied with the result." },
+    { "title": "Multi-Format Delivery", "description": "We deliver in all formats you need — web, print, social and more." }
+  ],
+  "process": [
+    "Identifying needs",
+    "Conceptualizing plans",
+    "Engineering solutions",
+    "Delivering success"
+  ],
+  "whyUs": "We are the new generation digital marketing agency providing high-end content and exceptional services. Our graphic designers are built to deliver stand-out visual identities."
+}

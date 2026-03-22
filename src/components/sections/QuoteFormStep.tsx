@@ -1,47 +1,48 @@
 import React from "react";
 import { motion } from "motion/react";
 import * as Icons from "lucide-react";
+import { LabelInputContainer, FormInput, FormTextarea } from "@/components/ui/FormInput";
 
 export function QuoteFormStep({ step }: { step: any; key?: React.Key }) {
   return (
     <div>
-      <div className="flex items-center gap-4 border-b border-gray-100 pb-6">
-        <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#111827] text-xs font-bold text-white">{step.id}</span>
-        <h3 className="text-xl font-bold text-gray-900">{step.title}</h3>
+      <div className="flex items-center gap-3 mb-6">
+        <span className="flex h-7 w-7 items-center justify-center rounded-full bg-gray-900 text-xs font-bold text-white">
+          {step.id}
+        </span>
+        <h3 className="text-lg font-bold text-gray-900">{step.title}</h3>
       </div>
       {step.fields && (
-        <div className="mt-8 grid gap-8 sm:grid-cols-2">
+        <div className="grid gap-5 sm:grid-cols-2">
           {step.fields.map((field: any) => (
-            <div key={field.id} className={field.type === "textarea" ? "sm:col-span-2" : ""}>
-              <label htmlFor={field.id} className="block text-xs font-bold tracking-widest text-gray-500 uppercase">{field.label}</label>
-              {field.type === "textarea" ? (
-                <textarea id={field.id} rows={4} placeholder={field.placeholder} className="mt-2 block w-full rounded-xl border-0 bg-gray-50 py-4 px-5 text-gray-900 ring-1 ring-inset ring-gray-200 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 resize-none transition-all" />
-              ) : (
-                <input type={field.type} id={field.id} placeholder={field.placeholder} className="mt-2 block w-full rounded-xl border-0 bg-gray-50 py-4 px-5 text-gray-900 ring-1 ring-inset ring-gray-200 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 transition-all" />
-              )}
-            </div>
+            <LabelInputContainer key={field.id} className={field.type === "textarea" ? "sm:col-span-2" : ""}>
+              <label htmlFor={field.id} className="text-sm font-medium text-neutral-700">{field.label}</label>
+              {field.type === "textarea"
+                ? <FormTextarea id={field.id} rows={5} placeholder={field.placeholder} />
+                : <FormInput id={field.id} type={field.type} placeholder={field.placeholder} />}
+            </LabelInputContainer>
           ))}
         </div>
       )}
       {step.options && (
-        <div className="mt-8 grid gap-6 sm:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-3">
           {step.options.map((opt: any, idx: number) => {
             const Icon = (Icons as any)[opt.icon] || Icons.Code;
             return (
               <motion.label
                 key={opt.id}
-                whileHover={{ scale: 1.02, backgroundColor: "rgba(243, 244, 246, 1)" }}
+                whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: idx * 0.1 }}
-                className="relative flex cursor-pointer rounded-2xl border border-gray-200 bg-gray-50 p-6 focus-within:ring-2 focus-within:ring-indigo-600 transition-colors"
+                transition={{ duration: 0.3, delay: idx * 0.08 }}
+                className="relative flex cursor-pointer rounded-xl border border-gray-200 bg-gray-50 p-5 hover:bg-indigo-50 hover:border-indigo-200 focus-within:ring-2 focus-within:ring-indigo-500 transition-colors"
               >
                 <input type="radio" name="specialty" value={opt.id} className="sr-only" />
-                <div className="flex flex-col gap-4">
-                  <Icon className="h-6 w-6 text-indigo-600" />
-                  <span className="text-sm font-bold text-gray-900">{opt.label}</span>
+                <div className="flex flex-col gap-3">
+                  <Icon className="h-5 w-5 text-indigo-600" />
+                  <span className="text-sm font-semibold text-gray-900">{opt.label}</span>
                 </div>
               </motion.label>
             );

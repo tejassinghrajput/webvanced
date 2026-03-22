@@ -1,6 +1,29 @@
 import servicesData from "@/mockData/services.json";
 import { motion } from "motion/react";
-import * as SiIcons from "react-icons/si";
+import {
+  SiReact, SiTypescript, SiTailwindcss, SiNextdotjs,
+  SiOpenai, SiAnthropic, SiGoogle, SiHuggingface,
+  SiZapier, SiMake, SiPython, SiN8N,
+  SiStripe, SiPaypal, SiSquare, SiRazorpay,
+  SiShopify, SiWoocommerce, SiBigcommerce,
+  SiGooglemaps, SiMapbox, SiLeaflet, SiOpenstreetmap,
+  SiCalendly, SiGooglecalendar, SiZoom,
+} from "react-icons/si";
+import type React from "react";
+
+type SvgIcon = React.ComponentType<{ className?: string; style?: React.CSSProperties }>;
+
+const SI_ICONS: Record<string, SvgIcon> = {
+  SiReact, SiTypescript, SiTailwindcss, SiNextdotjs,
+  SiOpenai, SiAnthropic, SiGoogle, SiHuggingface,
+  SiZapier, SiMake, SiPython,
+  // SiN8n is exported as SiN8N in react-icons/si
+  SiN8n: SiN8N,
+  SiStripe, SiPaypal, SiSquare, SiRazorpay,
+  SiShopify, SiWoocommerce, SiBigcommerce,
+  SiGooglemaps, SiMapbox, SiLeaflet, SiOpenstreetmap,
+  SiCalendly, SiGooglecalendar, SiZoom,
+};
 
 export function ServicesFeatures() {
   return (
@@ -20,7 +43,7 @@ export function ServicesFeatures() {
               <div className="relative z-10">
                 <div className="mb-6 flex flex-wrap gap-3">
                   {service.icons.map((iconObj: { name: string, color: string }) => {
-                    const Icon = (SiIcons as any)[iconObj.name];
+                    const Icon = SI_ICONS[iconObj.name];
                     return Icon ? (
                       <div key={iconObj.name} className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white shadow-sm group-hover:scale-110 transition-transform duration-300">
                         <Icon className="h-6 w-6" style={{ color: iconObj.color }} />

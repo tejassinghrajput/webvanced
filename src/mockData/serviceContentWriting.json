@@ -1,0 +1,58 @@
+{
+  "hero": {
+    "badge": "CONTENT WRITING",
+    "stat": "Content is King — And We're the Kingmakers",
+    "title": "Words That Work. Content That Converts.",
+    "description": "Content marketing services are not only for publishing houses — they are a necessary aspect for your business rendering authenticity. Similar to how graphics attract the eyes, content pleases the mind."
+  },
+  "intro": "Content is required to attract and retain your audience not only on social media platforms but also on your website, brochures, and ads. Make your brand sound reliable and trustworthy to your potential client.",
+  "benefits": [
+    {
+      "title": "Builds Brand Authority",
+      "description": "High-quality content positions your brand as an authority in your industry, earning the trust of both customers and search engines."
+    },
+    {
+      "title": "Drives Organic Traffic",
+      "description": "SEO-optimized content helps your website rank higher on search engines, bringing in a steady flow of potential customers."
+    },
+    {
+      "title": "Increases Engagement",
+      "description": "Compelling content keeps your audience engaged longer, reducing bounce rates and increasing the likelihood of conversion."
+    },
+    {
+      "title": "Supports Every Channel",
+      "description": "From social media to email campaigns, great content is the backbone of every successful digital marketing channel."
+    },
+    {
+      "title": "Generates Qualified Leads",
+      "description": "Content that speaks directly to your target audience attracts the right people — those who are genuinely interested in your services."
+    },
+    {
+      "title": "Long-Term ROI",
+      "description": "Unlike paid ads, great content continues to deliver value long after it's published. It's an investment that compounds over time."
+    }
+  ],
+  "services": [
+    { "title": "SEO-Optimized Website Content", "description": "Web pages engineered to rank and convert.", "href": "/services/content-writing" },
+    { "title": "Blog Posts & Articles", "description": "Long-form content that builds authority and drives organic traffic.", "href": "/services/content-writing" },
+    { "title": "Social Media Content", "description": "Platform-specific copy that drives engagement and follows.", "href": "/services/social-media" },
+    { "title": "Ad Copywriting", "description": "Punchy, persuasive copy for PPC and social ads that converts.", "href": "/services/ppc" },
+    { "title": "Product Descriptions", "description": "Compelling product copy that sells for e-commerce businesses.", "href": "/services/content-writing" },
+    { "title": "Email Newsletters", "description": "Targeted email content that nurtures leads and retains customers.", "href": "/services/content-writing" }
+  ],
+  "qualities": [
+    { "title": "Original & Plagiarism-Free", "description": "Every piece of content is 100% original and crafted specifically for your brand." },
+    { "title": "SEO-First Approach", "description": "We write for humans first, but always with search engine rankings in mind." },
+    { "title": "Research-Backed", "description": "Every claim we make is backed by thorough research and industry data." },
+    { "title": "Brand Voice Consistent", "description": "We match your brand's tone and voice across every piece of content." },
+    { "title": "Timely Delivery", "description": "We respect deadlines without compromising on quality." },
+    { "title": "Revision Friendly", "description": "We iterate until the content perfectly represents your brand." }
+  ],
+  "process": [
+    "Identifying needs",
+    "Conceptualizing plans",
+    "Engineering solutions",
+    "Delivering success"
+  ],
+  "whyUs": "We are the new generation digital marketing agency providing high-end content and exceptional services. We believe in expanding horizons, disrupting industries, creating unforgettable experiences, and entrusting concrete results."
+}

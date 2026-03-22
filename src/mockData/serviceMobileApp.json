@@ -1,0 +1,82 @@
+{
+  "hero": {
+    "badge": "MOBILE APP DEVELOPMENT",
+    "stat": "Smartphone users use apps 50 times a day on average.",
+    "title": "Unlock the Next Level of Your Business!",
+    "description": "We have ushered into an era of digitalization where people keep power in their hands through mobile phones. For your business to remain at the top, you have to grab on to this opportunity."
+  },
+  "intro": "We are a group of professionals skilled at understanding your needs and providing the perfect customized solutions. We are proficient at creating mobile apps which are user-friendly, trendy and innovative. Mobile app brings you a step closer to your customers.",
+  "benefits": [
+    {
+      "title": "Strengthen Customer Support",
+      "description": "Companies run customer support by giving customers awards and recognition so that they remain motivated to make their next purchase."
+    },
+    {
+      "title": "Accessibility",
+      "description": "Unlike physical stores, a mobile app increases accessibility and helps businesses broaden their horizons, reaching global customers."
+    },
+    {
+      "title": "Brand Awareness",
+      "description": "Mobile apps make advertising easier and more efficient, accustomizing customers with your products conveniently and building brand awareness."
+    },
+    {
+      "title": "Responsive",
+      "description": "Mobile apps help you respond to multiple customers in a shorter interval, establishing stronger relationships with your audience."
+    },
+    {
+      "title": "Boost Profit",
+      "description": "A mobile app generates greater profits as it is more accessible to a larger audience and gives out information in a more appealing manner."
+    },
+    {
+      "title": "Increased Customer Loyalty",
+      "description": "Interactive engagement and quality, speedy services make customers feel prioritized, boosting loyalty to your brand."
+    }
+  ],
+  "services": [
+    {
+      "title": "Android App Development",
+      "description": "90% of mobile users are android users. We understand your needs, study the market, create blueprints, decide designs and constantly test before launch.",
+      "href": "/services/mobile-app"
+    },
+    {
+      "title": "iOS App Development",
+      "description": "We hold expertise in developing applications for iOS softwares including integrations, in-app purchases, following Apple's interface guidelines.",
+      "href": "/services/mobile-app"
+    },
+    {
+      "title": "React Native Development",
+      "description": "Native apps access the user's GPS, camera, and contact list. Our programmers customize with scalability, interactive UI, and dynamic features.",
+      "href": "/services/mobile-app"
+    },
+    {
+      "title": "App UI/UX Design",
+      "description": "Beautiful, intuitive interfaces designed to maximize user engagement and minimize friction in your customer journey.",
+      "href": "/services/mobile-app"
+    },
+    {
+      "title": "App Testing & QA",
+      "description": "Rigorous testing across devices and OS versions to ensure a flawless experience for every single user.",
+      "href": "/services/testing"
+    },
+    {
+      "title": "App Maintenance & Support",
+      "description": "Ongoing updates, performance monitoring and feature additions to keep your app competitive and up-to-date.",
+      "href": "/services/mobile-app"
+    }
+  ],
+  "qualities": [
+    { "title": "Targeted", "description": "We strategically target the heart of your audience." },
+    { "title": "Customized", "description": "Apps are created as per your requirements for the best experience." },
+    { "title": "Interactive", "description": "Our apps are simple, creative, attractive and interactive." },
+    { "title": "Quality", "description": "We update and check the apps to give users a smooth experience." },
+    { "title": "Optimized", "description": "We constantly optimize apps for 100% user satisfaction and security." },
+    { "title": "Professional", "description": "Our professionals make you look authentic while increasing sales." }
+  ],
+  "process": [
+    "Identifying needs",
+    "Conceptualizing plans",
+    "Engineering solutions",
+    "Delivering success"
+  ],
+  "whyUs": "We understand the need for your business to be available even in the remotest areas. Our professionals are geared to create mobile apps enriched with profits and potential customers."
+}

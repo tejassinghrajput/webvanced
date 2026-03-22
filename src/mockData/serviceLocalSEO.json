@@ -1,0 +1,58 @@
+{
+  "hero": {
+    "badge": "LOCAL SEARCH OPTIMIZATION",
+    "stat": "Don't Miss Out on the Searches Right Around You",
+    "title": "Be Found by Customers in Your Neighbourhood — and Beyond.",
+    "description": "Your business can only develop and grow with an online presence. Our originality and innovative design ideas ensure the creation of a stunning online presence tailored to your local market."
+  },
+  "intro": "Local SEO helps you stay focused on your local clients' needs and the relevant information will drive them to you. Our developers have an exemplary command over strategies and know the nuances your business requires.",
+  "benefits": [
+    {
+      "title": "Show Up in Local Searches",
+      "description": "Appear prominently when nearby customers search for the services you offer — both on Google and maps."
+    },
+    {
+      "title": "Google My Business Visibility",
+      "description": "A well-optimized GMB profile puts you at the top of local search results with reviews, hours and directions."
+    },
+    {
+      "title": "Drive Foot Traffic",
+      "description": "Local SEO brings online searchers into your physical store by providing accurate, compelling business information."
+    },
+    {
+      "title": "Beat Local Competition",
+      "description": "Out-rank competitors in your area by building a stronger local online presence across all key directories."
+    },
+    {
+      "title": "Build Local Trust",
+      "description": "Positive reviews and consistent local citations build trust with nearby customers who are ready to buy."
+    },
+    {
+      "title": "Cost-Effective Growth",
+      "description": "Local SEO delivers highly targeted traffic at a low cost, making it one of the best ROI marketing strategies."
+    }
+  ],
+  "services": [
+    { "title": "Google My Business Optimization", "description": "Complete setup and ongoing optimization of your GMB profile to maximize local visibility.", "href": "/services/local-seo" },
+    { "title": "Local Keyword Targeting", "description": "Research and target location-specific keywords your nearby customers actually search for.", "href": "/services/local-seo" },
+    { "title": "Local Citations & Listings", "description": "Build and maintain consistent business listings across all major local directories.", "href": "/services/local-seo" },
+    { "title": "Location-Based Content", "description": "Create locally relevant content that resonates with your community and boosts rankings.", "href": "/services/local-seo" },
+    { "title": "Review Management", "description": "Develop strategies to generate positive reviews and professionally respond to all feedback.", "href": "/services/local-seo" },
+    { "title": "Local Backlink Building", "description": "Build high-quality backlinks from relevant local sources to boost your domain authority.", "href": "/services/local-seo" }
+  ],
+  "qualities": [
+    { "title": "Hyper-Local Focus", "description": "We specialize in local market dynamics that generic SEO agencies miss." },
+    { "title": "Maps Optimization", "description": "We ensure you appear prominently on Google Maps for all relevant searches." },
+    { "title": "Citation Consistency", "description": "We ensure your name, address and phone number is consistent everywhere online." },
+    { "title": "Review Strategy", "description": "We help you build a stellar reputation through authentic customer reviews." },
+    { "title": "Geo-Targeted Campaigns", "description": "Every strategy is precisely targeted to your specific geographic market." },
+    { "title": "Transparent Reporting", "description": "You see exactly how your local rankings improve with our detailed reports." }
+  ],
+  "process": [
+    "Identifying needs",
+    "Conceptualizing plans",
+    "Engineering solutions",
+    "Delivering success"
+  ],
+  "whyUs": "We are the new generation digital marketing agency in India providing high-end content and exceptional services, specialized in making local businesses discoverable online."
+}

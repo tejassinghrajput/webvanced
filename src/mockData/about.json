@@ -1,58 +1,54 @@
 {
   "hero": {
-    "badge": "Our Story",
-    "title": "Architecting Digital Excellence",
-    "description": "We blend precision engineering with visionary design to build digital ecosystems that stand the test of time.",
-    "image": "https://picsum.photos/seed/about/1920/1080",
-    "quote": "The best way to predict the future is to invent it.",
-    "quoteAuthor": "Alan Kay"
+    "badge": "Our Aim",
+    "title": "Making great digital work\naccessible to every business",
+    "description": "Most businesses have real potential and a genuine story to tell. We exist to build the digital presence that matches that — without the agency bloat, the broken promises, or the disappearing act after launch.",
+    "stats": [
+      { "value": "50+", "label": "Projects delivered" },
+      { "value": "4",   "label": "Specialists" },
+      { "value": "98%", "label": "Client retention" },
+      { "value": "2019","label": "Year founded" }
+    ]
   },
-  "mission": {
-    "title": "Our Mission",
-    "description": "To empower ambitious organizations by crafting innovative, scalable, and human-centric digital solutions that redefine industry standards.",
-    "pillars": [
+  "why": {
+    "badge": "Our Motivation",
+    "title": "We are driven by a simple belief.",
+    "description": "Every business — no matter how small or how early — deserves a digital presence that actually works. Not a template. Not a rushed handoff. Real, thoughtful work that grows with you and compounds over time.",
+    "reasons": [
       {
         "icon": "Target",
-        "title": "Strategic Precision",
-        "description": "We meticulously analyze every requirement to ensure our solutions are perfectly aligned with your business goals."
+        "title": "Close the digital gap",
+        "body": "Brilliant businesses are still being held back by weak digital foundations. We're here to change that."
       },
       {
-        "icon": "Zap",
-        "title": "Agile Innovation",
-        "description": "We leverage cutting-edge technology to deliver high-performance applications with remarkable speed and efficiency."
+        "icon": "Heart",
+        "title": "Relationships over transactions",
+        "body": "We don't win by doing one job. We win by becoming the team you call every single time."
+      },
+      {
+        "icon": "Mountain",
+        "title": "Build for the long run",
+        "body": "Everything we make is designed to compound — traffic, conversions, systems — the longer it runs, the better it gets."
       }
     ]
   },
-  "principles": {
-    "badge": "Our Core Values",
-    "title": "The Webvance Philosophy",
+  "what": {
+    "badge": "What We Do",
+    "title": "The work that gets us out of bed",
     "items": [
-      {
-        "icon": "Users",
-        "title": "Collaborative Partnership",
-        "description": "We don't just build for you; we build with you. Your vision is our blueprint."
-      },
-      {
-        "icon": "Shield",
-        "title": "Uncompromising Integrity",
-        "description": "Transparency and honesty are the foundations of every relationship we build."
-      },
-      {
-        "icon": "Lightbulb",
-        "title": "Radical Innovation",
-        "description": "We constantly challenge the status quo to deliver solutions that are not just current, but future-ready."
-      }
+      { "icon": "Layers",     "color": "indigo",  "title": "Crafting beautiful interfaces",  "body": "Design that doesn't just look good — it guides, converts and leaves an impression." },
+      { "icon": "Code2",      "color": "violet",  "title": "Writing clean, scalable code",   "body": "Solid engineering that performs under pressure and grows with the business." },
+      { "icon": "TrendingUp", "color": "emerald", "title": "Growing brands through search",  "body": "SEO and content that compound month over month into real organic growth." },
+      { "icon": "Smartphone", "color": "blue",    "title": "Building for every screen",      "body": "Websites and apps that feel native — fast, fluid and frustration-free." },
+      { "icon": "Cpu",        "color": "orange",  "title": "Automating the repetitive",      "body": "Smart workflows that free your team for the work that actually matters." },
+      { "icon": "BarChart2",  "color": "rose",    "title": "Making data actionable",         "body": "Dashboards and analytics that surface what's working — and what isn't." }
     ]
   },
   "cta": {
-    "title": "Ready to build your future?",
-    "subtitle": "Let's collaborate on your next breakthrough project.",
+    "title": "Want to work with us?",
+    "subtitle": "Let's have an honest conversation about your goals.",
     "buttons": [
-      {
-        "label": "Start Your Project",
-        "href": "/contact",
-        "primary": true
-      }
+      { "label": "Get in touch", "href": "/contact", "primary": true }
     ]
   }
 }

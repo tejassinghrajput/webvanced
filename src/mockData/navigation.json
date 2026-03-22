@@ -1,12 +1,39 @@
 {
   "logo": "Webvance",
   "links": [
-    { "label": "Services", "href": "/services" },
     { "label": "How We Work", "href": "/how-we-work" },
     { "label": "Industries", "href": "/industries" },
     { "label": "About", "href": "/about" },
     { "label": "FAQ", "href": "/faq" },
     { "label": "Contact", "href": "/contact" }
   ],
+  "servicesMenu": {
+    "label": "Services",
+    "href": "/services",
+    "categories": [
+      {
+        "title": "Digital Marketing",
+        "items": [
+          { "label": "Digital Marketing Overview", "href": "/services/digital-marketing", "description": "Full-spectrum digital marketing for your brand" },
+          { "label": "SEO", "href": "/services/seo", "description": "Rank higher and drive organic traffic" },
+          { "label": "Pay-Per-Click (PPC)", "href": "/services/ppc", "description": "Targeted ads with measurable ROI" },
+          { "label": "Content Writing", "href": "/services/content-writing", "description": "Content that converts and builds authority" },
+          { "label": "Social Media Management", "href": "/services/social-media", "description": "Grow your audience across all platforms" },
+          { "label": "Graphic Designing", "href": "/services/graphic-design", "description": "Visuals that capture attention and drive action" },
+          { "label": "Local Search Optimization", "href": "/services/local-seo", "description": "Dominate searches in your neighbourhood" }
+        ]
+      },
+      {
+        "title": "IT Outsourcing",
+        "items": [
+          { "label": "IT Outsourcing Overview", "href": "/services/it-outsourcing", "description": "End-to-end IT solutions for your business" },
+          { "label": "Mobile App Development", "href": "/services/mobile-app", "description": "Android, iOS and React Native apps" },
+          { "label": "Testing Services", "href": "/services/testing", "description": "Bug-free, optimized software delivery" },
+          { "label": "Data Services", "href": "/services/data-services", "description": "Data entry, processing and analytics" },
+          { "label": "ERP Solutions", "href": "/services/erp", "description": "Automate and integrate your operations" }
+        ]
+      }
+    ]
+  },
   "cta": { "label": "Start a Project", "href": "/contact" }
 }

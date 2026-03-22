@@ -1,0 +1,82 @@
+{
+  "hero": {
+    "badge": "TESTING SERVICES",
+    "stat": "Increase customers by 4x with 100% bug-free and optimized software.",
+    "title": "The Invigilation Your Business Can't Do Without!",
+    "description": "Your software and apps need to be constantly tested for bugs so you can deliver with utmost efficiency. Having professionals take over testing so your business runs smoothly is the option companies prefer the most."
+  },
+  "intro": "We do the repetitive and menial task of checking your software and apps so that you finish your tasks with higher efficiency. We got your back so that you win laurels.",
+  "benefits": [
+    {
+      "title": "Efficient",
+      "description": "A faulty software can bring down an entire business. Dedicated testers are more efficient, faster and accurate than any in-house approach."
+    },
+    {
+      "title": "Cost Effective",
+      "description": "Testing services require professional tools that are highly expensive. Outsourcing saves hefty monetary loss and avoids extra expenses of an in-house testing team."
+    },
+    {
+      "title": "Saves Time",
+      "description": "The job done by a professional always gives more accuracy in less time, helping you attend to your targeted goals."
+    },
+    {
+      "title": "Helps Focus",
+      "description": "With testing professionals handling QA, your employees can attend to more important tasks with improved productivity."
+    },
+    {
+      "title": "More Security",
+      "description": "Outsourcing to an ISO certified company assures that confidential and intellectual property rights remain disclosed only to authorized parties."
+    },
+    {
+      "title": "Professional Assistance",
+      "description": "Having software tested by a dedicated professional takes less time and helps integrate solutions with a higher accuracy level."
+    }
+  ],
+  "services": [
+    {
+      "title": "Mobile App Testing",
+      "description": "Our testing professionals monitor, troubleshoot, and test content of your mobile device including validation and thorough verification.",
+      "href": "/services/testing"
+    },
+    {
+      "title": "QA Testing",
+      "description": "Continuous monitoring with QA testing standardizes the products and services offered to customers in an effective and efficient manner.",
+      "href": "/services/testing"
+    },
+    {
+      "title": "Automation Testing",
+      "description": "Special software tools that manage test execution compared with expected outcomes without the interference of a testing engineer.",
+      "href": "/services/testing"
+    },
+    {
+      "title": "Selenium Automation Testing",
+      "description": "Quality, integration, reliability and accuracy of web applications. Independent of programming language and platform.",
+      "href": "/services/testing"
+    },
+    {
+      "title": "Accessibility Testing",
+      "description": "Detects possible accessibility-related issues and provides compliance solutions including page-by-page analysis and regression testing.",
+      "href": "/services/testing"
+    },
+    {
+      "title": "Performance Testing",
+      "description": "Determines speed, scalability and stability of an application even with simultaneous user loads.",
+      "href": "/services/testing"
+    }
+  ],
+  "qualities": [
+    { "title": "Cost Effective", "description": "An in-house testing team will cost you a fortune — we won't." },
+    { "title": "Efficiency", "description": "Decreases redundant tasks and increases efficiency of employees." },
+    { "title": "Professional", "description": "Testing outsourced gets you professional assistance at lower cost." },
+    { "title": "Save Time", "description": "Focus on important tasks and let us do the repetitive work for you." },
+    { "title": "Optimization", "description": "Full optimization of apps and software with professional tools for best results." },
+    { "title": "Secure", "description": "Your business is our priority and we adhere to total confidentiality." }
+  ],
+  "process": [
+    "Identifying needs",
+    "Conceptualizing plans",
+    "Engineering solutions",
+    "Delivering success"
+  ],
+  "whyUs": "We are experienced in various service delivery models and adept at delivering multimodal, QA managed server engagements. Our services are above par when compared with others."
+}

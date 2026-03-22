@@ -1,0 +1,82 @@
+{
+  "hero": {
+    "badge": "ENTERPRISE RESOURCE PLANNING",
+    "stat": "73% of business owners name ERP as a priority investment.",
+    "title": "Surprise Your Business with Success!",
+    "description": "ERP is an indispensable software that business owners invest in. It helps businesses integrate and automate their processes, reducing the burden of manual labour for your team."
+  },
+  "intro": "ERP services use centralized database servers to simplify workflows and gain intel from all departments for smoother assistance. We build ERP software customized for your business and proudly delegate our services to help owners succeed.",
+  "benefits": [
+    {
+      "title": "Cost Effective",
+      "description": "ERP gives leverage to a business helping utilize resources efficiently, reduces administration costs, and helps make decisions quickly."
+    },
+    {
+      "title": "Security",
+      "description": "ERP software locks in sensitive information and guards data with its in-built auto-regulated protection system that keeps malicious activities at bay."
+    },
+    {
+      "title": "Productivity",
+      "description": "ERP enhances employee productivity by letting them focus on important tasks while ERP manages redundant tasks through automated processes."
+    },
+    {
+      "title": "Flexibility",
+      "description": "ERP software is customized for every business. It enriches a brand with robustness as it becomes compatible with the changing needs of a business."
+    },
+    {
+      "title": "Forecasting",
+      "description": "ERP gives managers forecasting powers with tools that help make better decisions through realistic estimates using accurate and consistent data."
+    },
+    {
+      "title": "Integration",
+      "description": "ERP is the centralized hub that stores all relevant data of business and its various departments, integrating CRM intel for easy retrieval."
+    }
+  ],
+  "services": [
+    {
+      "title": "Employee Management",
+      "description": "Tracking options and quality evaluation of employee growth. Safeguards sensitive employee details and provides valid records for business challenges.",
+      "href": "/services/erp"
+    },
+    {
+      "title": "Accounting",
+      "description": "Reduces time accountants spend on tedious manual entries. Automated software ensures accuracy, identifies smart investments and cuts irrelevant expenses.",
+      "href": "/services/erp"
+    },
+    {
+      "title": "Inventory Management",
+      "description": "Monitors inventory, analyzes reorder points and immediately re-stacks. Also provides placement suggestions based on customer purchasing habits.",
+      "href": "/services/erp"
+    },
+    {
+      "title": "Browser Automation",
+      "description": "Manages repetitive tasks — filling out forms, scraping data, transferring data between transactions, and generating reports.",
+      "href": "/services/erp"
+    },
+    {
+      "title": "CRM Integration",
+      "description": "Keeps track of customer purchasing behavior and provides related products. Customers can also track their own purchases.",
+      "href": "/services/erp"
+    },
+    {
+      "title": "Salesforce Automation",
+      "description": "Automates tasks earlier carried out manually. Maintains customer relationships, increases satisfaction, and promotes sales and profits.",
+      "href": "/services/erp"
+    }
+  ],
+  "qualities": [
+    { "title": "Cost Effective", "description": "Our services offer the best features and yet are affordable." },
+    { "title": "Secure", "description": "Our ERP service ensures top-notch security for your business." },
+    { "title": "Automation", "description": "Our services help you land safely on success through automated functions." },
+    { "title": "Efficient", "description": "We entrust 100% efficiency to your business without falling back on our word." },
+    { "title": "Optimized", "description": "Our services help transform and optimize your business from the core." },
+    { "title": "Flexible", "description": "Our customizations give your business the flexibility it needs to ensure a smooth run." }
+  ],
+  "process": [
+    "Identifying needs",
+    "Conceptualizing plans",
+    "Engineering solutions",
+    "Delivering success"
+  ],
+  "whyUs": "Our ERP services make sure your business is equipped with efficient automation that helps configure time and money. We delegate our proficient technical abilities onto ERP software that delivers success to your brand."
+}

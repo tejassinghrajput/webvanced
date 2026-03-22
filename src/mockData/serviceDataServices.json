@@ -1,0 +1,82 @@
+{
+  "hero": {
+    "badge": "DATA SERVICES",
+    "stat": "83% of companies invest in data services to avoid bankruptcy.",
+    "title": "Big Data is No Longer a Dream — It's a Reality.",
+    "description": "Simply being informed about your business is not enough. You need to step up the acceleration pedal if you want to stay ahead of the rest. Good data analytics helps you reach optimum performance."
+  },
+  "intro": "Getting your in-house team to do data work would make you shell out money for staff, infrastructure, technologies and miscellaneous expenses. Outsourcing cuts down expenses while keeping efficiency at par.",
+  "benefits": [
+    {
+      "title": "Agility",
+      "description": "Data can be accessed easily through formatted categorization. It helps retrieve data quickly, efficiently, and one can easily implement changes."
+    },
+    {
+      "title": "High-Quality Data",
+      "description": "High-quality data is primarily maintained through data services that also ensure privacy and security, improving overall quality."
+    },
+    {
+      "title": "Cost-Effective",
+      "description": "Data services can be outsourced charging relatively less while ensuring quality. Beneficial for new or small business owners."
+    },
+    {
+      "title": "Improve Process",
+      "description": "Data services give a company reason to conserve resources, save time and money. Outsourcing limits expenses and increases ROI."
+    },
+    {
+      "title": "Understand the Market",
+      "description": "You need the right data to understand your audience better. Data helps business owners interpret the interests of their customers."
+    },
+    {
+      "title": "See Performance",
+      "description": "It is crucial for a business to stay informed about their performance and progress. Invest in data analysts to stay ahead."
+    }
+  ],
+  "services": [
+    {
+      "title": "Data Entry & Support",
+      "description": "High levels of accuracy in data entry that helps control expenses, boost performance and accessibility.",
+      "href": "/services/data-services"
+    },
+    {
+      "title": "Data Processing",
+      "description": "Indispensable segment of any business that helps make sound decisions through systematic strategy and meticulous processing.",
+      "href": "/services/data-services"
+    },
+    {
+      "title": "Data Management",
+      "description": "The main nerve that holds the business together. Standardizes and regularizes data for hassle-free retrieval and addition.",
+      "href": "/services/data-services"
+    },
+    {
+      "title": "SLA Management",
+      "description": "Becomes important when a business does not achieve a goal. Reinstates mismanagement by restoring functionality.",
+      "href": "/services/data-services"
+    },
+    {
+      "title": "Data Visualization",
+      "description": "Transforms challenging data into easy and comprehensible designs that render better decisions for the company.",
+      "href": "/services/data-services"
+    },
+    {
+      "title": "Data Migration (ETL)",
+      "description": "ETL (Extract, Transfer, Load) keeps sensitive data secure against operational, security, reputational, or natural risks.",
+      "href": "/services/data-services"
+    }
+  ],
+  "qualities": [
+    { "title": "Secure", "description": "Our strict confidentiality contract helps us protect your information." },
+    { "title": "Quality", "description": "We never sacrifice our quality and deliver you the best out of the lot." },
+    { "title": "Professional", "description": "We provide expert assistance to give you the best result and satisfaction." },
+    { "title": "Productivity", "description": "Our expertise allows you to focus on important tasks increasing productivity." },
+    { "title": "Cost Effective", "description": "Our services do not put your budget under tremendous pressure." },
+    { "title": "Optimization", "description": "We fully optimize your business so that you aren't left behind in the race to success." }
+  ],
+  "process": [
+    "Identifying needs",
+    "Conceptualizing plans",
+    "Engineering solutions",
+    "Delivering success"
+  ],
+  "whyUs": "Our team creates creative solutions for your business by providing exceptional data services while also acting as an insurance to protect you from going bankrupt."
+}

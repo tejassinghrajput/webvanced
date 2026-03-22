@@ -1,0 +1,82 @@
+{
+  "hero": {
+    "badge": "SEO SERVICES",
+    "stat": "93% of all online experiences begin with a search engine.",
+    "title": "SEO is the real CEO of Digital Marketing!",
+    "description": "Want to know what you can get through SEO? You are in the right place — we will guide you through it and help your business rank, grow and convert."
+  },
+  "intro": "SEO helps you drive organic traffic to your website. Owning a company is not enough to succeed in the 21st century. You need to stay online to rank on Google to make people notice and trust your business. SEO will help you climb that ladder and turn your business into a brand.",
+  "benefits": [
+    {
+      "title": "Higher Rank on Google",
+      "description": "Optimizing your business with SEO ensures your product is easily found by search engines through regular and organic search, building authenticity."
+    },
+    {
+      "title": "Drives Organic Traffic",
+      "description": "SEO helps you drive organic (unpaid) traffic by publishing relevant and quality content on your website."
+    },
+    {
+      "title": "Cost-Effective",
+      "description": "SEO is the most cost-effective way of online marketing focused on improving quality traffic. Especially important for startups and small businesses."
+    },
+    {
+      "title": "Targets Quality Traffic",
+      "description": "SEO helps target only interested and relevant customers. You don't have to persuade them — they are already interested in your service."
+    },
+    {
+      "title": "Drives Offline Sales",
+      "description": "SEO builds your credibility online which makes clients visit your physical store, boosting your offline sales too."
+    },
+    {
+      "title": "Higher Conversion Rates",
+      "description": "The traffic SEO drives has the highest conversion rate. It provides 24/7 promotion that your human salesperson can't ensure."
+    }
+  ],
+  "services": [
+    {
+      "title": "Content Marketing",
+      "description": "SEO-charged content drives the potential audience to your website, enhancing visibility and search rankings on Google.",
+      "href": "/services/seo"
+    },
+    {
+      "title": "On Page & Content Optimization",
+      "description": "On-page optimization through site structures, site speed, and content optimization.",
+      "href": "/services/seo"
+    },
+    {
+      "title": "Targeted Local SEO",
+      "description": "Stay targeted on the local front so you don't miss out on nearby searches. Relevant information drives local clients to you.",
+      "href": "/services/local-seo"
+    },
+    {
+      "title": "Relevant Backlinks",
+      "description": "We only publish relevant content on your site. We don't do black-hat SEO, manipulate or spam.",
+      "href": "/services/seo"
+    },
+    {
+      "title": "Off-Page SEO",
+      "description": "Getting ranked on search engines requires off-page SEO. It brings in hordes of traffic, eventually converting them into clients.",
+      "href": "/services/seo"
+    },
+    {
+      "title": "Better Site Structure",
+      "description": "A good site structure builds performance while attracting traffic. Your website needs to be SEO-friendly with relevant information.",
+      "href": "/services/seo"
+    }
+  ],
+  "qualities": [
+    { "title": "White-Hat SEO Techniques", "description": "Our white-hat techniques are off the bat!" },
+    { "title": "Qualified SEO Specialist", "description": "We assign a qualified SEO specialist for your customized needs." },
+    { "title": "New Age SEO Tactics", "description": "We don't do old school but new age SEO." },
+    { "title": "Industry Experts", "description": "We have unparalleled expertise in the industry." },
+    { "title": "Transparent", "description": "We don't play hide and seek with our results." },
+    { "title": "Ethical SEO", "description": "Our ethicality extends even to our SEO practices." }
+  ],
+  "process": [
+    "Identifying needs",
+    "Conceptualizing plans",
+    "Engineering solutions",
+    "Delivering success"
+  ],
+  "whyUs": "Our SEO experts are like professional archers who never miss their aim while targeting a specific audience for a business of any industry. We don't do nonsense but publish only what's relevant."
+}
