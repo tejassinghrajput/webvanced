@@ -1,0 +1,12 @@
+{
+  "sectionLabel": "Our Edge",
+  "heading": "One team. Every dimension of your digital growth.",
+  "items": [
+    { "title": "Visionary Strategy", "body": "We don't just build for today; we engineer digital experiences that anticipate industry shifts, ensuring your brand leads rather than follows." },
+    { "title": "Bespoke Craftsmanship", "body": "Every solution is architected from the ground up, tailored specifically to your brand identity and audience. No templates, no shortcuts—just pure, intentional design." },
+    { "title": "Unified Ecosystems", "body": "We seamlessly bridge your website, applications, CRM, and AI systems into a single, high-performance engine that scales effortlessly with your ambition." },
+    { "title": "Outcome-Driven Impact", "body": "We define success by tangible business metrics: accelerated revenue, optimized lead conversion, and lasting customer loyalty." },
+    { "title": "Future-Proof Infrastructure", "body": "We utilize cutting-edge technology stacks to ensure your digital foundation is inherently secure, performant, and ready for tomorrow's demands." },
+    { "title": "Adaptive Velocity", "body": "We combine rapid execution with surgical precision, allowing your business to pivot and evolve without compromising the integrity of your core systems." }
+  ]
+}

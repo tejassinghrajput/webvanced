@@ -1,0 +1,19 @@
+{
+  "sectionLabel": "Why Webvance",
+  "heading": "Built on craft. Measured by results.",
+  "paragraphs": [
+    "We hold every project to a single standard. Does this create genuine value for our client? That question shapes every decision we make, from the first strategy session to the final line of code.",
+    "Our clients stay because the work keeps delivering. That is the only metric that matters to us."
+  ],
+  "stats": [
+    { "value": "78+", "label": "Projects Completed" },
+    { "value": "98%", "label": "Average Conversion Growth" },
+    { "value": "33+", "label": "Clients Served" },
+    { "value": "7", "label": "Countries" }
+  ],
+  "pillars": [
+    "Strategy drives every decision we make.",
+    "Full transparency from day one to delivery.",
+    "A partnership that continues well beyond launch."
+  ]
+}

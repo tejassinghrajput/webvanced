@@ -1,0 +1,39 @@
+{
+  "hero": {
+    "badge": "CONNECT WITH US",
+    "title": "Let's Talk About Your Digital Blueprint.",
+    "description": "Architecture for the web requires precision, vision, and a direct line of communication. We're ready to build yours."
+  },
+  "info": {
+    "guarantee": {
+      "title": "Response Guarantee",
+      "description": "Every inquiry is reviewed by our lead architect. We guarantee a detailed technical response within 24 hours."
+    },
+    "channels": {
+      "badge": "DIRECT CHANNELS",
+      "items": [
+        { "icon": "Mail", "label": "EMAIL US", "value": "hello@webvance.studio" },
+        { "icon": "MessageSquare", "label": "WHATSAPP", "value": "+1 (555) WEB-BLUE" }
+      ]
+    },
+    "image": "https://picsum.photos/seed/corridor/600/400"
+  },
+  "form": {
+    "title": "Professional Inquiry",
+    "fields": [
+      { "id": "name", "label": "FULL NAME", "placeholder": "John Doe", "type": "text" },
+      { "id": "email", "label": "WORK EMAIL", "placeholder": "john@company.com", "type": "email" },
+      { "id": "company", "label": "COMPANY / ORGANIZATION", "placeholder": "Acme Inc.", "type": "text" },
+      { "id": "category", "label": "PROJECT CATEGORY", "options": ["UI/UX Architecture", "Web Development", "Cloud Solutions"], "type": "select" },
+      { "id": "brief", "label": "THE BLUEPRINT BRIEF", "placeholder": "Tell us about your vision, goals, and technical requirements...", "type": "textarea" }
+    ],
+    "security": "Your data is secured with enterprise-grade encryption.",
+    "submit": "Dispatch Inquiry"
+  },
+  "location": {
+    "icon": "MapPin",
+    "title": "The Digital Atelier",
+    "description": "Remote-First | Anchored in San Francisco, CA",
+    "status": { "tz": "GMT-7", "label": "ALWAYS ACTIVE" }
+  }
+}

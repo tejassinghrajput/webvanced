@@ -1,0 +1,27 @@
+{
+  "sectionLabel": "The People Behind the Work",
+  "heading": "A small team with an outsized impact.",
+  "subtext": "We are a focused team of strategists, designers, engineers and growth specialists who believe that the best digital products come from people who genuinely care about the outcome.",
+  "members": [
+    {
+      "name": "Aditya Verma",
+      "title": "Founder and Strategy Lead",
+      "bio": "Aditya started Webvance with one belief, that great digital products begin with a deep understanding of people. He leads strategy and client relationships across every engagement."
+    },
+    {
+      "name": "Nisha Raut",
+      "title": "Head of Design",
+      "bio": "Nisha turns complex problems into experiences that feel effortless. She brings a rare combination of visual craft and user psychology to every project she leads."
+    },
+    {
+      "name": "Karan Sood",
+      "title": "Lead Engineer",
+      "bio": "Karan architects the technical foundation of everything we build. Performance, scalability and clean code are non-negotiables for him, and it shows in the products we deliver."
+    },
+    {
+      "name": "Divya Pillai",
+      "title": "Growth and SEO Specialist",
+      "bio": "Divya connects the dots between audience behaviour and search strategy. She ensures that what we build gets found by the right people at exactly the right moment."
+    }
+  ]
+}

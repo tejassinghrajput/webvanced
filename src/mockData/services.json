@@ -1,0 +1,34 @@
+{
+  "hero": {
+    "badge": "ARCHITECTURAL INFRASTRUCTURE",
+    "title": "Structural Digital Design.",
+    "description": "We don't just build websites; we engineer digital environments. Our systems are built on foundations of logical rigor and aesthetic permanence."
+  },
+  "features": [
+    {
+      "id": "visibility",
+      "icon": "Activity",
+      "title": "Visibility Systems",
+      "description": "Engineered search dominance through technical SEO and semantic architecture. We ensure your brand's digital presence is discovered exactly where intent meets opportunity.",
+      "bullets": ["SEMANTIC DATA LAYERING", "ALGORITHMIC ALIGNMENT"]
+    },
+    {
+      "id": "logic",
+      "icon": "Cpu",
+      "title": "Logic Automations",
+      "description": "Removing friction from the growth engine. We integrate fragmented platforms into a unified, autonomous ecosystem that scales without human intervention.",
+      "systemPulse": "INTEGRATION_SYNC: 100% OPERATIONAL"
+    }
+  ],
+  "continuity": {
+    "icon": "Shield",
+    "title": "Operational Continuity",
+    "description": "Permanent vigilance for the digital architect. Our maintenance protocols ensure zero downtime, absolute security, and iterative performance optimization.",
+    "link": { "label": "EXPLORE PROTOCOLS", "href": "/services" },
+    "status": { "label": "System Integrity", "sub": "Continuous monitoring active", "uptime": "99.9%" }
+  },
+  "cta": {
+    "title": "Ready to build your digital legacy?",
+    "button": { "label": "Request Your Digital Blueprint", "href": "/quote" }
+  }
+}

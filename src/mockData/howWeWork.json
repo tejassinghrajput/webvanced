@@ -1,0 +1,28 @@
+{
+  "hero": {
+    "heading": "How We Work",
+    "subheading": "A transparent, focused and results-driven process designed to take your business from where it is to where it needs to be."
+  },
+  "steps": [
+    {
+      "number": "01",
+      "title": "Discovery & Strategy",
+      "body": "We start by listening. We learn about your business, your audience and your goals. This phase results in a clear roadmap and a defined strategy for your digital growth."
+    },
+    {
+      "number": "02",
+      "title": "Design & Craft",
+      "body": "We turn strategy into experience. Our design process is iterative and focused on creating a visual language that resonates with your customers and builds immediate trust."
+    },
+    {
+      "number": "03",
+      "title": "Engineering & Integration",
+      "body": "We build with precision. Our engineers use modern technology to create fast, secure and scalable products that integrate seamlessly with your existing business tools."
+    },
+    {
+      "number": "04",
+      "title": "Optimisation & Launch",
+      "body": "We test, refine and perfect. Before launch, we ensure every detail is correct, from SEO metadata to performance benchmarks, ensuring a flawless entry into the market."
+    }
+  ]
+}

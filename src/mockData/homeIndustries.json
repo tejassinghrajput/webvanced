@@ -1,0 +1,13 @@
+{
+  "sectionLabel": "Who We Serve",
+  "heading": "Built for the businesses shaping tomorrow.",
+  "subtext": "We work with founders and small business owners across industries who want a digital presence that genuinely reflects the quality of what they offer.",
+  "industries": [
+    { "title": "Retail and Ecommerce", "body": "Online stores built to convert browsers into buyers and buyers into loyal customers." },
+    { "title": "Health and Wellness", "body": "Trusted digital experiences for clinics, coaches and wellness brands that put their clients first." },
+    { "title": "Food and Hospitality", "body": "Beautiful, functional platforms for restaurants, cafes and hospitality businesses that make a lasting impression." },
+    { "title": "Professional Services", "body": "Credibility driven digital products for consultants, agencies, law firms and financial advisors." },
+    { "title": "Education and Coaching", "body": "Engaging platforms and applications that help educators and coaches deliver real transformation at scale." },
+    { "title": "Real Estate", "body": "High performance websites and tools that help property businesses build trust and close more deals." }
+  ]
+}

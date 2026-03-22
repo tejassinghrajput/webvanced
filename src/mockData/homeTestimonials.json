@@ -1,0 +1,26 @@
+{
+  "sectionLabel": "What Our Clients Say",
+  "heading": "Trusted by founders who take their growth seriously.",
+  "testimonials": [
+    {
+      "quote": "Webvance did not just build us a website. They studied how our customers behave and designed an experience around that. Our enquiries doubled within the first two months of launch.",
+      "name": "Rohan Mehta",
+      "title": "Founder, Greenleaf Wellness"
+    },
+    {
+      "quote": "The level of strategic thinking they brought to our project was something we had never experienced before. Every decision had a reason behind it and the results proved them right.",
+      "name": "Priya Sharma",
+      "title": "Co-Founder, Arko Retail"
+    },
+    {
+      "quote": "They automated our entire lead follow up process and integrated it with our CRM. What used to take our team three hours a day now runs on its own. Genuinely changed how we operate.",
+      "name": "Arjun Kapoor",
+      "title": "Director, KapoorTech Solutions"
+    },
+    {
+      "quote": "Working with Webvance felt like having a senior product team inside our company. They cared about our business outcomes as much as we did.",
+      "name": "Sneha Iyer",
+      "title": "CEO, Bloom Education"
+    }
+  ]
+}

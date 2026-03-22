@@ -1,0 +1,21 @@
+{
+  "logo": "Webvance",
+  "tagline": "From Invisible to Inevitable.",
+  "columns": [
+    {
+      "title": "Services",
+      "links": ["Web Design and Development", "AI Integrations", "SEO and Marketing", "Business Automation", "Mobile Apps"]
+    },
+    {
+      "title": "Company",
+      "links": ["About", "How We Work", "Industries", "Team", "Contact"]
+    },
+    {
+      "title": "Get In Touch",
+      "email": "hello@webvance.in",
+      "phone": "+91 98XXX XXXXX",
+      "location": "New Delhi, India"
+    }
+  ],
+  "copyright": "2025 Webvance. All rights reserved."
+}

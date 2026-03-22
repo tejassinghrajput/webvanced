@@ -1,0 +1,23 @@
+{
+  "sections": [
+    {
+      "id": "build-web",
+      "title": "We Build the Web. You Run the Business.",
+      "content": [
+        "Most agencies hand you a pretty website and vanish. At Webvance that is where we are different. Every decision we make, from the first design mockup to the final line of code, is built around one thing: making your business grow. Not just look good. Actually grow.",
+        "We work with businesses that are serious about their online presence. Whether you are starting from scratch or tired of a website that is not pulling its weight, we come in, understand your world, and build something that works. Web design, development, SEO, automation, payment systems and business integrations are all handled under one roof so you are never stuck managing five different vendors for one goal."
+      ],
+      "image": "https://img.freepik.com/free-vector/success-startup-managers-working-near-growth-profit-chart-financial-achievement-work-progress-rocket-launch-tiny-corporate-people-flat-vector-illustration-finance-opportunity-concept_74855-22554.jpg?t=st=1774193424~exp=1774197024~hmac=9543db7b0585608153d1ef7391d585a17acf5ec761bb8b82671f444f61978cdc&w=1480"
+    },
+    {
+      "id": "small-point",
+      "title": "We Are Small. That Is the Point.",
+      "content": [
+        "Big agencies have big overheads and even bigger egos. We are a small focused team and that is intentional. When you work with Webvance you talk directly to the people building your product. No account managers. No miscommunication. Just honest conversations and real work getting done.",
+        "We have seen too many great businesses lose customers online, not because their product was not brilliant, but because their digital presence was not telling the right story. That is the problem we exist to solve.",
+        "We do not disappear after launch. We stick around, keep improving, and make sure what we built keeps working for you long after the project ends."
+      ],
+      "image": "https://img.freepik.com/free-vector/hand-drawn-busy-office-illustration_23-2151051234.jpg?t=st=1774193311~exp=1774196911~hmac=0ed02f6eb0861c538744425e1ecfeffe03c18d7f924eb048107e8037df24f2ee&w=1480"
+    }
+  ]
+}

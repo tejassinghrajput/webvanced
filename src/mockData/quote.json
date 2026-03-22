@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "badge": "PROJECT BLUEPRINT",
+    "title": "Premium Consultation Request.",
+    "description": "Initiate your architectural review. This structured intake process ensures every trade specialty is accounted for in your digital infrastructure plan."
+  },
+  "form": {
+    "steps": [
+      {
+        "id": "01",
+        "title": "Core Project Identity",
+        "fields": [
+          { "id": "legalName", "label": "FULL LEGAL NAME", "placeholder": "Johnathan Doe", "type": "text" },
+          { "id": "domain", "label": "CORPORATE DOMAIN", "placeholder": "project@firm.com", "type": "text" }
+        ]
+      },
+      {
+        "id": "02",
+        "title": "Trade Specialty Selection",
+        "options": [
+          { "id": "ui", "icon": "Compass", "label": "UI/UX Strategy" },
+          { "id": "cloud", "icon": "Cloud", "label": "Cloud Infrastructure" },
+          { "id": "eng", "icon": "Code", "label": "Bespoke Engineering" }
+        ]
+      },
+      {
+        "id": "03",
+        "title": "Architectural Review Specifications",
+        "fields": [
+          { "id": "objectives", "label": "PROJECT OBJECTIVES & CONSTRAINTS", "placeholder": "Describe the structural goals and technical prerequisites...", "type": "textarea" }
+        ]
+      }
+    ],
+    "notice": "Your blueprint will be reviewed by our Lead Architect within 24 business hours. No pricing is discussed during this initial technical audit.",
+    "security": "Secure encrypted submission",
+    "submit": "Submit for Review"
+  },
+  "features": [
+    { "icon": "ShieldCheck", "title": "Technical Precision", "description": "Every proposal is grounded in architectural feasibility and modern cloud standards." },
+    { "icon": "Eye", "title": "Transparent Process", "description": "Follow your project's progress through our proprietary client blueprint portal." }
+  ]
+}

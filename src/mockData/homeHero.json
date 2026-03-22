@@ -1,0 +1,7 @@
+{
+  "badge": "Digital Products Built for Real Growth",
+  "headline": "From Invisible\nTo Inevitable.",
+  "subheadline": "We are not old school engineers who copy paste templates. We craft digital experiences based on your customer base, so your business grows with intention and precision.",
+  "primaryButton": { "label": "See Our Work", "href": "/work" },
+  "secondaryButton": { "label": "Let's Talk", "href": "/contact" }
+}

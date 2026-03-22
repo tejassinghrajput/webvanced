@@ -1,0 +1,12 @@
+{
+  "sectionLabel": "Our Process",
+  "heading": "A process built for clarity, speed and results.",
+  "subtext": "From the first conversation to the final launch and beyond, every step is designed to keep you informed, involved and confident.",
+  "steps": [
+    { "number": "01", "title": "Discovery", "body": "We start by getting under the skin of your business. Your goals, your customers, your market and the gaps your digital presence needs to fill. This is where the strategy takes shape." },
+    { "number": "02", "title": "Strategy and Planning", "body": "We translate discovery insights into a clear roadmap. What we will build, why we will build it that way, what it will achieve and exactly how long it will take. No ambiguity, no surprises." },
+    { "number": "03", "title": "Design", "body": "We craft the visual and functional experience of your product. Every screen is designed around how your specific customers think, feel and make decisions, so the experience feels effortless and intentional." },
+    { "number": "04", "title": "Development", "body": "Our engineers bring the designs to life with clean, performant and scalable code. Every interaction, every animation and every integration is built to work flawlessly across every device." },
+    { "number": "05", "title": "Launch and Optimise", "body": "We deploy with care, monitor closely and keep refining based on real user behaviour. Launch is not the finish line. It is the beginning of a product that keeps improving." }
+  ]
+}

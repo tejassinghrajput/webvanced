@@ -1,0 +1,55 @@
+{
+  "hero": {
+    "badge": "About Webvance",
+    "title": "We Build the Future",
+    "description": "We are a team of dedicated professionals committed to delivering excellence in every project.",
+    "image": "https://picsum.photos/seed/about/1920/1080",
+    "quote": "Excellence is not an act, but a habit.",
+    "quoteAuthor": "Aristotle"
+  },
+  "mission": {
+    "title": "Our Mission",
+    "description": "To empower businesses through innovative technology and design.",
+    "pillars": [
+      {
+        "icon": "Target",
+        "title": "Precision",
+        "description": "We focus on the details that matter."
+      },
+      {
+        "icon": "Zap",
+        "title": "Speed",
+        "description": "We deliver fast without compromising quality."
+      }
+    ]
+  },
+  "principles": {
+    "badge": "Our Principles",
+    "title": "How We Work",
+    "items": [
+      {
+        "icon": "Users",
+        "title": "Collaboration",
+        "description": "We work closely with our clients.",
+        "image": "https://picsum.photos/seed/collab/800/600"
+      },
+      {
+        "icon": "Shield",
+        "title": "Integrity",
+        "description": "We are honest and transparent.",
+        "image": "https://picsum.photos/seed/integrity/800/600"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to build something luminous?",
+    "subtitle": "Let's start your journey today.",
+    "buttons": [
+      {
+        "label": "Get Started",
+        "href": "/contact",
+        "primary": true
+      }
+    ]
+  }
+}

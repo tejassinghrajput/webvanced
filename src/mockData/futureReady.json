@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "title": "Let's Make You Future Ready",
+    "subtitle": "Let's explore game-changing advancements together in our global innovation network."
+  },
+  "cards": [
+    {
+      "title": "Artificial Intelligence",
+      "description": "AI-powered core to let you experience intelligent solutions with precision.",
+      "icon": "Brain",
+      "color": "indigo"
+    },
+    {
+      "title": "Cloud Computing",
+      "description": "Hybrid Integration platforms to give you the power to manage better even in remote locations.",
+      "icon": "Cloud",
+      "color": "emerald"
+    },
+    {
+      "title": "Automation",
+      "description": "Automation renders improved efficiency, higher reliability, 24*7 Availability and increased productivity.",
+      "icon": "Cpu",
+      "color": "violet"
+    },
+    {
+      "title": "BlockChain",
+      "description": "Record and manage data better by securely resisting hacks through blockchain.",
+      "icon": "Database",
+      "color": "teal"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "sectionLabel": "Common Questions",
+  "heading": "Everything you might want to know before we begin.",
+  "faqs": [
+    {
+      "question": "How long does a typical project take?",
+      "answer": "It depends on the scope. A focused website typically takes three to five weeks. A full product with AI integrations and automation can range from six to twelve weeks. We will give you a precise timeline during our strategy session before any work begins."
+    },
+    {
+      "question": "Do you work with businesses that are just starting out?",
+      "answer": "Absolutely. Some of our best work has been with founders who were building their digital presence from scratch. If you have a clear vision for your business, we have the expertise to bring it to life."
+    },
+    {
+      "question": "What makes Webvance different from a typical web agency?",
+      "answer": "We start with your customer, not with a template. Every decision we make is rooted in understanding how your audience thinks and what moves them to act. The result is a digital product that performs, not just one that looks good."
+    },
+    {
+      "question": "Will I be able to manage my website after it is built?",
+      "answer": "Yes. We build everything with ease of management in mind and provide full handover documentation and a training session so you feel completely in control of your digital product after launch."
+    },
+    {
+      "question": "Do you offer ongoing support after launch?",
+      "answer": "We do. We offer monthly retainer packages covering performance monitoring, content updates, SEO and continuous optimisation. We treat launch as the beginning of the relationship, not the end."
+    },
+    {
+      "question": "How do we get started?",
+      "answer": "Simply reach out through our contact form or book a call directly. We will schedule a discovery session, learn about your business and come back with a clear strategy and proposal within five working days."
+    }
+  ]
+}

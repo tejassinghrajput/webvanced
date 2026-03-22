@@ -1,0 +1,14 @@
+{
+  "sectionLabel": "Our Philosophy",
+  "heading": "We know real innovation starts with real understanding.",
+  "image": "https://img.freepik.com/free-vector/businessman-businesswoman-building-new-idea-business-idea-financial-target-ivestment-success-concept-vector-illustration-web-print-presentation_1150-58784.jpg?t=st=1774194079~exp=1774197679~hmac=e94dd69574d0caaf4b09470df7387598a25622566819cc62fea48739384fb8e4&w=740",
+  "paragraphs": [
+    "Before we open a design file or write a single line of code, we spend time inside your business. Understanding your goals, your market and the specific moments that influence your customers decisions. That understanding becomes the blueprint for everything we create.",
+    "The result is not just a product that looks impressive in a portfolio. It is a digital product your customers genuinely love, one that performs consistently, earns trust and grows alongside your business."
+  ],
+  "features": [
+    { "title": "Customer First Research", "body": "We understand your buyer deeply before we make a single design or development decision." },
+    { "title": "Conversion Architecture", "body": "Every screen and every element is placed with clear intention, guiding your customer naturally toward action." },
+    { "title": "Long Term Thinking", "body": "We build for the direction your business is heading, not just the problem in front of you today." }
+  ]
+}

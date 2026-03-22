@@ -1,0 +1,12 @@
+{
+  "sectionLabel": "What We Do",
+  "heading": "Precision built solutions for businesses that mean business.",
+  "subtext": "We bring together strategy, design, technology and intelligence to create digital products that your customers genuinely love using.",
+  "cards": [
+    { "tag": "Intelligence", "title": "Artificial Intelligence", "body": "We integrate AI into your digital presence so your business keeps performing around the clock. From intelligent chatbots to automated lead qualification and personalised user journeys, your website becomes a 24 hours a day 7 days a week revenue engine.", "icon": "Cpu" },
+    { "tag": "Development", "title": "Web Design and Development", "body": "Every website we build starts with a deep understanding of your customer. The result is a fast, focused and beautifully crafted digital product that reflects the quality of your brand and earns the trust of your audience from the very first scroll.", "icon": "Layout" },
+    { "tag": "Growth", "title": "SEO and Digital Marketing", "body": "We use audience research and real search behaviour data to position your brand in front of the people who are already looking for what you offer. Consistent, compounding visibility that turns attention into revenue.", "icon": "TrendingUp" },
+    { "tag": "Automation", "title": "Business Automation", "body": "We automate your lead capture, follow ups, CRM workflows and reporting so your team can focus entirely on work that actually needs a human. Less operational drag, more forward momentum.", "icon": "Zap" },
+    { "tag": "Mobile", "title": "Mobile App Development", "body": "We design and build mobile applications that feel natural from the very first tap. Purposeful, clean and built around the way your customers actually use their devices because great apps create loyalty that outlasts trends.", "icon": "Smartphone" }
+  ]
+}

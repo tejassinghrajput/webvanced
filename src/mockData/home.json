@@ -1,0 +1,62 @@
+{
+  "hero": {
+    "badge": "PROVEN EXCELLENCE",
+    "title": "Digital Architecture for Local Legends.",
+    "titleHighlight": "Local Legends.",
+    "description": "We design digital experiences that don't just look premium—they perform. High-fidelity solutions tailored for the experts who keep our world running."
+  },
+  "projects": [
+    {
+      "id": "sterling",
+      "image": "https://picsum.photos/seed/office/800/600",
+      "category": "LEGAL PROFESSIONAL",
+      "title": "Sterling & Partners",
+      "description": "A complete digital overhaul focused on authority and conversion. We transformed their outdated portal into a lead-generating machine.",
+      "stats": [
+        { "label": "GROWTH", "value": "+140%", "trend": "up" },
+        { "label": "LEADS/MONTH", "value": "22 New" }
+      ]
+    },
+    {
+      "id": "apex",
+      "image": "https://picsum.photos/seed/pipes/800/400",
+      "title": "Apex Flow Systems",
+      "description": "Automating emergency calls and service booking through a seamless mobile-first experience.",
+      "conversion": { "rate": "8.4%", "avg": "2.1%", "label": "CONVERSION RATE", "avgLabel": "Industry Avg: " }
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "harbor",
+      "title": "Harbor Community",
+      "quote": "Webvance didn't just build a site; they built a digital home for our mission. We've seen a 300% increase in volunteer signups.",
+      "author": { "name": "Sarah Jenkins", "role": "EXECUTIVE DIRECTOR", "image": "https://picsum.photos/seed/sarah/100/100" },
+      "metric": { "label": "SUCCESS METRIC", "value": "$45k Raised" }
+    }
+  ],
+  "testimonialFeature": {
+    "title": "Elevating Modern\nStructural Firms",
+    "description": "Designing portfolios that match the precision of their blueprints. We emphasize visual storytelling and structural integrity in every pixel.",
+    "bgImage": "https://picsum.photos/seed/building/800/800",
+    "buttons": [
+      { "label": "View Full Project" },
+      { "label": "Read Story" }
+    ]
+  },
+  "stats": {
+    "title": "Numbers that speak for themselves",
+    "items": [
+      { "label": "AVERAGE LEAD GROWTH", "value": "3.2x", "desc": "Across all service sectors" },
+      { "label": "RETENTION RATE", "value": "98%", "desc": "Client satisfaction after 12 months" },
+      { "label": "TOTAL REVENUE DRIVEN", "value": "$1.2M+", "desc": "New generated client revenue" }
+    ]
+  },
+  "cta": {
+    "title": "Ready to become our next Success Story?",
+    "titleHighlight": "Success Story?",
+    "buttons": [
+      { "label": "Start Your Project", "href": "/quote", "primary": true },
+      { "label": "Book a Consultation", "href": "/contact", "primary": false }
+    ]
+  }
+}
