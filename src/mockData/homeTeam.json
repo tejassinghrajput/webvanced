@@ -1,27 +1,39 @@
 {
-  "sectionLabel": "Meet the Team",
-  "heading": "Const HashMap",
-  "subtext": "A tight-knit group of builders — every one of us chosen for craft, character, and the ability to think long-term.",
+  "sectionLabel": "The Crew",
+  "heading": "",
+  "subtext": "Four people. Every discipline covered. We design, engineer, and scale digital products end-to-end — no outsourcing, no fluff, no middlemen.",
   "members": [
     {
-      "name": "Aditya Verma",
-      "title": "Founder and Strategy Lead",
-      "bio": "Aditya started Webvance with one belief, that great digital products begin with a deep understanding of people. He leads strategy and client relationships across every engagement."
+      "name": "Tejas Kumar Singh",
+      "title": "Founder & CTO",
+      "quote": "Ship fast, scale smarter — never compromise the craft.",
+      "experience": "Full-stack & Systems Architect",
+      "color": "indigo",
+      "bio": "Tejas leads technology and product strategy at Webvance. With a focus on scalable architecture and clean engineering, he ensures every product we build is reliable, high-performance, and ready to grow."
     },
     {
-      "name": "Nisha Raut",
-      "title": "Head of Design",
-      "bio": "Nisha turns complex problems into experiences that feel effortless. She brings a rare combination of visual craft and user psychology to every project she leads."
+      "name": "Unnati Rajpoot",
+      "title": "Head of Design & UX",
+      "quote": "Great design isn't seen — it's felt in every interaction.",
+      "experience": "Ex-Infosys UX Developer",
+      "color": "violet",
+      "bio": "Unnati leads design and user experience across all products. Her background at Infosys and deep understanding of user behavior help transform complex ideas into intuitive digital experiences."
     },
     {
-      "name": "Karan Sood",
-      "title": "Lead Engineer",
-      "bio": "Karan architects the technical foundation of everything we build. Performance, scalability and clean code are non-negotiables for him, and it shows in the products we deliver."
+      "name": "Piyush Gupta",
+      "title": "Head of Leads & SEO",
+      "quote": "If the right people can't find you, everything else is noise.",
+      "experience": "Ex-Zoho Lead Developer",
+      "color": "emerald",
+      "bio": "Piyush drives lead generation and search visibility. Combining technical expertise with growth strategy, he ensures our clients' platforms attract the right audience and convert consistently."
     },
     {
-      "name": "Divya Pillai",
-      "title": "Growth and SEO Specialist",
-      "bio": "Divya connects the dots between audience behaviour and search strategy. She ensures that what we build gets found by the right people at exactly the right moment."
+      "name": "Atharv Singh",
+      "title": "Head of Product & Client Success",
+      "quote": "Value delivered is the only metric that ever truly matters.",
+      "experience": "Ex-TutorNext Product Manager",
+      "color": "amber",
+      "bio": "Atharv manages product delivery and client success. His product management background ensures every project stays aligned with business goals while delivering measurable value."
     }
   ]
 }

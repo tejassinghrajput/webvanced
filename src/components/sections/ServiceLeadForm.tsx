@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import { Send, CheckCircle2, AlertCircle, Loader2, Zap, Lock, Target, BadgeCheck } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { submitContactLead } from "@/lib/leadService";
 
 interface FormState {
   name: string;
@@ -95,13 +96,15 @@ export function ServiceLeadFormSection({ serviceName }: ServiceLeadFormProps) {
     const validationErrors = validate(form);
     if (Object.keys(validationErrors).length > 0) { setErrors(validationErrors); return; }
     setStatus("loading");
-    try {
-      // TODO: Replace with POST /api/leads when backend is available.
-      await new Promise<void>((resolve) => setTimeout(resolve, 1000));
-      setStatus("success");
-    } catch {
-      setStatus("error");
-    }
+    const res = await submitContactLead({
+      name: form.name,
+      email: form.email,
+      phone: form.phone || undefined,
+      company: form.company,
+      category: serviceName,
+      brief: form.message,
+    });
+    setStatus(res.success ? "success" : "error");
   }
 
   return (

@@ -3,35 +3,15 @@ import { MapPin, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import aboutData from "@/mockData/about.json";
 
-/** Drifting aurora blobs — slow, ethereal gradient orbs */
-function AuroraBlobs() {
-  return (
-    <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
-      <motion.div
-        className="absolute -top-48 -left-48 h-[640px] w-[640px] rounded-full bg-indigo-600/20 blur-[130px]"
-        animate={{ x: [0, 90, -40, 70, 0], y: [0, -70, 50, -40, 0] }}
-        transition={{ duration: 24, repeat: Infinity, ease: "easeInOut" }}
-      />
-      <motion.div
-        className="absolute -top-20 right-0 h-[480px] w-[480px] rounded-full bg-violet-500/12 blur-[110px]"
-        animate={{ x: [0, -70, 30, -50, 0], y: [0, 60, -50, 30, 0] }}
-        transition={{ duration: 30, repeat: Infinity, ease: "easeInOut", delay: 5 }}
-      />
-    </div>
-  );
-}
-
 export function AboutHero() {
   const { badge, title, description, stats } = aboutData.hero;
   const [line1, line2] = title.split("\n");
 
   return (
-    <section className="relative bg-[#03070e] text-white overflow-hidden min-h-[82vh] flex flex-col justify-center">
-      <AuroraBlobs />
-
+    <section className="relative text-white min-h-[82vh] flex flex-col justify-center">
       {/* Subtle grid overlay */}
       <div
-        className="pointer-events-none absolute inset-0 opacity-[0.022]"
+        className="pointer-events-none absolute inset-0 opacity-[0.025]"
         style={{
           backgroundImage:
             "linear-gradient(rgba(165,180,252,1) 1px, transparent 1px), linear-gradient(90deg, rgba(165,180,252,1) 1px, transparent 1px)",
@@ -83,7 +63,7 @@ export function AboutHero() {
           className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-px bg-white/10 rounded-2xl overflow-hidden"
         >
           {stats.map((s) => (
-            <div key={s.label} className="bg-[#03070e] px-6 py-6 text-center">
+            <div key={s.label} className="bg-[#03070e]/60 backdrop-blur-sm px-6 py-6 text-center">
               <p className="text-3xl font-black bg-gradient-to-r from-indigo-400 to-violet-400 bg-clip-text text-transparent">
                 {s.value}
               </p>
@@ -95,5 +75,3 @@ export function AboutHero() {
     </section>
   );
 }
-
-/** Drifting aurora blobs — slow, ethereal gradient orbs */
