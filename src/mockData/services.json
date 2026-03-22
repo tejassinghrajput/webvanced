@@ -1,34 +1,83 @@
 {
   "hero": {
-    "badge": "ARCHITECTURAL INFRASTRUCTURE",
-    "title": "Structural Digital Design.",
-    "description": "We don't just build websites; we engineer digital environments. Our systems are built on foundations of logical rigor and aesthetic permanence."
+    "badge": "OUR SERVICES",
+    "title": "Digital Solutions for Modern Business.",
+    "description": "We build high-performance digital products and systems that streamline your operations and accelerate your growth."
   },
-  "features": [
+  "services": [
     {
-      "id": "visibility",
-      "icon": "Activity",
-      "title": "Visibility Systems",
-      "description": "Engineered search dominance through technical SEO and semantic architecture. We ensure your brand's digital presence is discovered exactly where intent meets opportunity.",
-      "bullets": ["SEMANTIC DATA LAYERING", "ALGORITHMIC ALIGNMENT"]
+      "title": "Web Development",
+      "description": "Custom, responsive, and high-performance websites built with modern technologies.",
+      "icons": [
+        { "name": "SiReact", "color": "#61DAFB" },
+        { "name": "SiTypescript", "color": "#3178C6" },
+        { "name": "SiTailwindcss", "color": "#06B6D4" },
+        { "name": "SiNextdotjs", "color": "#000000" }
+      ]
     },
     {
-      "id": "logic",
-      "icon": "Cpu",
-      "title": "Logic Automations",
-      "description": "Removing friction from the growth engine. We integrate fragmented platforms into a unified, autonomous ecosystem that scales without human intervention.",
-      "systemPulse": "INTEGRATION_SYNC: 100% OPERATIONAL"
+      "title": "AI Integrations",
+      "description": "Leverage the power of AI to automate tasks, improve customer experiences, and gain insights.",
+      "icons": [
+        { "name": "SiOpenai", "color": "#412991" },
+        { "name": "SiAnthropic", "color": "#D97757" },
+        { "name": "SiGoogle", "color": "#4285F4" },
+        { "name": "SiHuggingface", "color": "#FFD21E" }
+      ]
+    },
+    {
+      "title": "Automations",
+      "description": "Streamline your workflows and eliminate manual tasks with custom automation solutions.",
+      "icons": [
+        { "name": "SiZapier", "color": "#FF4A00" },
+        { "name": "SiMake", "color": "#6C25BE" },
+        { "name": "SiPython", "color": "#3776AB" },
+        { "name": "SiN8n", "color": "#FF6D5A" }
+      ]
+    },
+    {
+      "title": "Payment Gateway Integration",
+      "description": "Secure and seamless payment processing integrations for your business.",
+      "icons": [
+        { "name": "SiStripe", "color": "#008CD1" },
+        { "name": "SiPaypal", "color": "#003087" },
+        { "name": "SiSquare", "color": "#3E4348" },
+        { "name": "SiRazorpay", "color": "#008CFF" }
+      ]
+    },
+    {
+      "title": "Ordering Systems",
+      "description": "Custom ordering platforms tailored to your business needs and customer journey.",
+      "icons": [
+        { "name": "SiShopify", "color": "#7AB55C" },
+        { "name": "SiWoocommerce", "color": "#96588A" },
+        { "name": "SiMagento", "color": "#EE672F" },
+        { "name": "SiBigcommerce", "color": "#000000" }
+      ]
+    },
+    {
+      "title": "Map Integration",
+      "description": "Advanced map integrations for location-based services and logistics.",
+      "icons": [
+        { "name": "SiGooglemaps", "color": "#4285F4" },
+        { "name": "SiMapbox", "color": "#000000" },
+        { "name": "SiLeaflet", "color": "#199900" },
+        { "name": "SiOpenstreetmap", "color": "#7EBC6F" }
+      ]
+    },
+    {
+      "title": "Calendar Scheduling",
+      "description": "Automated scheduling solutions to manage appointments and bookings efficiently.",
+      "icons": [
+        { "name": "SiCalendly", "color": "#006BFF" },
+        { "name": "SiGooglecalendar", "color": "#4285F4" },
+        { "name": "SiMicrosoftoutlook", "color": "#0078D4" },
+        { "name": "SiZoom", "color": "#2D8CFF" }
+      ]
     }
   ],
-  "continuity": {
-    "icon": "Shield",
-    "title": "Operational Continuity",
-    "description": "Permanent vigilance for the digital architect. Our maintenance protocols ensure zero downtime, absolute security, and iterative performance optimization.",
-    "link": { "label": "EXPLORE PROTOCOLS", "href": "/services" },
-    "status": { "label": "System Integrity", "sub": "Continuous monitoring active", "uptime": "99.9%" }
-  },
   "cta": {
-    "title": "Ready to build your digital legacy?",
-    "button": { "label": "Request Your Digital Blueprint", "href": "/quote" }
+    "title": "Ready to build your digital solution?",
+    "button": { "label": "Request a Quote", "href": "/quote" }
   }
 }

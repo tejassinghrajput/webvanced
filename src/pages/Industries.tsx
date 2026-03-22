@@ -15,26 +15,37 @@ export default function IndustriesPage() {
               {data.hero.subheading}
             </p>
           </div>
-          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-            <div className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
-              {data.industries.map((industry, idx) => (
+          <div className="mx-auto mt-16 max-w-7xl space-y-24">
+            {data.industries.map((industry, idx) => {
+              const isEven = idx % 2 === 0;
+              return (
                 <motion.div
                   key={industry.title}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: idx * 0.1 }}
-                  className="flex flex-col bg-white p-10 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+                  className="grid lg:grid-cols-2 gap-12 items-center"
                 >
-                  <h3 className="text-2xl font-bold tracking-tight text-gray-900">
-                    {industry.title}
-                  </h3>
-                  <p className="mt-4 text-base leading-7 text-gray-600">
-                    {industry.body}
-                  </p>
+                  <div className={`overflow-hidden rounded-2xl shadow-sm ${isEven ? "lg:order-1" : "lg:order-2"}`}>
+                    <img
+                      src={industry.image}
+                      alt={industry.title}
+                      className="h-full w-full object-cover aspect-video"
+                      referrerPolicy="no-referrer"
+                    />
+                  </div>
+                  <div className={`flex flex-col ${isEven ? "lg:order-2" : "lg:order-1"}`}>
+                    <h3 className="text-3xl font-bold tracking-tight text-gray-900">
+                      {industry.title}
+                    </h3>
+                    <p className="mt-6 text-lg leading-8 text-gray-600">
+                      {industry.body}
+                    </p>
+                  </div>
                 </motion.div>
-              ))}
-            </div>
+              );
+            })}
           </div>
         </div>
       </section>

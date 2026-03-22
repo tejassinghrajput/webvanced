@@ -6,48 +6,48 @@ export function AboutMission() {
   const { title, description, pillars } = aboutData.mission;
 
   return (
-    <section className="bg-gray-50 py-32">
+    <section className="py-32 bg-white">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="grid gap-16 lg:grid-cols-2">
-          <motion.div
+        <div className="max-w-3xl">
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            className="text-5xl font-bold tracking-tight text-gray-950"
           >
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 border-b-2 border-indigo-600 inline-block pb-2">{title}</h2>
-          </motion.div>
-          <div>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-2xl leading-relaxed text-gray-900"
-            >
-              {description}
-            </motion.p>
-            <div className="mt-16 grid gap-12 sm:grid-cols-2">
-              {pillars.map((pillar, idx) => {
-                const Icon = (Icons as any)[pillar.icon] || Icons.Compass;
-                return (
-                  <motion.div
-                    key={pillar.title}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0.3 + idx * 0.1 }}
-                  >
-                    <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-white text-indigo-600 shadow-sm ring-1 ring-gray-200">
-                      <Icon className="h-6 w-6" />
-                    </div>
-                    <h3 className="text-lg font-bold text-gray-900">{pillar.title}</h3>
-                    <p className="mt-4 text-sm leading-relaxed text-gray-600">{pillar.description}</p>
-                  </motion.div>
-                );
-              })}
-            </div>
-          </div>
+            {title}
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="mt-10 text-2xl text-gray-600 leading-relaxed"
+          >
+            {description}
+          </motion.p>
+        </div>
+        
+        <div className="mt-24 grid gap-12 md:grid-cols-2">
+          {pillars.map((pillar, idx) => {
+            const Icon = (Icons as any)[pillar.icon] || Icons.Compass;
+            return (
+              <motion.div
+                key={pillar.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2 + idx * 0.1 }}
+                className="border-t border-gray-200 pt-12"
+              >
+                <div className="mb-6 h-12 w-12 flex items-center justify-center rounded-full bg-indigo-50 text-indigo-600">
+                  <Icon className="h-6 w-6" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-950">{pillar.title}</h3>
+                <p className="mt-4 text-gray-600 leading-relaxed">{pillar.description}</p>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>

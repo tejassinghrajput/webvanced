@@ -1,52 +1,55 @@
 {
   "hero": {
-    "badge": "About Webvance",
-    "title": "We Build the Future",
-    "description": "We are a team of dedicated professionals committed to delivering excellence in every project.",
+    "badge": "Our Story",
+    "title": "Architecting Digital Excellence",
+    "description": "We blend precision engineering with visionary design to build digital ecosystems that stand the test of time.",
     "image": "https://picsum.photos/seed/about/1920/1080",
-    "quote": "Excellence is not an act, but a habit.",
-    "quoteAuthor": "Aristotle"
+    "quote": "The best way to predict the future is to invent it.",
+    "quoteAuthor": "Alan Kay"
   },
   "mission": {
     "title": "Our Mission",
-    "description": "To empower businesses through innovative technology and design.",
+    "description": "To empower ambitious organizations by crafting innovative, scalable, and human-centric digital solutions that redefine industry standards.",
     "pillars": [
       {
         "icon": "Target",
-        "title": "Precision",
-        "description": "We focus on the details that matter."
+        "title": "Strategic Precision",
+        "description": "We meticulously analyze every requirement to ensure our solutions are perfectly aligned with your business goals."
       },
       {
         "icon": "Zap",
-        "title": "Speed",
-        "description": "We deliver fast without compromising quality."
+        "title": "Agile Innovation",
+        "description": "We leverage cutting-edge technology to deliver high-performance applications with remarkable speed and efficiency."
       }
     ]
   },
   "principles": {
-    "badge": "Our Principles",
-    "title": "How We Work",
+    "badge": "Our Core Values",
+    "title": "The Webvance Philosophy",
     "items": [
       {
         "icon": "Users",
-        "title": "Collaboration",
-        "description": "We work closely with our clients.",
-        "image": "https://picsum.photos/seed/collab/800/600"
+        "title": "Collaborative Partnership",
+        "description": "We don't just build for you; we build with you. Your vision is our blueprint."
       },
       {
         "icon": "Shield",
-        "title": "Integrity",
-        "description": "We are honest and transparent.",
-        "image": "https://picsum.photos/seed/integrity/800/600"
+        "title": "Uncompromising Integrity",
+        "description": "Transparency and honesty are the foundations of every relationship we build."
+      },
+      {
+        "icon": "Lightbulb",
+        "title": "Radical Innovation",
+        "description": "We constantly challenge the status quo to deliver solutions that are not just current, but future-ready."
       }
     ]
   },
   "cta": {
-    "title": "Ready to build something luminous?",
-    "subtitle": "Let's start your journey today.",
+    "title": "Ready to build your future?",
+    "subtitle": "Let's collaborate on your next breakthrough project.",
     "buttons": [
       {
-        "label": "Get Started",
+        "label": "Start Your Project",
         "href": "/contact",
         "primary": true
       }

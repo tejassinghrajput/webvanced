@@ -6,7 +6,7 @@ const icons = [ShoppingBag, HeartPulse, Utensils, Briefcase, GraduationCap, Buil
 
 export function HomeIndustries() {
   return (
-    <section className="bg-white py-24 sm:py-32">
+    <section className="bg-gray-50 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-semibold text-indigo-600 tracking-wide uppercase">{data.sectionLabel}</h2>

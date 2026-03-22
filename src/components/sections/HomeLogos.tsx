@@ -3,7 +3,7 @@ import data from "@/mockData/homeLogos.json";
 
 export function HomeLogos() {
   return (
-    <section className="bg-white py-32 border-y border-gray-100">
+    <section className="bg-gray-50 py-32 border-y border-gray-100">
       <div className="mx-auto w-full px-6 lg:px-12 xl:px-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

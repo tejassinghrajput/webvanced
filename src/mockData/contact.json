@@ -16,19 +16,19 @@
         { "icon": "MessageSquare", "label": "WHATSAPP", "value": "+1 (555) WEB-BLUE" }
       ]
     },
-    "image": "https://picsum.photos/seed/corridor/600/400"
+    "image": "https://img.freepik.com/free-vector/contact-center-abstract-concept_335657-3032.jpg?t=st=1774196628~exp=1774200228~hmac=8010100b61e721bf295a96dc72178bf5e2cc2cb74539dcd39c5522d98552b9dc&w=740"
   },
   "form": {
-    "title": "Professional Inquiry",
+    "title": "Project Consultation Request",
     "fields": [
-      { "id": "name", "label": "FULL NAME", "placeholder": "John Doe", "type": "text" },
-      { "id": "email", "label": "WORK EMAIL", "placeholder": "john@company.com", "type": "email" },
-      { "id": "company", "label": "COMPANY / ORGANIZATION", "placeholder": "Acme Inc.", "type": "text" },
-      { "id": "category", "label": "PROJECT CATEGORY", "options": ["UI/UX Architecture", "Web Development", "Cloud Solutions"], "type": "select" },
-      { "id": "brief", "label": "THE BLUEPRINT BRIEF", "placeholder": "Tell us about your vision, goals, and technical requirements...", "type": "textarea" }
+      { "id": "name", "label": "Full Name", "placeholder": "John Doe", "type": "text" },
+      { "id": "email", "label": "Business Email", "placeholder": "john@company.com", "type": "email" },
+      { "id": "company", "label": "Organization", "placeholder": "Acme Inc.", "type": "text" },
+      { "id": "category", "label": "Service Interest", "options": ["UI/UX Architecture", "Web Development", "Cloud Solutions"], "type": "select" },
+      { "id": "brief", "label": "Project Overview", "placeholder": "Tell us about your vision, goals, and technical requirements...", "type": "textarea" }
     ],
     "security": "Your data is secured with enterprise-grade encryption.",
-    "submit": "Dispatch Inquiry"
+    "submit": "Submit Request"
   },
   "location": {
     "icon": "MapPin",

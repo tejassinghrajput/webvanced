@@ -3,7 +3,7 @@ import data from "@/mockData/homeInnovation.json";
 
 export function HomeInnovation() {
   return (
-    <section className="bg-white py-24 sm:py-32">
+    <section className="bg-gray-50 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
         <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
           <h2 className="text-base font-semibold text-indigo-600">{data.sectionLabel}</h2>

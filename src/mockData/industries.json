@@ -6,19 +6,23 @@
   "industries": [
     {
       "title": "FinTech & Banking",
-      "body": "Secure, compliant and high-performance digital products that build trust and simplify complex financial journeys for your customers."
+      "body": "Secure, compliant and high-performance digital products that build trust and simplify complex financial journeys for your customers.",
+      "image": "https://img.freepik.com/free-vector/fintech-concept-illustration_114360-4097.jpg?t=st=1711120000~exp=1711123600~hmac=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "title": "Health & Wellness",
-      "body": "Patient-centric digital experiences that prioritise privacy, accessibility and clarity, ensuring your services are found and trusted."
+      "body": "Patient-centric digital experiences that prioritise privacy, accessibility and clarity, ensuring your services are found and trusted.",
+      "image": "https://img.freepik.com/free-vector/healthcare-concept-illustration_114360-4098.jpg?t=st=1711120000~exp=1711123600~hmac=f3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "title": "E-commerce & Retail",
-      "body": "Conversion-focused platforms that unify your brand experience across every touchpoint, from search to checkout and beyond."
+      "body": "Conversion-focused platforms that unify your brand experience across every touchpoint, from search to checkout and beyond.",
+      "image": "https://img.freepik.com/free-vector/ecommerce-concept-illustration_114360-4099.jpg?t=st=1711120000~exp=1711123600~hmac=a3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "title": "Professional Services",
-      "body": "Strategic digital presence for law firms, consultancies and agencies that need to project authority and capture high-value leads."
+      "body": "Strategic digital presence for law firms, consultancies and agencies that need to project authority and capture high-value leads.",
+      "image": "https://img.freepik.com/free-vector/professional-services-concept-illustration_114360-4100.jpg?t=st=1711120000~exp=1711123600~hmac=b3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     }
   ]
 }

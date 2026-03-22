@@ -1,48 +1,48 @@
 import { PageLayout } from "@/components/layout/PageLayout";
 import { motion } from "motion/react";
+import * as LucideIcons from "lucide-react";
 import data from "@/mockData/howWeWork.json";
-import { Sparkles, GlitterCard, GlitterText } from "@/components/ui/Sparkles";
 
 export default function HowWeWorkPage() {
   return (
     <PageLayout>
-      <section className="relative bg-white py-20 md:py-32 overflow-hidden">
-        <Sparkles />
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
+      <section className="py-24 sm:py-32 bg-white">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900">
-              <GlitterText>{data.hero.heading}</GlitterText>
+            <h1 className="text-5xl font-extrabold tracking-tighter text-gray-950 sm:text-7xl">
+              {data.hero.heading}
             </h1>
-            <p className="mt-6 text-base md:text-lg leading-8 text-gray-600">
+            <p className="mt-8 text-xl leading-8 text-gray-700">
               {data.hero.subheading}
             </p>
           </div>
-          <div className="mx-auto mt-12 md:mt-20 lg:mt-24 lg:max-w-none">
-            <dl className="grid grid-cols-1 gap-x-8 gap-y-12 md:gap-y-16 lg:grid-cols-2">
-              {data.steps.map((step, idx) => (
-                <div key={step.number}>
-                  <GlitterCard>
-                    <motion.div
-                      initial={{ opacity: 0, x: -20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.5, delay: idx * 0.1 }}
-                      className="flex flex-col border-l border-indigo-600 pl-8 h-full"
-                    >
-                      <dt className="text-sm font-semibold leading-6 text-indigo-600">
-                        Step {step.number}
-                      </dt>
-                      <dd className="mt-2 text-2xl font-bold tracking-tight text-gray-900">
-                        {step.title}
-                      </dd>
-                      <dd className="mt-4 text-base leading-7 text-gray-600">
-                        {step.body}
-                      </dd>
-                    </motion.div>
-                  </GlitterCard>
-                </div>
-              ))}
-            </dl>
+          <div className="mx-auto mt-16 max-w-7xl">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {data.steps.map((step, idx) => {
+                const Icon = (LucideIcons as any)[step.icon];
+                return (
+                  <motion.div
+                    key={step.number}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: idx * 0.1 }}
+                    className={`rounded-3xl p-10 border transition-all hover:scale-105 hover:shadow-xl ${step.color}`}
+                  >
+                    <div className="flex items-center justify-between mb-6">
+                      <div className="text-sm font-bold tracking-widest uppercase opacity-80">Step {step.number}</div>
+                      {Icon && <Icon className="w-8 h-8 opacity-80" />}
+                    </div>
+                    <h3 className="text-3xl font-extrabold tracking-tight">
+                      {step.title}
+                    </h3>
+                    <p className="mt-4 text-lg leading-8 opacity-90">
+                      {step.body}
+                    </p>
+                  </motion.div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </section>

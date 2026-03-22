@@ -1,19 +1,43 @@
 import servicesData from "@/mockData/services.json";
-import { ServicesFeatureCard } from "./ServicesFeatureCard";
-import { GlitterCard } from "../ui/Sparkles";
+import { motion } from "motion/react";
+import * as SiIcons from "react-icons/si";
 
 export function ServicesFeatures() {
-  const [visibility, logic] = servicesData.features;
-
   return (
-    <section className="mx-auto max-w-7xl px-6 py-16">
-      <div className="grid gap-8 lg:grid-cols-2">
-        <GlitterCard>
-          <ServicesFeatureCard feature={visibility} index={0} />
-        </GlitterCard>
-        <GlitterCard>
-          <ServicesFeatureCard feature={logic} index={1} isDark />
-        </GlitterCard>
+    <section className="mx-auto max-w-7xl px-6 py-24 bg-white">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {servicesData.services.map((service: any, index: number) => {
+          return (
+            <motion.div
+              key={service.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.05 }}
+              className="group relative overflow-hidden rounded-[2rem] bg-gray-50 p-8 border border-gray-100 hover:border-indigo-200 transition-all duration-300 hover:shadow-2xl hover:shadow-indigo-500/10"
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative z-10">
+                <div className="mb-6 flex flex-wrap gap-3">
+                  {service.icons.map((iconObj: { name: string, color: string }) => {
+                    const Icon = (SiIcons as any)[iconObj.name];
+                    return Icon ? (
+                      <div key={iconObj.name} className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white shadow-sm group-hover:scale-110 transition-transform duration-300">
+                        <Icon className="h-6 w-6" style={{ color: iconObj.color }} />
+                      </div>
+                    ) : null;
+                  })}
+                </div>
+                <h3 className="text-2xl font-extrabold tracking-tight text-gray-950">
+                  {service.title}
+                </h3>
+                <p className="mt-3 text-base leading-7 text-gray-600">
+                  {service.description}
+                </p>
+              </div>
+            </motion.div>
+          );
+        })}
       </div>
     </section>
   );
