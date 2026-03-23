@@ -1,3 +1,4 @@
+import { SEO } from "@/components/seo/SEO";
 import { PageLayout } from "@/components/layout/PageLayout";
 import { motion } from "motion/react";
 import * as LucideIcons from "lucide-react";
@@ -6,6 +7,11 @@ import data from "@/mockData/howWeWork.json";
 export default function HowWeWorkPage() {
   return (
     <PageLayout>
+      <SEO
+        title="How We Work"
+        description="A transparent look at how Webvance delivers projects — from discovery and strategy through design, development, and launch — with a clear, collaborative process at every step."
+        canonical="https://webvance.tech/how-we-work"
+      />
       <section className="py-24 sm:py-32 bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">

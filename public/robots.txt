@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Block utility / legal pages from indexing
+Disallow: /privacy-policy
+Disallow: /terms-of-service
+
+Sitemap: https://webvance.in/sitemap.xml

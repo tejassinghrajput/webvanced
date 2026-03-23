@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import { SEO } from "@/components/seo/SEO";
 import { PageLayout } from "@/components/layout/PageLayout";
 import { ContactInfo } from "@/components/sections/ContactInfo";
 import { ContactForm } from "@/components/sections/ContactForm";
@@ -36,6 +37,11 @@ function SignalPulse() {
 export default function ContactPage() {
   return (
     <PageLayout>
+      <SEO
+        title="Contact Us"
+        description="Get in touch with Webvance. Reach our team in New Delhi for digital marketing, web development, SEO, or any project enquiry. We respond within 24 hours."
+        canonical="https://webvance.tech/contact"
+      />
       <SignalPulse />
       <div className="relative z-10 mx-auto max-w-7xl px-6 py-12 md:py-16">
         <div className="grid gap-8 lg:grid-cols-[1fr_1.1fr] lg:items-stretch">

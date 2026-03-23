@@ -1,3 +1,4 @@
+import { SEO } from "@/components/seo/SEO";
 import { PageLayout } from "@/components/layout/PageLayout";
 import data from "@/mockData/terms.json";
 import { motion } from "motion/react";
@@ -5,6 +6,12 @@ import { motion } from "motion/react";
 export default function TermsOfService() {
   return (
     <PageLayout>
+      <SEO
+        title="Terms of Service"
+        description="Review the terms and conditions governing use of Webvance's services and website. Please read these carefully before engaging with our agency."
+        canonical="https://webvance.tech/terms-of-service"
+        noindex
+      />
       <div className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-3xl px-6">
           <motion.h1 

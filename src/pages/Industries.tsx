@@ -1,3 +1,4 @@
+import { SEO } from "@/components/seo/SEO";
 import { PageLayout } from "@/components/layout/PageLayout";
 import { motion } from "motion/react";
 import data from "@/mockData/industries.json";
@@ -5,6 +6,11 @@ import data from "@/mockData/industries.json";
 export default function IndustriesPage() {
   return (
     <PageLayout>
+      <SEO
+        title="Industries We Serve"
+        description="Webvance delivers tailored digital strategies and bespoke solutions across a wide range of industries — from healthcare and e-commerce to education, hospitality, and more."
+        canonical="https://webvance.tech/industries"
+      />
       <section className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
