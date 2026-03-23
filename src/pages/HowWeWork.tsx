@@ -1,8 +1,17 @@
 import { SEO } from "@/components/seo/SEO";
 import { PageLayout } from "@/components/layout/PageLayout";
 import { motion } from "motion/react";
-import * as LucideIcons from "lucide-react";
+import { Search, Palette, Code, Rocket } from "lucide-react";
+import type { LucideProps } from "lucide-react";
 import data from "@/mockData/howWeWork.json";
+import type { ComponentType } from "react";
+
+const STEP_ICONS: Record<string, ComponentType<LucideProps>> = {
+  Search,
+  Palette,
+  Code,
+  Rocket,
+};
 
 export default function HowWeWorkPage() {
   return (
@@ -25,7 +34,7 @@ export default function HowWeWorkPage() {
           <div className="mx-auto mt-16 max-w-7xl">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {data.steps.map((step, idx) => {
-                const Icon = (LucideIcons as any)[step.icon];
+                const Icon = STEP_ICONS[step.icon];
                 return (
                   <motion.div
                     key={step.number}

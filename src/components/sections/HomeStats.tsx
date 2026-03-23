@@ -6,7 +6,7 @@ export function HomeStats() {
   const bg = "https://img.freepik.com/free-photo/abstract-background-with-low-poly-design_1048-10022.jpg";
   return (
     <section className="relative bg-gray-900 py-12 sm:py-16 text-white overflow-hidden">
-      <div className="absolute inset-0 z-0"><img src={bg} className="h-full w-full object-cover opacity-20" referrerPolicy="no-referrer" /></div>
+      <div className="absolute inset-0 z-0"><img src={bg} alt="" role="presentation" className="h-full w-full object-cover opacity-20" referrerPolicy="no-referrer" /></div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-base font-semibold text-indigo-400">{data.sectionLabel}</h2>
