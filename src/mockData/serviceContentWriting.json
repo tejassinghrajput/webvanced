@@ -9,36 +9,42 @@
   "benefits": [
     {
       "title": "Builds Brand Authority",
-      "description": "High-quality content positions your brand as an authority in your industry, earning the trust of both customers and search engines."
+      "description": "High-quality content positions your brand as an authority in your industry, earning the trust of both customers and search engines.",
+      "icon": "Award"
     },
     {
       "title": "Drives Organic Traffic",
-      "description": "SEO-optimized content helps your website rank higher on search engines, bringing in a steady flow of potential customers."
+      "description": "SEO-optimized content helps your website rank higher on search engines, bringing in a steady flow of potential customers.",
+      "icon": "TrendingUp"
     },
     {
       "title": "Increases Engagement",
-      "description": "Compelling content keeps your audience engaged longer, reducing bounce rates and increasing the likelihood of conversion."
+      "description": "Compelling content keeps your audience engaged longer, reducing bounce rates and increasing the likelihood of conversion.",
+      "icon": "Heart"
     },
     {
       "title": "Supports Every Channel",
-      "description": "From social media to email campaigns, great content is the backbone of every successful digital marketing channel."
+      "description": "From social media to email campaigns, great content is the backbone of every successful digital marketing channel.",
+      "icon": "Share2"
     },
     {
       "title": "Generates Qualified Leads",
-      "description": "Content that speaks directly to your target audience attracts the right people — those who are genuinely interested in your services."
+      "description": "Content that speaks directly to your target audience attracts the right people — those who are genuinely interested in your services.",
+      "icon": "Target"
     },
     {
       "title": "Long-Term ROI",
-      "description": "Unlike paid ads, great content continues to deliver value long after it's published. It's an investment that compounds over time."
+      "description": "Unlike paid ads, great content continues to deliver value long after it's published. It's an investment that compounds over time.",
+      "icon": "Clock"
     }
   ],
   "services": [
-    { "title": "SEO-Optimized Website Content", "description": "Web pages engineered to rank and convert.", "href": "/services/content-writing" },
-    { "title": "Blog Posts & Articles", "description": "Long-form content that builds authority and drives organic traffic.", "href": "/services/content-writing" },
-    { "title": "Social Media Content", "description": "Platform-specific copy that drives engagement and follows.", "href": "/services/social-media" },
-    { "title": "Ad Copywriting", "description": "Punchy, persuasive copy for PPC and social ads that converts.", "href": "/services/ppc" },
-    { "title": "Product Descriptions", "description": "Compelling product copy that sells for e-commerce businesses.", "href": "/services/content-writing" },
-    { "title": "Email Newsletters", "description": "Targeted email content that nurtures leads and retains customers.", "href": "/services/content-writing" }
+    { "title": "SEO-Optimized Website Content", "description": "Web pages engineered to rank and convert.", "href": "/services/content-writing", "icon": "Globe" },
+    { "title": "Blog Posts & Articles", "description": "Long-form content that builds authority and drives organic traffic.", "href": "/services/content-writing", "icon": "BookOpen" },
+    { "title": "Social Media Content", "description": "Platform-specific copy that drives engagement and follows.", "href": "/services/social-media", "icon": "Share2" },
+    { "title": "Ad Copywriting", "description": "Punchy, persuasive copy for PPC and social ads that converts.", "href": "/services/ppc", "icon": "Megaphone" },
+    { "title": "Product Descriptions", "description": "Compelling product copy that sells for e-commerce businesses.", "href": "/services/content-writing", "icon": "Package" },
+    { "title": "Email Newsletters", "description": "Targeted email content that nurtures leads and retains customers.", "href": "/services/content-writing", "icon": "Mail" }
   ],
   "qualities": [
     { "title": "Original & Plagiarism-Free", "description": "Every piece of content is 100% original and crafted specifically for your brand." },

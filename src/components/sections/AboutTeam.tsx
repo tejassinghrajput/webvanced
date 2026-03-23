@@ -8,20 +8,19 @@ export function AboutTeam() {
   const { sectionLabel, heading, subtext, members } = teamData;
 
   return (
-    <section className="bg-white py-24 md:py-36 overflow-hidden">
-      <div className="mx-auto max-w-6xl px-6">
+    <section className="bg-slate-50 py-24 md:py-36 overflow-hidden">
+      <div className="mx-auto max-w-[85rem] px-6">
 
         {/* Section header */}
-        <div className="mb-20 text-center">
+        <div className="mb-16 md:mb-20 text-center">
           <motion.span
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="inline-flex items-center gap-3 text-xs font-bold tracking-[0.2em] text-indigo-500 uppercase"
+            className="inline-flex items-center gap-3 text-xs font-bold tracking-widest text-indigo-500 uppercase"
           >
-            <span className="h-px w-8 bg-indigo-300" />
+            <span className="h-[2px] w-6 bg-indigo-500 rounded-full" />
             {sectionLabel}
-            <span className="h-px w-8 bg-indigo-300" />
           </motion.span>
 
           <motion.h2
@@ -29,7 +28,7 @@ export function AboutTeam() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="mt-5 text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900"
+            className="mt-5 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900"
           >
             {heading}
           </motion.h2>
@@ -45,18 +44,12 @@ export function AboutTeam() {
           </motion.p>
         </div>
 
-        {/* Single card — four columns side by side */}
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.15, duration: 0.6 }}
-          className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 rounded-3xl border border-gray-100 bg-white shadow-xl shadow-slate-100 overflow-hidden"
-        >
+        {/* Cards Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
           {(members as TeamMember[]).map((m, i) => (
             <TeamCard key={m.name} member={m} index={i} isLast={i === members.length - 1} />
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

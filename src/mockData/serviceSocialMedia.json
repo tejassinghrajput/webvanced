@@ -9,36 +9,42 @@
   "benefits": [
     {
       "title": "Massive Reach",
-      "description": "Social media platforms collectively have billions of active users. Your brand can reach a global audience instantly."
+      "description": "Social media platforms collectively have billions of active users. Your brand can reach a global audience instantly.",
+      "icon": "Globe"
     },
     {
       "title": "Cost-Effective Marketing",
-      "description": "Compared to traditional advertising, social media marketing offers incredibly high ROI at a fraction of the cost."
+      "description": "Compared to traditional advertising, social media marketing offers incredibly high ROI at a fraction of the cost.",
+      "icon": "DollarSign"
     },
     {
       "title": "Direct Customer Engagement",
-      "description": "Interact directly with your customers in real-time, building relationships that foster loyalty and trust."
+      "description": "Interact directly with your customers in real-time, building relationships that foster loyalty and trust.",
+      "icon": "MessageCircle"
     },
     {
       "title": "Brand Awareness",
-      "description": "Consistent, quality social media presence keeps your brand top-of-mind for your target audience."
+      "description": "Consistent, quality social media presence keeps your brand top-of-mind for your target audience.",
+      "icon": "Star"
     },
     {
       "title": "Drives Website Traffic",
-      "description": "Strategic social media posts and campaigns drive qualified traffic directly to your website and landing pages."
+      "description": "Strategic social media posts and campaigns drive qualified traffic directly to your website and landing pages.",
+      "icon": "TrendingUp"
     },
     {
       "title": "Analytics & Insights",
-      "description": "Social media platforms provide rich analytics that help you understand your audience and refine your strategy."
+      "description": "Social media platforms provide rich analytics that help you understand your audience and refine your strategy.",
+      "icon": "BarChart3"
     }
   ],
   "services": [
-    { "title": "Facebook Marketing", "description": "Strategic page management, ad campaigns, and community building on the world's largest social network.", "href": "/services/social-media" },
-    { "title": "Instagram Management", "description": "Visual storytelling, Reels, and Stories that grow your following and drive engagement.", "href": "/services/social-media" },
-    { "title": "LinkedIn Marketing", "description": "Professional B2B content and campaigns that establish your authority and generate business leads.", "href": "/services/social-media" },
-    { "title": "Twitter / X Strategy", "description": "Real-time engagement, trending hashtag campaigns, and brand voice management.", "href": "/services/social-media" },
-    { "title": "YouTube Management", "description": "Channel optimization, video SEO, shorts strategy and audience growth campaigns.", "href": "/services/social-media" },
-    { "title": "TikTok & Pinterest", "description": "Creative short-form video and visual content strategies for younger, highly engaged audiences.", "href": "/services/social-media" }
+    { "title": "Facebook Marketing", "description": "Strategic page management, ad campaigns, and community building on the world's largest social network.", "href": "/services/social-media", "icon": "Facebook" },
+    { "title": "Instagram Management", "description": "Visual storytelling, Reels, and Stories that grow your following and drive engagement.", "href": "/services/social-media", "icon": "Instagram" },
+    { "title": "LinkedIn Marketing", "description": "Professional B2B content and campaigns that establish your authority and generate business leads.", "href": "/services/social-media", "icon": "Linkedin" },
+    { "title": "Twitter / X Strategy", "description": "Real-time engagement, trending hashtag campaigns, and brand voice management.", "href": "/services/social-media", "icon": "Twitter" },
+    { "title": "YouTube Management", "description": "Channel optimization, video SEO, shorts strategy and audience growth campaigns.", "href": "/services/social-media", "icon": "Youtube" },
+    { "title": "TikTok & Pinterest", "description": "Creative short-form video and visual content strategies for younger, highly engaged audiences.", "href": "/services/social-media", "icon": "Music" }
   ],
   "qualities": [
     { "title": "Trend Aware", "description": "We stay updated with every platform algorithm change and cultural trend." },

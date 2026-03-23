@@ -9,7 +9,7 @@ export default function SEOPage() {
     <ServicePageTemplate
       data={data as ServicePageData}
       icon={<Search className="h-5 w-5" />}
-      illustration={<SEOIllustration className="w-full h-auto max-h-80" />}
+      illustration={<SEOIllustration className="w-full h-auto" />}
       accentColor="emerald"
     />
   );

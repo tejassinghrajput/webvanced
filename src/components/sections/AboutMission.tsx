@@ -5,7 +5,7 @@ import aboutData from "@/mockData/about.json";
 /** Slowly rotating concentric rings in the top-right corner */
 function RotatingRings() {
   return (
-    <div className="pointer-events-none absolute -right-40 -top-40 overflow-visible" aria-hidden="true">
+    <div className="pointer-events-none absolute -right-40 -top-40 overflow-hidden" aria-hidden="true">
       {[360, 280, 200].map((size, i) => (
         <motion.div
           key={size}

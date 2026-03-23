@@ -9,7 +9,7 @@ export default function ERPPage() {
     <ServicePageTemplate
       data={data as ServicePageData}
       icon={<LayoutGrid className="h-5 w-5" />}
-      illustration={<ERPIllustration className="w-full h-auto max-h-80" />}
+      illustration={<ERPIllustration className="w-full h-auto" />}
       accentColor="purple"
     />
   );

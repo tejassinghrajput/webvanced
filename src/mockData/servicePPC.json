@@ -9,59 +9,71 @@
   "benefits": [
     {
       "title": "Boosts Traffic to Website",
-      "description": "PPC drives traffic more efficiently than any other form of advertising. You pay for every click but your money doesn't go to waste — clickers are genuinely interested."
+      "description": "PPC drives traffic more efficiently than any other form of advertising. You pay for every click but your money doesn't go to waste — clickers are genuinely interested.",
+      "icon": "TrendingUp"
     },
     {
       "title": "Measurable & Trackable",
-      "description": "PPC helps you measure your rate of returns on investment. It provides a crystal clear picture of the returns your campaigns and ads are generating."
+      "description": "PPC helps you measure your rate of returns on investment. It provides a crystal clear picture of the returns your campaigns and ads are generating.",
+      "icon": "BarChart3"
     },
     {
       "title": "Increase Sales",
-      "description": "PPC increases leads, revenue and sales helping your business climb the ladder to success by targeting the correct audience."
+      "description": "PPC increases leads, revenue and sales helping your business climb the ladder to success by targeting the correct audience.",
+      "icon": "ShoppingCart"
     },
     {
       "title": "Increases Brand Awareness",
-      "description": "PPC gives your company better visibility and enhanced exposure leading to a higher number of conversions."
+      "description": "PPC gives your company better visibility and enhanced exposure leading to a higher number of conversions.",
+      "icon": "Eye"
     },
     {
       "title": "Extremely Targeted",
-      "description": "PPC targets audiences in a channelized way that pulls in quality traffic. Your money is not wasted as clickers are genuinely interested in your services."
+      "description": "PPC targets audiences in a channelized way that pulls in quality traffic. Your money is not wasted as clickers are genuinely interested in your services.",
+      "icon": "Target"
     },
     {
       "title": "Higher Conversion Rate",
-      "description": "Search traffic has the highest rate of conversions and drives immediate results when a client searches for a specific service."
+      "description": "Search traffic has the highest rate of conversions and drives immediate results when a client searches for a specific service.",
+      "icon": "Zap"
     }
   ],
   "services": [
     {
       "title": "Search Advertising",
       "description": "Customized campaign strategy, extensive keyword research, ad creation and testing while optimizing and managing your page with full transparency.",
-      "href": "/services/ppc"
+      "href": "/services/ppc",
+      "icon": "Search"
     },
     {
       "title": "Google Shopping Ads",
       "description": "We target the niche and display compelling ads relevant to the target audience, increasing conversion rates and ROI.",
-      "href": "/services/ppc"
+      "href": "/services/ppc",
+      "icon": "ShoppingCart"
     },
     {
       "title": "Email Marketing",
       "description": "One of the most powerful platforms for advertising. Our PPC experts effectively combine search and display advertising techniques.",
-      "href": "/services/ppc"
+      "href": "/services/ppc",
+      "icon": "Mail"
     },
     {
       "title": "Remarketing",
       "description": "We advertise smart by showing ads to audiences who have actually visited your website, showing a high conversion rate.",
-      "href": "/services/ppc"
+      "href": "/services/ppc",
+      "icon": "RefreshCw"
     },
     {
       "title": "Mobile Advertising",
       "description": "We understand patterns of mobile users and effectively combine mobile ads with other advertisement forms attracting the relevant audience.",
-      "href": "/services/ppc"
+      "href": "/services/ppc",
+      "icon": "Smartphone"
     },
     {
       "title": "Display Advertising",
       "description": "With visually appealing ads, you can attract a higher amount of audience, measure and track your ROI more easily and efficiently.",
-      "href": "/services/ppc"
+      "href": "/services/ppc",
+      "icon": "Eye"
     }
   ],
   "qualities": [

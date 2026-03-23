@@ -9,59 +9,71 @@
   "benefits": [
     {
       "title": "Agility",
-      "description": "Data can be accessed easily through formatted categorization. It helps retrieve data quickly, efficiently, and one can easily implement changes."
+      "description": "Data can be accessed easily through formatted categorization. It helps retrieve data quickly, efficiently, and one can easily implement changes.",
+      "icon": "Zap"
     },
     {
       "title": "High-Quality Data",
-      "description": "High-quality data is primarily maintained through data services that also ensure privacy and security, improving overall quality."
+      "description": "High-quality data is primarily maintained through data services that also ensure privacy and security, improving overall quality.",
+      "icon": "Database"
     },
     {
       "title": "Cost-Effective",
-      "description": "Data services can be outsourced charging relatively less while ensuring quality. Beneficial for new or small business owners."
+      "description": "Data services can be outsourced charging relatively less while ensuring quality. Beneficial for new or small business owners.",
+      "icon": "DollarSign"
     },
     {
       "title": "Improve Process",
-      "description": "Data services give a company reason to conserve resources, save time and money. Outsourcing limits expenses and increases ROI."
+      "description": "Data services give a company reason to conserve resources, save time and money. Outsourcing limits expenses and increases ROI.",
+      "icon": "Settings"
     },
     {
       "title": "Understand the Market",
-      "description": "You need the right data to understand your audience better. Data helps business owners interpret the interests of their customers."
+      "description": "You need the right data to understand your audience better. Data helps business owners interpret the interests of their customers.",
+      "icon": "TrendingUp"
     },
     {
       "title": "See Performance",
-      "description": "It is crucial for a business to stay informed about their performance and progress. Invest in data analysts to stay ahead."
+      "description": "It is crucial for a business to stay informed about their performance and progress. Invest in data analysts to stay ahead.",
+      "icon": "BarChart3"
     }
   ],
   "services": [
     {
       "title": "Data Entry & Support",
       "description": "High levels of accuracy in data entry that helps control expenses, boost performance and accessibility.",
-      "href": "/services/data-services"
+      "href": "/services/data-services",
+      "icon": "PenLine"
     },
     {
       "title": "Data Processing",
       "description": "Indispensable segment of any business that helps make sound decisions through systematic strategy and meticulous processing.",
-      "href": "/services/data-services"
+      "href": "/services/data-services",
+      "icon": "Cpu"
     },
     {
       "title": "Data Management",
       "description": "The main nerve that holds the business together. Standardizes and regularizes data for hassle-free retrieval and addition.",
-      "href": "/services/data-services"
+      "href": "/services/data-services",
+      "icon": "FolderOpen"
     },
     {
       "title": "SLA Management",
       "description": "Becomes important when a business does not achieve a goal. Reinstates mismanagement by restoring functionality.",
-      "href": "/services/data-services"
+      "href": "/services/data-services",
+      "icon": "ClipboardList"
     },
     {
       "title": "Data Visualization",
       "description": "Transforms challenging data into easy and comprehensible designs that render better decisions for the company.",
-      "href": "/services/data-services"
+      "href": "/services/data-services",
+      "icon": "PieChart"
     },
     {
       "title": "Data Migration (ETL)",
       "description": "ETL (Extract, Transfer, Load) keeps sensitive data secure against operational, security, reputational, or natural risks.",
-      "href": "/services/data-services"
+      "href": "/services/data-services",
+      "icon": "Upload"
     }
   ],
   "qualities": [

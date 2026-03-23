@@ -9,36 +9,42 @@
   "benefits": [
     {
       "title": "Show Up in Local Searches",
-      "description": "Appear prominently when nearby customers search for the services you offer — both on Google and maps."
+      "description": "Appear prominently when nearby customers search for the services you offer — both on Google and maps.",
+      "icon": "Search"
     },
     {
       "title": "Google My Business Visibility",
-      "description": "A well-optimized GMB profile puts you at the top of local search results with reviews, hours and directions."
+      "description": "A well-optimized GMB profile puts you at the top of local search results with reviews, hours and directions.",
+      "icon": "MapPin"
     },
     {
       "title": "Drive Foot Traffic",
-      "description": "Local SEO brings online searchers into your physical store by providing accurate, compelling business information."
+      "description": "Local SEO brings online searchers into your physical store by providing accurate, compelling business information.",
+      "icon": "Users"
     },
     {
       "title": "Beat Local Competition",
-      "description": "Out-rank competitors in your area by building a stronger local online presence across all key directories."
+      "description": "Out-rank competitors in your area by building a stronger local online presence across all key directories.",
+      "icon": "Trophy"
     },
     {
       "title": "Build Local Trust",
-      "description": "Positive reviews and consistent local citations build trust with nearby customers who are ready to buy."
+      "description": "Positive reviews and consistent local citations build trust with nearby customers who are ready to buy.",
+      "icon": "Star"
     },
     {
       "title": "Cost-Effective Growth",
-      "description": "Local SEO delivers highly targeted traffic at a low cost, making it one of the best ROI marketing strategies."
+      "description": "Local SEO delivers highly targeted traffic at a low cost, making it one of the best ROI marketing strategies.",
+      "icon": "DollarSign"
     }
   ],
   "services": [
-    { "title": "Google My Business Optimization", "description": "Complete setup and ongoing optimization of your GMB profile to maximize local visibility.", "href": "/services/local-seo" },
-    { "title": "Local Keyword Targeting", "description": "Research and target location-specific keywords your nearby customers actually search for.", "href": "/services/local-seo" },
-    { "title": "Local Citations & Listings", "description": "Build and maintain consistent business listings across all major local directories.", "href": "/services/local-seo" },
-    { "title": "Location-Based Content", "description": "Create locally relevant content that resonates with your community and boosts rankings.", "href": "/services/local-seo" },
-    { "title": "Review Management", "description": "Develop strategies to generate positive reviews and professionally respond to all feedback.", "href": "/services/local-seo" },
-    { "title": "Local Backlink Building", "description": "Build high-quality backlinks from relevant local sources to boost your domain authority.", "href": "/services/local-seo" }
+    { "title": "Google My Business Optimization", "description": "Complete setup and ongoing optimization of your GMB profile to maximize local visibility.", "href": "/services/local-seo", "icon": "Building2" },
+    { "title": "Local Keyword Targeting", "description": "Research and target location-specific keywords your nearby customers actually search for.", "href": "/services/local-seo", "icon": "Search" },
+    { "title": "Local Citations & Listings", "description": "Build and maintain consistent business listings across all major local directories.", "href": "/services/local-seo", "icon": "List" },
+    { "title": "Location-Based Content", "description": "Create locally relevant content that resonates with your community and boosts rankings.", "href": "/services/local-seo", "icon": "MapPin" },
+    { "title": "Review Management", "description": "Develop strategies to generate positive reviews and professionally respond to all feedback.", "href": "/services/local-seo", "icon": "Star" },
+    { "title": "Local Backlink Building", "description": "Build high-quality backlinks from relevant local sources to boost your domain authority.", "href": "/services/local-seo", "icon": "Link" }
   ],
   "qualities": [
     { "title": "Hyper-Local Focus", "description": "We specialize in local market dynamics that generic SEO agencies miss." },

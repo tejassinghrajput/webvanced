@@ -4,6 +4,36 @@ interface IllustrationProps {
   className?: string;
 }
 
+export function AppDevelopmentIllustration({ className }: IllustrationProps) {
+  return (
+    <svg viewBox="0 0 400 320" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+      <circle cx="200" cy="160" r="138" fill="#e0e7ff" opacity="0.55" />
+      {/* Laptop Base */}
+      <rect x="70" y="80" width="260" height="150" rx="8" fill="#1e1b4b" />
+      <rect x="70" y="80" width="260" height="24" rx="8" fill="#312e81" />
+      <rect x="70" y="94" width="260" height="10" fill="#312e81" />
+      {/* Browser dots */}
+      <circle cx="86" cy="92" r="4" fill="#ef4444" opacity="0.8" />
+      <circle cx="100" cy="92" r="4" fill="#f59e0b" opacity="0.8" />
+      <circle cx="114" cy="92" r="4" fill="#10b981" opacity="0.8" />
+      
+      {/* Code / Window Layout */}
+      <rect x="80" y="115" width="80" height="10" rx="3" fill="#818cf8" opacity="0.6" />
+      <rect x="80" y="135" width="130" height="6" rx="3" fill="#c7d2fe" opacity="0.4" />
+      <rect x="80" y="147" width="110" height="6" rx="3" fill="#c7d2fe" opacity="0.4" />
+      <rect x="80" y="159" width="120" height="6" rx="3" fill="#c7d2fe" opacity="0.4" />
+
+      {/* Code / Window Sidebar */}
+      <rect x="230" y="115" width="80" height="80" rx="6" fill="#4f46e5" opacity="0.8" />
+      <rect x="240" y="125" width="60" height="6" rx="3" fill="#white" opacity="0.8" />
+      <rect x="240" y="137" width="40" height="6" rx="3" fill="#white" opacity="0.5" />
+      
+      <path d="M50,230 L350,230 L360,240 L40,240 Z" fill="#6366f1" />
+      <rect x="170" y="230" width="60" height="4" fill="#a5b4fc" />
+    </svg>
+  );
+}
+
 export function ITOutsourcingIllustration({ className }: IllustrationProps) {
   return (
     <svg viewBox="0 0 400 320" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>

@@ -9,59 +9,71 @@
   "benefits": [
     {
       "title": "Cost Effective",
-      "description": "ERP gives leverage to a business helping utilize resources efficiently, reduces administration costs, and helps make decisions quickly."
+      "description": "ERP gives leverage to a business helping utilize resources efficiently, reduces administration costs, and helps make decisions quickly.",
+      "icon": "DollarSign"
     },
     {
       "title": "Security",
-      "description": "ERP software locks in sensitive information and guards data with its in-built auto-regulated protection system that keeps malicious activities at bay."
+      "description": "ERP software locks in sensitive information and guards data with its in-built auto-regulated protection system that keeps malicious activities at bay.",
+      "icon": "Shield"
     },
     {
       "title": "Productivity",
-      "description": "ERP enhances employee productivity by letting them focus on important tasks while ERP manages redundant tasks through automated processes."
+      "description": "ERP enhances employee productivity by letting them focus on important tasks while ERP manages redundant tasks through automated processes.",
+      "icon": "Zap"
     },
     {
       "title": "Flexibility",
-      "description": "ERP software is customized for every business. It enriches a brand with robustness as it becomes compatible with the changing needs of a business."
+      "description": "ERP software is customized for every business. It enriches a brand with robustness as it becomes compatible with the changing needs of a business.",
+      "icon": "Settings"
     },
     {
       "title": "Forecasting",
-      "description": "ERP gives managers forecasting powers with tools that help make better decisions through realistic estimates using accurate and consistent data."
+      "description": "ERP gives managers forecasting powers with tools that help make better decisions through realistic estimates using accurate and consistent data.",
+      "icon": "BarChart3"
     },
     {
       "title": "Integration",
-      "description": "ERP is the centralized hub that stores all relevant data of business and its various departments, integrating CRM intel for easy retrieval."
+      "description": "ERP is the centralized hub that stores all relevant data of business and its various departments, integrating CRM intel for easy retrieval.",
+      "icon": "Database"
     }
   ],
   "services": [
     {
       "title": "Employee Management",
       "description": "Tracking options and quality evaluation of employee growth. Safeguards sensitive employee details and provides valid records for business challenges.",
-      "href": "/services/erp"
+      "href": "/services/erp",
+      "icon": "Users"
     },
     {
       "title": "Accounting",
       "description": "Reduces time accountants spend on tedious manual entries. Automated software ensures accuracy, identifies smart investments and cuts irrelevant expenses.",
-      "href": "/services/erp"
+      "href": "/services/erp",
+      "icon": "Calculator"
     },
     {
       "title": "Inventory Management",
       "description": "Monitors inventory, analyzes reorder points and immediately re-stacks. Also provides placement suggestions based on customer purchasing habits.",
-      "href": "/services/erp"
+      "href": "/services/erp",
+      "icon": "Package"
     },
     {
       "title": "Browser Automation",
       "description": "Manages repetitive tasks — filling out forms, scraping data, transferring data between transactions, and generating reports.",
-      "href": "/services/erp"
+      "href": "/services/erp",
+      "icon": "Bot"
     },
     {
       "title": "CRM Integration",
       "description": "Keeps track of customer purchasing behavior and provides related products. Customers can also track their own purchases.",
-      "href": "/services/erp"
+      "href": "/services/erp",
+      "icon": "Link"
     },
     {
       "title": "Salesforce Automation",
       "description": "Automates tasks earlier carried out manually. Maintains customer relationships, increases satisfaction, and promotes sales and profits.",
-      "href": "/services/erp"
+      "href": "/services/erp",
+      "icon": "Rocket"
     }
   ],
   "qualities": [

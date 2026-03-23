@@ -9,36 +9,42 @@
   "benefits": [
     {
       "title": "Cost-Effective",
-      "description": "Getting services outsourced effectively cuts down costs and gets expert services at subsidized rates, maximizing your benefits."
+      "description": "Getting services outsourced effectively cuts down costs and gets expert services at subsidized rates, maximizing your benefits.",
+      "icon": "DollarSign"
     },
     {
       "title": "Increasing In-House Efficiency",
-      "description": "Outsourcing menial services lets your in-house team focus on main projects, increasing overall work efficiency and productivity."
+      "description": "Outsourcing menial services lets your in-house team focus on main projects, increasing overall work efficiency and productivity.",
+      "icon": "Zap"
     },
     {
       "title": "Expertise",
-      "description": "The outsourcing team has better knowledge of the domain they work on, detecting errors quickly and providing expert solutions."
+      "description": "The outsourcing team has better knowledge of the domain they work on, detecting errors quickly and providing expert solutions.",
+      "icon": "BookOpen"
     },
     {
       "title": "Promote Growth",
-      "description": "Increased productivity, quality and business values draw clients towards your services. Flexibility and scalability act as the additional charm."
+      "description": "Increased productivity, quality and business values draw clients towards your services. Flexibility and scalability act as the additional charm.",
+      "icon": "TrendingUp"
     },
     {
       "title": "Security",
-      "description": "It is better to get IT security outsourced through professionals that keep your sensitive information protected and safe."
+      "description": "It is better to get IT security outsourced through professionals that keep your sensitive information protected and safe.",
+      "icon": "Shield"
     },
     {
       "title": "Run Your Business 24/7",
-      "description": "Outsourced services across different time zones ensure your business is awake around the clock attracting customers globally."
+      "description": "Outsourced services across different time zones ensure your business is awake around the clock attracting customers globally.",
+      "icon": "Clock"
     }
   ],
   "services": [
-    { "title": "Website Development", "description": "Custom websites and web applications tailored to your business needs and user expectations.", "href": "/services/it-outsourcing" },
-    { "title": "Data Services", "description": "Data entry, processing, management and analytics to keep your business information accurate and actionable.", "href": "/services/data-services" },
-    { "title": "Technical Support", "description": "Round-the-clock technical assistance to keep your systems running smoothly.", "href": "/services/it-outsourcing" },
-    { "title": "Photo Editing", "description": "Professional image editing, retouching and enhancement for your digital and print assets.", "href": "/services/it-outsourcing" },
-    { "title": "Testing Services", "description": "Comprehensive software testing to ensure bug-free, optimized applications for your users.", "href": "/services/testing" },
-    { "title": "Mobile App Development", "description": "Native and cross-platform mobile apps that bring your business closer to your customers.", "href": "/services/mobile-app" }
+    { "title": "Website Development", "description": "Custom websites and web applications tailored to your business needs and user expectations.", "href": "/services/it-outsourcing", "icon": "Globe" },
+    { "title": "Data Services", "description": "Data entry, processing, management and analytics to keep your business information accurate and actionable.", "href": "/services/data-services", "icon": "Database" },
+    { "title": "Technical Support", "description": "Round-the-clock technical assistance to keep your systems running smoothly.", "href": "/services/it-outsourcing", "icon": "Headphones" },
+    { "title": "Photo Editing", "description": "Professional image editing, retouching and enhancement for your digital and print assets.", "href": "/services/it-outsourcing", "icon": "Image" },
+    { "title": "Testing Services", "description": "Comprehensive software testing to ensure bug-free, optimized applications for your users.", "href": "/services/testing", "icon": "BugPlay" },
+    { "title": "Mobile App Development", "description": "Native and cross-platform mobile apps that bring your business closer to your customers.", "href": "/services/mobile-app", "icon": "Smartphone" }
   ],
   "qualities": [
     { "title": "Focus", "description": "Our services help you focus better on more important tasks." },

@@ -9,7 +9,7 @@ export default function LocalSEOPage() {
     <ServicePageTemplate
       data={data as ServicePageData}
       icon={<MapPin className="h-5 w-5" />}
-      illustration={<LocalSEOIllustration className="w-full h-auto max-h-80" />}
+      illustration={<LocalSEOIllustration className="w-full h-auto" />}
       accentColor="teal"
     />
   );

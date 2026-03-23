@@ -62,7 +62,7 @@ export function ContactInfo() {
       <motion.div
         initial={{ opacity: 0, y: 14 }} whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }} transition={{ duration: 0.4, delay: 0.1 }}
-        className="grid grid-cols-2 gap-px rounded-2xl border border-gray-200 bg-gray-200 overflow-hidden shadow-sm"
+        className="grid grid-cols-1 sm:grid-cols-2 gap-px rounded-2xl border border-gray-200 bg-gray-200 overflow-hidden shadow-sm"
       >
         {DETAILS.map((d) => (
           <div key={d.label} className="flex items-center gap-3 bg-white px-5 py-4">
@@ -75,9 +75,9 @@ export function ContactInfo() {
             </div>
             <div className="min-w-0">
               {d.href ? (
-                <a href={d.href} className="text-xs font-semibold text-gray-800 hover:text-indigo-600 transition-colors truncate block">{d.value}</a>
+                <a href={d.href} className="text-xs font-semibold text-gray-800 hover:text-indigo-600 transition-colors break-all">{d.value}</a>
               ) : (
-                <p className="text-xs font-semibold text-gray-800 truncate">{d.value}</p>
+                <p className="text-xs font-semibold text-gray-800 break-all">{d.value}</p>
               )}
             </div>
           </div>

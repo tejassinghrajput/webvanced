@@ -3,6 +3,7 @@ import { motion } from "motion/react";
 import { Send, CheckCircle2, AlertCircle, Loader2, Zap, Lock, Target, BadgeCheck } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { submitContactLead } from "@/lib/leadService";
+import { AnimatedCheckmark } from "@/components/ui/AnimatedCheckmark";
 
 interface FormState {
   name: string;
@@ -32,25 +33,32 @@ interface FieldProps {
 }
 
 function Field({ id, label, type, placeholder, value, onChange, error, required }: FieldProps) {
+  const autoComplete = id === "name" ? "name" : id === "email" ? "email" : id === "phone" ? "tel" : id === "company" ? "organization" : "on";
+
   return (
-    <div>
-      <label htmlFor={id} className="block text-xs font-bold uppercase tracking-widest text-gray-500 mb-2">
-        {label}
-      </label>
+    <div className="relative z-0 w-full group">
       <input
         id={id}
         name={id}
         type={type}
-        placeholder={placeholder}
         value={value}
         onChange={onChange}
         required={required}
+        autoComplete={autoComplete}
+        placeholder=" "
         className={cn(
-          "block w-full rounded-xl border bg-gray-50 py-3.5 px-4 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all",
-          error ? "border-red-300 bg-red-50 focus:ring-red-400" : "border-gray-200"
+          "block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white/20 appearance-none focus:outline-none focus:ring-0 focus:border-white peer",
+          "[&:-webkit-autofill]:bg-transparent [&:-webkit-autofill]:[-webkit-text-fill-color:white] [&:-webkit-autofill]:[transition:background-color_5000s_ease-in-out_0s]",
+          error ? "border-red-400 focus:border-red-400" : ""
         )}
       />
-      {error && <p className="mt-1.5 text-xs text-red-600">{error}</p>}
+      <label 
+        htmlFor={id} 
+        className="peer-focus:font-medium absolute text-sm text-white/60 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 tracking-wide uppercase"
+      >
+        {placeholder}
+      </label>
+      {error && <p className="mt-1 text-[11px] text-red-400 absolute">{error}</p>}
     </div>
   );
 }
@@ -77,10 +85,10 @@ const TRUST_POINTS = [
 interface ServiceLeadFormProps {
   /** Service name pre-filled into the service field (e.g. "SEO SERVICES"). */
   serviceName: string;
+  themeColorClass?: string;
 }
 
-/** Full lead generation section: trust copy on left, controlled form on right. */
-export function ServiceLeadFormSection({ serviceName }: ServiceLeadFormProps) {
+export function ServiceLeadFormCard({ serviceName, themeColorClass }: ServiceLeadFormProps) {
   const [form, setForm] = useState<FormState>({ name: "", email: "", phone: "", company: "", message: "" });
   const [errors, setErrors] = useState<FormErrors>({});
   const [status, setStatus] = useState<SubmitStatus>("idle");
@@ -108,24 +116,115 @@ export function ServiceLeadFormSection({ serviceName }: ServiceLeadFormProps) {
   }
 
   return (
-    <section className="bg-gray-50 py-24 md:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-12 xl:px-20">
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+    <div className="bg-black/25 backdrop-blur-2xl rounded-3xl p-5 md:p-6 lg:p-7 border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.3)] relative overflow-hidden ring-1 ring-white/5">
+      {/* Glossy inner glow */}
+      <div className="absolute inset-0 top-0 left-0 w-full h-[150px] opacity-[0.06]" style={{ background: 'linear-gradient(180deg, rgba(255,255,255,1) 0%, transparent 100%)' }} />
+      <div className="relative z-10">
+      {status === "success" ? (
+        <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} className="flex flex-col items-center justify-center text-center py-8">
+          <div className="mb-5">
+            <AnimatedCheckmark className="w-24 h-24" colorClass={themeColorClass || "text-green-500"} />
+          </div>
+          <h3 className="text-2xl font-extrabold text-white mb-2">Message Received!</h3>
+          <p className="text-sm text-white/80 max-w-xs mx-auto">
+            Our team will be in touch within 24 hours regarding your {serviceName.toLowerCase()} needs.
+          </p>
+        </motion.div>
+      ) : (
+        <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-5 mt-1">
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-5">
+            <Field id="name" label="Name" type="text" placeholder="Name *" value={form.name} onChange={handleChange} error={errors.name} required />
+            <Field id="email" label="Business Email" type="email" placeholder="Business Email *" value={form.email} onChange={handleChange} error={errors.email} required />
+            <Field id="phone" label="Contact No." type="tel" placeholder="Contact No." value={form.phone} onChange={handleChange} />
+            <Field id="company" label="Company Name" type="text" placeholder="Company Name" value={form.company} onChange={handleChange} />
+          </div>
+          
+          <div className="relative z-0 w-full group mt-1">
+            <input
+              id="serviceName"
+              type="text"
+              value={serviceName.toUpperCase()}
+              disabled
+              placeholder=" "
+              className="block py-2 px-0 w-full text-sm font-semibold text-white/80 bg-transparent border-0 border-b-2 border-white/20 appearance-none focus:outline-none focus:ring-0 cursor-not-allowed peer"
+            />
+            <label htmlFor="serviceName" className="absolute text-[10px] sm:text-xs text-white/50 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] tracking-widest uppercase font-bold">
+              Service of Interest
+            </label>
+          </div>
 
-          {/* Left: trust copy */}
-          <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-            <span className="text-xs font-bold uppercase tracking-widest text-indigo-600">Free Consultation</span>
-            <h2 className="mt-3 text-3xl md:text-4xl font-extrabold tracking-tight text-gray-950 mb-5">
+          <div className="relative z-0 w-full group mt-1">
+            <textarea
+              id="message"
+              name="message"
+              rows={1}
+              value={form.message}
+              onChange={handleChange}
+              placeholder=" "
+              className={cn(
+                "block py-2 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white/20 appearance-none focus:outline-none focus:ring-0 focus:border-white peer resize-none overflow-hidden",
+                "[&:-webkit-autofill]:bg-transparent [&:-webkit-autofill]:[-webkit-text-fill-color:white] [&:-webkit-autofill]:[transition:background-color_5000s_ease-in-out_0s]",
+                errors.message ? "border-red-400 focus:border-red-400" : ""
+              )}
+            />
+            <label 
+              htmlFor="message" 
+              className="peer-focus:font-medium absolute text-sm text-white/60 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 tracking-wide uppercase"
+            >
+              How Can We Help? *
+            </label>
+            {errors.message && <p className="mt-1 text-[11px] text-red-400 absolute">{errors.message}</p>}
+          </div>
+
+          {status === "error" && (
+            <div className="flex items-center gap-2 rounded-lg bg-red-500/10 p-3 text-sm text-red-400 border border-red-500/20 mt-2">
+              <AlertCircle className="h-4 w-4 shrink-0" />
+              Something went wrong. Please try again.
+            </div>
+          )}
+
+          <div className="pt-2 relative">
+            <p className="text-[11px] text-white/50 mb-3 font-medium text-center">Let's craft our relationship over freshly brewed Coffee!</p>
+            <button
+              type="submit"
+              disabled={status === "loading"}
+              className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-white text-gray-950 px-8 py-3 text-sm font-bold tracking-wide hover:bg-gray-100 transition-all shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:shadow-[0_0_25px_rgba(255,255,255,0.3)] disabled:opacity-70 disabled:cursor-not-allowed"
+            >
+              {status === "loading" ? (
+                <Loader2 className="h-4 w-4 animate-spin" />
+              ) : (
+                <>SUBMIT</>
+              )}
+            </button>
+          </div>
+        </form>
+      )}
+      </div>
+    </div>
+  );
+}
+
+/** Full lead generation section: trust copy on left, controlled form on right. */
+export function ServiceLeadFormSection({ serviceName }: ServiceLeadFormProps) {
+  return (
+    <section className="bg-white py-16 md:py-24 border-t border-gray-100" id="lead-form">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          
+          {/* Left: Trust copy */}
+          <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
+            <span className="text-sm font-bold uppercase tracking-widest text-indigo-600">Free Consultation</span>
+            <h2 className="mt-3 text-3xl md:text-4xl font-extrabold tracking-tight text-gray-950 mb-4">
               Let's Talk About Your Project
             </h2>
-            <p className="text-gray-600 leading-relaxed mb-10">
-              Fill in the form and our specialists will come back to you within 24 hours with a tailored plan.
-              No fluff. Just data-driven strategy built for your goals.
+            <p className="text-base text-gray-600 leading-relaxed mb-8">
+              Get a tailored <span className="font-semibold text-gray-900">{serviceName}</span> strategy within 24 hours. No fluff. Just a data-driven plan built for your goals.
             </p>
-            <ul className="space-y-5">
+            <ul className="space-y-4">
               {TRUST_POINTS.map(({ icon: Icon, label }) => (
                 <li key={label} className="flex items-center gap-3 text-sm font-medium text-gray-700">
-                  <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-indigo-100 shrink-0">
+                  <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-50 shrink-0">
                     <Icon className="h-4 w-4 text-indigo-600" />
                   </span>
                   {label}
@@ -134,79 +233,13 @@ export function ServiceLeadFormSection({ serviceName }: ServiceLeadFormProps) {
             </ul>
           </motion.div>
 
-          {/* Right: form */}
+          {/* Right: Form */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
+            initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="bg-white rounded-3xl p-8 border border-gray-100 shadow-xl shadow-gray-200/40"
           >
-            {status === "success" ? (
-              <div className="flex flex-col items-center justify-center text-center py-12">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-green-100 mb-5">
-                  <CheckCircle2 className="h-8 w-8 text-green-600" />
-                </div>
-                <h3 className="text-xl font-extrabold text-gray-950 mb-3">Message Received!</h3>
-                <p className="text-sm text-gray-500 max-w-xs">
-                  Thanks for reaching out about{" "}
-                  <span className="font-semibold text-indigo-600">{serviceName}</span>. Our team will be
-                  in touch within 24 hours.
-                </p>
-              </div>
-            ) : (
-              <>
-                <h3 className="text-xl font-extrabold text-gray-950 mb-6">Get a Free Consultation</h3>
-                <form onSubmit={handleSubmit} noValidate className="space-y-5">
-                  <div className="grid sm:grid-cols-2 gap-5">
-                    <Field id="name" label="Full Name *" type="text" placeholder="Jane Smith" value={form.name} onChange={handleChange} error={errors.name} required />
-                    <Field id="email" label="Business Email *" type="email" placeholder="jane@company.com" value={form.email} onChange={handleChange} error={errors.email} required />
-                    <Field id="phone" label="Phone" type="tel" placeholder="+1 (555) 000-0000" value={form.phone} onChange={handleChange} />
-                    <Field id="company" label="Company" type="text" placeholder="Acme Inc." value={form.company} onChange={handleChange} />
-                  </div>
-                  <div>
-                    <label className="block text-xs font-bold uppercase tracking-widest text-gray-500 mb-2">Service of Interest</label>
-                    <div className="block w-full rounded-xl border border-indigo-100 bg-indigo-50 py-3.5 px-4 text-sm font-semibold text-indigo-600">
-                      {serviceName}
-                    </div>
-                  </div>
-                  <div>
-                    <label htmlFor="message" className="block text-xs font-bold uppercase tracking-widest text-gray-500 mb-2">
-                      How Can We Help? *
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows={4}
-                      placeholder="Tell us about your project, goals, and timeline..."
-                      value={form.message}
-                      onChange={handleChange}
-                      className={cn(
-                        "block w-full rounded-xl border bg-gray-50 py-3.5 px-4 text-sm text-gray-900 placeholder-gray-400 resize-none focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all",
-                        errors.message ? "border-red-300 bg-red-50" : "border-gray-200"
-                      )}
-                    />
-                    {errors.message && <p className="mt-1.5 text-xs text-red-600">{errors.message}</p>}
-                  </div>
-                  {status === "error" && (
-                    <div className="flex items-center gap-2 rounded-xl bg-red-50 border border-red-100 px-4 py-3 text-sm text-red-700">
-                      <AlertCircle className="h-4 w-4 shrink-0" />
-                      Something went wrong. Please try again or email us directly.
-                    </div>
-                  )}
-                  <motion.button
-                    type="submit"
-                    disabled={status === "loading"}
-                    whileHover={{ scale: status === "loading" ? 1 : 1.02 }}
-                    whileTap={{ scale: status === "loading" ? 1 : 0.98 }}
-                    className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-indigo-600 px-8 py-4 text-sm font-bold text-white uppercase tracking-widest hover:bg-indigo-500 disabled:opacity-60 disabled:cursor-not-allowed transition-all shadow-lg shadow-indigo-200"
-                  >
-                    {status === "loading"
-                      ? <><Loader2 className="h-4 w-4 animate-spin" /> Sending...</>
-                      : <><Send className="h-4 w-4" /> Send Message</>}
-                  </motion.button>
-                </form>
-              </>
-            )}
+            <ServiceLeadFormCard serviceName={serviceName} />
           </motion.div>
         </div>
       </div>

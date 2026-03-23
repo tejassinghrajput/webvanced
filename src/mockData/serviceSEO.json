@@ -9,59 +9,71 @@
   "benefits": [
     {
       "title": "Higher Rank on Google",
-      "description": "Optimizing your business with SEO ensures your product is easily found by search engines through regular and organic search, building authenticity."
+      "description": "Optimizing your business with SEO ensures your product is easily found by search engines through regular and organic search, building authenticity.",
+      "icon": "TrendingUp"
     },
     {
       "title": "Drives Organic Traffic",
-      "description": "SEO helps you drive organic (unpaid) traffic by publishing relevant and quality content on your website."
+      "description": "SEO helps you drive organic (unpaid) traffic by publishing relevant and quality content on your website.",
+      "icon": "Globe"
     },
     {
       "title": "Cost-Effective",
-      "description": "SEO is the most cost-effective way of online marketing focused on improving quality traffic. Especially important for startups and small businesses."
+      "description": "SEO is the most cost-effective way of online marketing focused on improving quality traffic. Especially important for startups and small businesses.",
+      "icon": "DollarSign"
     },
     {
       "title": "Targets Quality Traffic",
-      "description": "SEO helps target only interested and relevant customers. You don't have to persuade them — they are already interested in your service."
+      "description": "SEO helps target only interested and relevant customers. You don't have to persuade them — they are already interested in your service.",
+      "icon": "Target"
     },
     {
       "title": "Drives Offline Sales",
-      "description": "SEO builds your credibility online which makes clients visit your physical store, boosting your offline sales too."
+      "description": "SEO builds your credibility online which makes clients visit your physical store, boosting your offline sales too.",
+      "icon": "Store"
     },
     {
       "title": "Higher Conversion Rates",
-      "description": "The traffic SEO drives has the highest conversion rate. It provides 24/7 promotion that your human salesperson can't ensure."
+      "description": "The traffic SEO drives has the highest conversion rate. It provides 24/7 promotion that your human salesperson can't ensure.",
+      "icon": "BarChart3"
     }
   ],
   "services": [
     {
       "title": "Content Marketing",
       "description": "SEO-charged content drives the potential audience to your website, enhancing visibility and search rankings on Google.",
-      "href": "/services/seo"
+      "href": "/services/seo",
+      "icon": "FileText"
     },
     {
       "title": "On Page & Content Optimization",
       "description": "On-page optimization through site structures, site speed, and content optimization.",
-      "href": "/services/seo"
+      "href": "/services/seo",
+      "icon": "Settings"
     },
     {
       "title": "Targeted Local SEO",
       "description": "Stay targeted on the local front so you don't miss out on nearby searches. Relevant information drives local clients to you.",
-      "href": "/services/local-seo"
+      "href": "/services/local-seo",
+      "icon": "MapPin"
     },
     {
       "title": "Relevant Backlinks",
       "description": "We only publish relevant content on your site. We don't do black-hat SEO, manipulate or spam.",
-      "href": "/services/seo"
+      "href": "/services/seo",
+      "icon": "Link"
     },
     {
       "title": "Off-Page SEO",
       "description": "Getting ranked on search engines requires off-page SEO. It brings in hordes of traffic, eventually converting them into clients.",
-      "href": "/services/seo"
+      "href": "/services/seo",
+      "icon": "Globe"
     },
     {
       "title": "Better Site Structure",
       "description": "A good site structure builds performance while attracting traffic. Your website needs to be SEO-friendly with relevant information.",
-      "href": "/services/seo"
+      "href": "/services/seo",
+      "icon": "LayoutGrid"
     }
   ],
   "qualities": [

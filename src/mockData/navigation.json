@@ -3,7 +3,7 @@
   "links": [
     { "label": "How We Work", "href": "/how-we-work" },
     { "label": "Industries", "href": "/industries" },
-    { "label": "About", "href": "/about" },
+    { "label": "About Us", "href": "/about" },
     { "label": "FAQ", "href": "/faq" },
     { "label": "Contact", "href": "/contact" }
   ],
@@ -24,9 +24,10 @@
         ]
       },
       {
-        "title": "IT Outsourcing",
+        "title": "IT Outsourcing & Dev",
         "items": [
           { "label": "IT Outsourcing Overview", "href": "/services/it-outsourcing", "description": "End-to-end IT solutions for your business" },
+          { "label": "Web Development", "href": "/services/web-development", "description": "Responsive, high-performance web applications" },
           { "label": "Mobile App Development", "href": "/services/mobile-app", "description": "Android, iOS and React Native apps" },
           { "label": "Testing Services", "href": "/services/testing", "description": "Bug-free, optimized software delivery" },
           { "label": "Data Services", "href": "/services/data-services", "description": "Data entry, processing and analytics" },

@@ -9,7 +9,7 @@ export default function ITOutsourcingPage() {
     <ServicePageTemplate
       data={data as ServicePageData}
       icon={<Server className="h-5 w-5" />}
-      illustration={<ITOutsourcingIllustration className="w-full h-auto max-h-80" />}
+      illustration={<ITOutsourcingIllustration className="w-full h-auto" />}
       accentColor="sky"
     />
   );

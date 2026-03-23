@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { Loader2, CheckCircle2, AlertCircle, Send } from "lucide-react";
+import { Loader2, AlertCircle, Send } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { subscribeNewsletter } from "@/lib/leadService";
+import { AnimatedCheckmark } from "@/components/ui/AnimatedCheckmark";
 
 type Status = "idle" | "loading" | "success" | "error";
 
@@ -30,9 +31,9 @@ export function NewsletterSignup() {
 
   if (status === "success") {
     return (
-      <div className="flex items-center gap-2 text-sm text-emerald-400">
-        <CheckCircle2 className="h-4 w-4 shrink-0" />
-        <span>{message}</span>
+      <div className="flex items-center gap-3 bg-white/5 rounded-xl px-4 py-3 border border-emerald-500/20 text-sm text-emerald-400">
+        <AnimatedCheckmark className="w-6 h-6 shrink-0" colorClass="text-emerald-500" />
+        <span className="font-medium">{message}</span>
       </div>
     );
   }

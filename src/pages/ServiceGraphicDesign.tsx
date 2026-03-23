@@ -9,7 +9,7 @@ export default function GraphicDesignPage() {
     <ServicePageTemplate
       data={data as ServicePageData}
       icon={<Palette className="h-5 w-5" />}
-      illustration={<GraphicDesignIllustration className="w-full h-auto max-h-80" />}
+      illustration={<GraphicDesignIllustration className="w-full h-auto" />}
       accentColor="fuchsia"
     />
   );

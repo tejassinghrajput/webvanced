@@ -11,9 +11,9 @@ export const CONTACT = {
     display: "+91 76520 50611",
   },
   whatsapp: {
-    number: "+91762050611",
-    href: "https://wa.me/91762050611",
-    display: "+91 762050611",
+    number: "+917652050611",
+    href: "https://wa.me/917652050611",
+    display: "+91 7652050611",
   },
   location: {
     address: "Caddie Commercial Tower, Novotel Pullman, Hospitality District, New Delhi, Delhi, 110037, IND",

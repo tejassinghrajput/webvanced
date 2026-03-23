@@ -69,7 +69,7 @@ export const BackgroundBeamsWithCollision = ({
     <div
       ref={parentRef}
       className={cn(
-        "relative w-full",
+        "relative w-full overflow-hidden",
         className
       )}
     >

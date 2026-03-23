@@ -14,8 +14,8 @@ export default function AboutPage() {
         </div>
       </BackgroundBeamsWithCollision>
       <AboutMission />
-      <AboutPrinciples />
       <AboutTeam />
+      <AboutPrinciples />
     </PageLayout>
   );
 }

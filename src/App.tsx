@@ -27,6 +27,7 @@ const ServiceMobileApp = lazy(() => import("./pages/ServiceMobileApp"));
 const ServiceTesting = lazy(() => import("./pages/ServiceTesting"));
 const ServiceDataServices = lazy(() => import("./pages/ServiceDataServices"));
 const ServiceERP = lazy(() => import("./pages/ServiceERP"));
+const ServiceWebDevelopment = lazy(() => import("./pages/ServiceWebDevelopment"));
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -67,6 +68,7 @@ export default function App() {
             <Route path="/services/testing" element={<ServiceTesting />} />
             <Route path="/services/data-services" element={<ServiceDataServices />} />
             <Route path="/services/erp" element={<ServiceERP />} />
+            <Route path="/services/web-development" element={<ServiceWebDevelopment />} />
           </Routes>
         </Suspense>
         <Footer />

@@ -9,7 +9,7 @@ export default function ContentWritingPage() {
     <ServicePageTemplate
       data={data as ServicePageData}
       icon={<PenLine className="h-5 w-5" />}
-      illustration={<ContentWritingIllustration className="w-full h-auto max-h-80" />}
+      illustration={<ContentWritingIllustration className="w-full h-auto" />}
       accentColor="violet"
     />
   );

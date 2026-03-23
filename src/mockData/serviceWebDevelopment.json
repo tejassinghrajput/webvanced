@@ -1,0 +1,64 @@
+{
+  "hero": {
+    "badge": "WEB DEVELOPMENT",
+    "stat": "A high-performance website is the core engine of modern digital growth.",
+    "title": "Build Fast, Scalable, & Stunning Websites",
+    "description": "We engineer responsive, conversion-focused websites that look incredible and perform flawlessly. From robust e-commerce platforms to scalable SaaS applications, we deliver digital solutions that drive real business results."
+  },
+  "intro": "Your website is your ultimate digital storefront. We go beyond basic templates to provide custom web development solutions that prioritize user experience, speed, and clean code architecture.",
+  "benefits": [
+    {
+      "title": "Lightning Fast",
+      "description": "Optimized performance and load speeds that keep your audience engaged and boost your SEO rankings.",
+      "icon": "Zap"
+    },
+    {
+      "title": "Fully Responsive",
+      "description": "Flawless experiences across all devices—mobile, tablet, and desktop.",
+      "icon": "Smartphone"
+    },
+    {
+      "title": "Scalable Architecture",
+      "description": "Built on modern frameworks like React and Next.js, allowing your platform to grow seamlessly.",
+      "icon": "Layers"
+    },
+    {
+      "title": "High Conversion Focus",
+      "description": "UX/UI designed meticulously around user journeys to turn visitors into paying customers.",
+      "icon": "TrendingUp"
+    },
+    {
+      "title": "Secure & Reliable",
+      "description": "Enterprise-grade security standards and best practices to keep your data and users safe.",
+      "icon": "Shield"
+    },
+    {
+      "title": "Seamless Integrations",
+      "description": "Connect effortlessly to your favorite CRMs, payment gateways, and marketing tools.",
+      "icon": "Link"
+    }
+  ],
+  "services": [
+    { "title": "Corporate Websites", "description": "Professional, fast-loading company sites that establish authority and trust.", "href": "/services/web-development", "icon": "Building" },
+    { "title": "E-Commerce Stores", "description": "Custom online stores built to maximize sales, manage inventory, and provide secure checkouts.", "href": "/services/web-development", "icon": "ShoppingCart" },
+    { "title": "SaaS Applications", "description": "Robust, scalable software-as-a-service platforms engineered with modern tech stacks.", "href": "/services/web-development", "icon": "Cloud" },
+    { "title": "Landing Pages", "description": "High-converting, hyper-focused pages designed for specific marketing campaigns.", "href": "/services/web-development", "icon": "LayoutTemplate" },
+    { "title": "CMS Integration", "description": "Easy-to-use content management systems so you can update your site without coding.", "href": "/services/web-development", "icon": "Database" },
+    { "title": "Website Maintenance", "description": "Ongoing support, security updates, and performance tuning to keep your site fresh.", "href": "/services/web-development", "icon": "Wrench" }
+  ],
+  "qualities": [
+    { "title": "Modern Tech", "description": "We strictly use modern frameworks for top-tier performance." },
+    { "title": "Clean Code", "description": "Maintainable, well-documented codebases you actually own." },
+    { "title": "Agile Delivery", "description": "Iterative, transparent sprints so you see progress continuously." },
+    { "title": "Analytics Ready", "description": "Built-in tracking capabilities to monitor every interaction." },
+    { "title": "UX First", "description": "Design thinking applied to every single line of code." },
+    { "title": "Dedicated Support", "description": "A technical team that stays with you even after launch." }
+  ],
+  "process": [
+    "Discovery & Strategy",
+    "UX/UI Design",
+    "Development & Integration",
+    "Testing & Launch"
+  ],
+  "whyUs": "In a world of bloated templates, we engineer digital experiences from the ground up to guarantee optimal performance, robust security, and an interface your users will love."
+}

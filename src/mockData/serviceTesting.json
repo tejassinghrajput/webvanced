@@ -9,59 +9,71 @@
   "benefits": [
     {
       "title": "Efficient",
-      "description": "A faulty software can bring down an entire business. Dedicated testers are more efficient, faster and accurate than any in-house approach."
+      "description": "A faulty software can bring down an entire business. Dedicated testers are more efficient, faster and accurate than any in-house approach.",
+      "icon": "Zap"
     },
     {
       "title": "Cost Effective",
-      "description": "Testing services require professional tools that are highly expensive. Outsourcing saves hefty monetary loss and avoids extra expenses of an in-house testing team."
+      "description": "Testing services require professional tools that are highly expensive. Outsourcing saves hefty monetary loss and avoids extra expenses of an in-house testing team.",
+      "icon": "DollarSign"
     },
     {
       "title": "Saves Time",
-      "description": "The job done by a professional always gives more accuracy in less time, helping you attend to your targeted goals."
+      "description": "The job done by a professional always gives more accuracy in less time, helping you attend to your targeted goals.",
+      "icon": "Clock"
     },
     {
       "title": "Helps Focus",
-      "description": "With testing professionals handling QA, your employees can attend to more important tasks with improved productivity."
+      "description": "With testing professionals handling QA, your employees can attend to more important tasks with improved productivity.",
+      "icon": "Target"
     },
     {
       "title": "More Security",
-      "description": "Outsourcing to an ISO certified company assures that confidential and intellectual property rights remain disclosed only to authorized parties."
+      "description": "Outsourcing to an ISO certified company assures that confidential and intellectual property rights remain disclosed only to authorized parties.",
+      "icon": "Shield"
     },
     {
       "title": "Professional Assistance",
-      "description": "Having software tested by a dedicated professional takes less time and helps integrate solutions with a higher accuracy level."
+      "description": "Having software tested by a dedicated professional takes less time and helps integrate solutions with a higher accuracy level.",
+      "icon": "Award"
     }
   ],
   "services": [
     {
       "title": "Mobile App Testing",
       "description": "Our testing professionals monitor, troubleshoot, and test content of your mobile device including validation and thorough verification.",
-      "href": "/services/testing"
+      "href": "/services/testing",
+      "icon": "Smartphone"
     },
     {
       "title": "QA Testing",
       "description": "Continuous monitoring with QA testing standardizes the products and services offered to customers in an effective and efficient manner.",
-      "href": "/services/testing"
+      "href": "/services/testing",
+      "icon": "ClipboardCheck"
     },
     {
       "title": "Automation Testing",
       "description": "Special software tools that manage test execution compared with expected outcomes without the interference of a testing engineer.",
-      "href": "/services/testing"
+      "href": "/services/testing",
+      "icon": "Bot"
     },
     {
       "title": "Selenium Automation Testing",
       "description": "Quality, integration, reliability and accuracy of web applications. Independent of programming language and platform.",
-      "href": "/services/testing"
+      "href": "/services/testing",
+      "icon": "Code"
     },
     {
       "title": "Accessibility Testing",
       "description": "Detects possible accessibility-related issues and provides compliance solutions including page-by-page analysis and regression testing.",
-      "href": "/services/testing"
+      "href": "/services/testing",
+      "icon": "Eye"
     },
     {
       "title": "Performance Testing",
       "description": "Determines speed, scalability and stability of an application even with simultaneous user loads.",
-      "href": "/services/testing"
+      "href": "/services/testing",
+      "icon": "Zap"
     }
   ],
   "qualities": [

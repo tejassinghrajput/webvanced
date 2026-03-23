@@ -9,7 +9,7 @@ export default function MobileAppPage() {
     <ServicePageTemplate
       data={data as ServicePageData}
       icon={<Smartphone className="h-5 w-5" />}
-      illustration={<MobileAppIllustration className="w-full h-auto max-h-80" />}
+      illustration={<MobileAppIllustration className="w-full h-auto" />}
       accentColor="cyan"
     />
   );

@@ -9,7 +9,7 @@ export default function DataServicesPage() {
     <ServicePageTemplate
       data={data as ServicePageData}
       icon={<Database className="h-5 w-5" />}
-      illustration={<DataServicesIllustration className="w-full h-auto max-h-80" />}
+      illustration={<DataServicesIllustration className="w-full h-auto" />}
       accentColor="rose"
     />
   );

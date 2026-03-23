@@ -9,59 +9,71 @@
   "benefits": [
     {
       "title": "Global Reach",
-      "description": "Even small businesses and start-ups get the universe's attention. Breaking geographical barriers helps your business grow and enhance overall brand value."
+      "description": "Even small businesses and start-ups get the universe's attention. Breaking geographical barriers helps your business grow and enhance overall brand value.",
+      "icon": "Globe"
     },
     {
       "title": "Measurable Results",
-      "description": "Digital Marketing empowers your company with statistics your boss demands, turning your CAN'TS into CANS with reliable optimization."
+      "description": "Digital Marketing empowers your company with statistics your boss demands, turning your CAN'TS into CANS with reliable optimization.",
+      "icon": "BarChart3"
     },
     {
       "title": "Reach Targeted Customers",
-      "description": "Creative designs assisted by smart advertising help magnify your brand by targeting specific audiences who are interested in your services."
+      "description": "Creative designs assisted by smart advertising help magnify your brand by targeting specific audiences who are interested in your services.",
+      "icon": "Target"
     },
     {
       "title": "Cost-Effective",
-      "description": "Every businessman wants the highest rate of return from the lowest investment. Digital Marketing helps you get sustainable returns."
+      "description": "Every businessman wants the highest rate of return from the lowest investment. Digital Marketing helps you get sustainable returns.",
+      "icon": "DollarSign"
     },
     {
       "title": "Boosts Sales",
-      "description": "Getting the right audience increases traffic on your website and magnifies your sales, retaining and urging customers to buy your service."
+      "description": "Getting the right audience increases traffic on your website and magnifies your sales, retaining and urging customers to buy your service.",
+      "icon": "TrendingUp"
     },
     {
       "title": "Increases Brand Reliability",
-      "description": "Digital marketing on social media delivers immediate customer feedback that positively reflects on your brand's authenticity."
+      "description": "Digital marketing on social media delivers immediate customer feedback that positively reflects on your brand's authenticity.",
+      "icon": "Star"
     }
   ],
   "services": [
     {
       "title": "SEO",
       "description": "Our marketing executives help you drive organic traffic to your website. Implementing the correct SEO strategy gets promising customers helping you grow your business.",
-      "href": "/services/seo"
+      "href": "/services/seo",
+      "icon": "Search"
     },
     {
       "title": "Pay-Per-Click (PPC)",
       "description": "PPC helps your business drive traffic through comprehensive online advertising, paid search, Google ads and online ads to promote your business.",
-      "href": "/services/ppc"
+      "href": "/services/ppc",
+      "icon": "MousePointerClick"
     },
     {
       "title": "Social Media Management",
       "description": "We are up-to-date with the latest trends giving you the edge your business needs across Facebook, Instagram, Twitter, LinkedIn, and more.",
-      "href": "/services/social-media"
+      "href": "/services/social-media",
+      "icon": "Share2"
     },
     {
       "title": "Content Writing",
       "description": "Content marketing services render authenticity to your business, attracting and retaining your audience on social media, website, brochures, and ads.",
-      "href": "/services/content-writing"
+      "href": "/services/content-writing",
+      "icon": "PenLine"
     },
     {
       "title": "Graphic Designing",
       "description": "Our graphic designers create banners, ads, and designs that grab the attention of your clients, because your brain reacts better to pictures.",
-      "href": "/services/graphic-design"
+      "href": "/services/graphic-design",
+      "icon": "Palette"
     },
     {
       "title": "Local Search Optimization",
       "description": "Our originality and innovative design ideas ensure the creation of a stunning online presence ensuring you never miss a local search.",
-      "href": "/services/local-seo"
+      "href": "/services/local-seo",
+      "icon": "MapPin"
     }
   ],
   "qualities": [

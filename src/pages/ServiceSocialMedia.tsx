@@ -9,7 +9,7 @@ export default function SocialMediaPage() {
     <ServicePageTemplate
       data={data as ServicePageData}
       icon={<Share2 className="h-5 w-5" />}
-      illustration={<SocialMediaIllustration className="w-full h-auto max-h-80" />}
+      illustration={<SocialMediaIllustration className="w-full h-auto" />}
       accentColor="pink"
     />
   );

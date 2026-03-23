@@ -9,7 +9,7 @@ export default function PPCPage() {
     <ServicePageTemplate
       data={data as ServicePageData}
       icon={<MousePointerClick className="h-5 w-5" />}
-      illustration={<PPCIllustration className="w-full h-auto max-h-80" />}
+      illustration={<PPCIllustration className="w-full h-auto" />}
       accentColor="orange"
     />
   );

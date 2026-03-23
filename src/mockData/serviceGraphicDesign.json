@@ -9,36 +9,42 @@
   "benefits": [
     {
       "title": "Instant Communication",
-      "description": "A great design communicates your brand message in seconds — faster than any text can."
+      "description": "A great design communicates your brand message in seconds — faster than any text can.",
+      "icon": "Zap"
     },
     {
       "title": "Builds Brand Identity",
-      "description": "Consistent, professional design builds a recognizable brand identity that customers trust and remember."
+      "description": "Consistent, professional design builds a recognizable brand identity that customers trust and remember.",
+      "icon": "Fingerprint"
     },
     {
       "title": "Increases Conversions",
-      "description": "Visually appealing ads, landing pages and social posts lead to significantly higher click and conversion rates."
+      "description": "Visually appealing ads, landing pages and social posts lead to significantly higher click and conversion rates.",
+      "icon": "TrendingUp"
     },
     {
       "title": "Competitive Advantage",
-      "description": "Outstanding design makes you stand out from competitors and positions your brand as premium and professional."
+      "description": "Outstanding design makes you stand out from competitors and positions your brand as premium and professional.",
+      "icon": "Trophy"
     },
     {
       "title": "Versatile Usage",
-      "description": "Great design assets can be repurposed across digital and print channels, maximizing your investment."
+      "description": "Great design assets can be repurposed across digital and print channels, maximizing your investment.",
+      "icon": "Layers"
     },
     {
       "title": "Emotional Connection",
-      "description": "Colours, typography and imagery create emotional responses. We design to evoke the exact feeling you want."
+      "description": "Colours, typography and imagery create emotional responses. We design to evoke the exact feeling you want.",
+      "icon": "Heart"
     }
   ],
   "services": [
-    { "title": "Social Media Graphics", "description": "Platform-optimized visuals for posts, stories, covers, and ads across all social platforms.", "href": "/services/graphic-design" },
-    { "title": "Banner & Display Ads", "description": "High-converting banner ads and display creatives designed to capture attention and drive clicks.", "href": "/services/graphic-design" },
-    { "title": "Brand Identity & Logos", "description": "Complete brand identity systems including logos, colour palettes, typography and usage guidelines.", "href": "/services/graphic-design" },
-    { "title": "Brochures & Print Design", "description": "Professional print materials including brochures, flyers, business cards and catalogues.", "href": "/services/graphic-design" },
-    { "title": "Infographics", "description": "Complex data and information transformed into compelling, shareable visual stories.", "href": "/services/graphic-design" },
-    { "title": "Website Visuals", "description": "Custom illustrations, hero images, icons and UI graphics that bring your website to life.", "href": "/services/graphic-design" }
+    { "title": "Social Media Graphics", "description": "Platform-optimized visuals for posts, stories, covers, and ads across all social platforms.", "href": "/services/graphic-design", "icon": "Image" },
+    { "title": "Banner & Display Ads", "description": "High-converting banner ads and display creatives designed to capture attention and drive clicks.", "href": "/services/graphic-design", "icon": "Megaphone" },
+    { "title": "Brand Identity & Logos", "description": "Complete brand identity systems including logos, colour palettes, typography and usage guidelines.", "href": "/services/graphic-design", "icon": "Fingerprint" },
+    { "title": "Brochures & Print Design", "description": "Professional print materials including brochures, flyers, business cards and catalogues.", "href": "/services/graphic-design", "icon": "Printer" },
+    { "title": "Infographics", "description": "Complex data and information transformed into compelling, shareable visual stories.", "href": "/services/graphic-design", "icon": "BarChart3" },
+    { "title": "Website Visuals", "description": "Custom illustrations, hero images, icons and UI graphics that bring your website to life.", "href": "/services/graphic-design", "icon": "Monitor" }
   ],
   "qualities": [
     { "title": "Creative Excellence", "description": "Our designers bring fresh, original ideas to every project." },

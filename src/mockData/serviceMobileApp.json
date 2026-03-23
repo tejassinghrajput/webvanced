@@ -9,59 +9,71 @@
   "benefits": [
     {
       "title": "Strengthen Customer Support",
-      "description": "Companies run customer support by giving customers awards and recognition so that they remain motivated to make their next purchase."
+      "description": "Companies run customer support by giving customers awards and recognition so that they remain motivated to make their next purchase.",
+      "icon": "Headphones"
     },
     {
       "title": "Accessibility",
-      "description": "Unlike physical stores, a mobile app increases accessibility and helps businesses broaden their horizons, reaching global customers."
+      "description": "Unlike physical stores, a mobile app increases accessibility and helps businesses broaden their horizons, reaching global customers.",
+      "icon": "Globe"
     },
     {
       "title": "Brand Awareness",
-      "description": "Mobile apps make advertising easier and more efficient, accustomizing customers with your products conveniently and building brand awareness."
+      "description": "Mobile apps make advertising easier and more efficient, accustomizing customers with your products conveniently and building brand awareness.",
+      "icon": "Star"
     },
     {
       "title": "Responsive",
-      "description": "Mobile apps help you respond to multiple customers in a shorter interval, establishing stronger relationships with your audience."
+      "description": "Mobile apps help you respond to multiple customers in a shorter interval, establishing stronger relationships with your audience.",
+      "icon": "MessageCircle"
     },
     {
       "title": "Boost Profit",
-      "description": "A mobile app generates greater profits as it is more accessible to a larger audience and gives out information in a more appealing manner."
+      "description": "A mobile app generates greater profits as it is more accessible to a larger audience and gives out information in a more appealing manner.",
+      "icon": "TrendingUp"
     },
     {
       "title": "Increased Customer Loyalty",
-      "description": "Interactive engagement and quality, speedy services make customers feel prioritized, boosting loyalty to your brand."
+      "description": "Interactive engagement and quality, speedy services make customers feel prioritized, boosting loyalty to your brand.",
+      "icon": "Heart"
     }
   ],
   "services": [
     {
       "title": "Android App Development",
       "description": "90% of mobile users are android users. We understand your needs, study the market, create blueprints, decide designs and constantly test before launch.",
-      "href": "/services/mobile-app"
+      "href": "/services/mobile-app",
+      "icon": "Smartphone"
     },
     {
       "title": "iOS App Development",
       "description": "We hold expertise in developing applications for iOS softwares including integrations, in-app purchases, following Apple's interface guidelines.",
-      "href": "/services/mobile-app"
+      "href": "/services/mobile-app",
+      "icon": "Tablet"
     },
     {
       "title": "React Native Development",
       "description": "Native apps access the user's GPS, camera, and contact list. Our programmers customize with scalability, interactive UI, and dynamic features.",
-      "href": "/services/mobile-app"
+      "href": "/services/mobile-app",
+      "icon": "Code"
     },
     {
       "title": "App UI/UX Design",
       "description": "Beautiful, intuitive interfaces designed to maximize user engagement and minimize friction in your customer journey.",
-      "href": "/services/mobile-app"
+      "href": "/services/mobile-app",
+      "icon": "Paintbrush"
     },
     {
       "title": "App Testing & QA",
       "description": "Rigorous testing across devices and OS versions to ensure a flawless experience for every single user.",
-      "href": "/services/testing"
+      "href": "/services/testing",
+      "icon": "BugPlay"
     },
     {
       "title": "App Maintenance & Support",
       "description": "Ongoing updates, performance monitoring and feature additions to keep your app competitive and up-to-date.",
-      "href": "/services/mobile-app"
+      "href": "/services/mobile-app",
+      "icon": "Wrench"
     }
   ],
   "qualities": [

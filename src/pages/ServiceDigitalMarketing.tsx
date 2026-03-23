@@ -9,7 +9,7 @@ export default function DigitalMarketingPage() {
     <ServicePageTemplate
       data={data as ServicePageData}
       icon={<Megaphone className="h-5 w-5" />}
-      illustration={<DigitalMarketingIllustration className="w-full h-auto max-h-80" />}
+      illustration={<DigitalMarketingIllustration className="w-full h-auto" />}
       accentColor="indigo"
     />
   );
