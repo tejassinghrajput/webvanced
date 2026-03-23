@@ -67,6 +67,15 @@
   scrollbar-width: none;
 }
 
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
 @keyframes blob-float {
   from { transform: translate(0, 0) scale(1); }
   to { transform: translate(20px, -40px) scale(1.1); }
@@ -99,6 +108,16 @@
 
 .animate-signal-pulse {
   animation: signal-pulse 4s ease-out var(--pulse-delay, 0s) infinite;
+}
+
+@keyframes dot-drift {
+  0%, 100% { transform: translateY(0);     opacity: 0.25; }
+  25%       { transform: translateY(-18px); opacity: 0.55; }
+  75%       { transform: translateY(18px);  opacity: 0.25; }
+}
+
+.animate-dot-drift {
+  animation: dot-drift var(--drift-duration, 5s) ease-in-out var(--drift-delay, 0s) infinite;
 }
 
 @theme inline {

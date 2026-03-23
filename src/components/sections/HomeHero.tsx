@@ -185,22 +185,23 @@ export function HomeHero() {
       {/* Content */}
       <div className="relative z-20 w-full px-6 sm:px-10 lg:px-14 xl:px-18 py-10">
 
-        {/* Headline */}
-        <div className="overflow-hidden mb-1">
+        {/* Headline — rendered visible immediately so LCP is measured from first paint.
+            Minimal CSS-driven fade replaces the JS clip animation. */}
+        <div className="mb-1">
           <motion.h1
-            initial={{ y: "105%" }}
-            animate={{ y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.05, ease: "easeOut" }}
             className="text-6xl sm:text-7xl lg:text-8xl font-extrabold tracking-tight text-white leading-[1.0]"
           >
             From Invisible
           </motion.h1>
         </div>
-        <div className="overflow-hidden mb-8">
+        <div className="mb-8">
           <motion.h1
-            initial={{ y: "105%" }}
-            animate={{ y: 0 }}
-            transition={{ duration: 0.8, delay: 0.32, ease: [0.22, 1, 0.36, 1] }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
             className="text-6xl sm:text-7xl lg:text-8xl font-extrabold tracking-tight leading-[1.0]"
             style={{ background: "linear-gradient(135deg, #a5b4fc 0%, #818cf8 45%, #c084fc 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}
           >

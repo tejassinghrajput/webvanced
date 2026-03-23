@@ -8,17 +8,9 @@ export function AboutCTA() {
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-indigo-950 via-violet-950 to-indigo-950 py-28">
-      {/* Pulsing orbs */}
-      <motion.div
-        className="pointer-events-none absolute -left-48 top-0 h-[560px] w-[560px] rounded-full bg-indigo-600/20 blur-[110px]"
-        animate={{ scale: [1, 1.2, 1], opacity: [0.2, 0.35, 0.2] }}
-        transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}
-      />
-      <motion.div
-        className="pointer-events-none absolute -right-48 bottom-0 h-[460px] w-[460px] rounded-full bg-violet-600/20 blur-[100px]"
-        animate={{ scale: [1, 1.15, 1], opacity: [0.15, 0.3, 0.15] }}
-        transition={{ duration: 12, repeat: Infinity, ease: "easeInOut", delay: 4 }}
-      />
+      {/* Static orbs — no JS timers */}
+      <div className="pointer-events-none absolute -left-48 top-0 h-[560px] w-[560px] rounded-full bg-indigo-600/20 blur-[110px]" />
+      <div className="pointer-events-none absolute -right-48 bottom-0 h-[460px] w-[460px] rounded-full bg-violet-600/20 blur-[100px]" />
 
       {/* Faint dot grid */}
       <div

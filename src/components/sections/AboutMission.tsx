@@ -1,3 +1,4 @@
+import React from "react";
 import { motion } from "motion/react";
 import { Target, Heart, Mountain, Sparkles as SparklesIcon } from "lucide-react";
 import type { LucideProps } from "lucide-react";
@@ -10,20 +11,16 @@ const MISSION_ICONS: Record<string, ComponentType<LucideProps>> = {
 
 /** Slowly rotating concentric rings in the top-right corner */
 function RotatingRings() {
+  const sizes = [360, 280, 200] as const;
   return (
     <div className="pointer-events-none absolute -right-40 -top-40 overflow-hidden" aria-hidden="true">
-      {[360, 280, 200].map((size, i) => (
-        <motion.div
+      {sizes.map((size, i) => (
+        <div
           key={size}
-          className="absolute rounded-full border border-indigo-400/[0.07]"
-          style={{
-            width: size,
-            height: size,
-            top: -size / 2,
-            right: -size / 2,
-          }}
-          animate={{ rotate: i % 2 === 0 ? 360 : -360 }}
-          transition={{ duration: 40 + i * 15, repeat: Infinity, ease: "linear" }}
+          className={i % 2 === 0
+            ? "absolute rounded-full border border-indigo-400/[0.07] animate-spin-slow"
+            : "absolute rounded-full border border-indigo-400/[0.07] [animation:spin-slow_55s_linear_infinite_reverse]"}
+          style={{ width: size, height: size, top: -size / 2, right: -size / 2 }}
         />
       ))}
       {/* Glowing centre dot */}
@@ -32,21 +29,25 @@ function RotatingRings() {
   );
 }
 
-/** Drifting micro-particles scattered across section */
+const DOT_POSITIONS = [
+  { left: "8%", top: "30%" }, { left: "22%", top: "65%" }, { left: "45%", top: "18%" },
+  { left: "58%", top: "75%" }, { left: "75%", top: "40%" }, { left: "90%", top: "20%" },
+] as const;
+
+/** Drifting micro-particles scattered across section — CSS only, no JS timers */
 function FloatingDots() {
-  const positions = [
-    { left: "8%", top: "30%" }, { left: "22%", top: "65%" }, { left: "45%", top: "18%" },
-    { left: "58%", top: "75%" }, { left: "75%", top: "40%" }, { left: "90%", top: "20%" },
-  ];
   return (
     <>
-      {positions.map((pos, i) => (
-        <motion.div
+      {DOT_POSITIONS.map((pos, i) => (
+        <div
           key={i}
-          className="pointer-events-none absolute h-1.5 w-1.5 rounded-full bg-indigo-400/25"
-          style={pos}
-          animate={{ y: [0, -18, 0, 18, 0], opacity: [0.25, 0.55, 0.25] }}
-          transition={{ duration: 5 + i * 0.8, repeat: Infinity, ease: "easeInOut", delay: i * 0.9 }}
+          className="pointer-events-none absolute h-1.5 w-1.5 rounded-full bg-indigo-400/25 animate-dot-drift"
+          style={{
+            left: pos.left,
+            top: pos.top,
+            "--drift-duration": (5 + i * 0.8) + "s",
+            "--drift-delay": (i * 0.9) + "s",
+          } as React.CSSProperties & Record<string, string>}
         />
       ))}
     </>

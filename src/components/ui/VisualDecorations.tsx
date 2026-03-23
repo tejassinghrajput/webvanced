@@ -1,5 +1,5 @@
-import { motion } from "motion/react";
-
+import React from "react";
+import { cn } from "@/lib/utils";
 import { ShimmerEffect } from "./Sparkles";
 
 export function MeshBackground() {
@@ -37,49 +37,50 @@ export function GridPattern() {
 
 export function DecorativeCircle({ className }: { className?: string }) {
   return (
-    <motion.div
-      animate={{ rotate: 360 }}
-      transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-      className={className}
-    >
+    <div className={cn("animate-spin-slow", className)} aria-hidden="true">
       <svg viewBox="0 0 100 100" className="h-full w-full opacity-20">
         <circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" strokeWidth="0.5" strokeDasharray="4 4" />
       </svg>
-    </motion.div>
+    </div>
   );
 }
 
+// Star positions generated once at module load — stable across renders, no JS timers.
+const STARS = Array.from({ length: 40 }, (_, i) => ({
+  id: i,
+  cx: ((i * 97 + 13) % 1000),
+  cy: ((i * 61 + 37) % 1000),
+  r: 0.5 + (i % 3) * 0.75,
+  opacity: 0.2 + (i % 5) * 0.16,
+  delay: (i % 7) * 0.7,
+  dur: 2 + (i % 4),
+}));
+
 export function NetworkBackground() {
   return (
-    <div className="absolute inset-0 -z-10 bg-gray-950 overflow-hidden">
+    <div className="absolute inset-0 -z-10 bg-gray-950 overflow-hidden" aria-hidden="true">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(79,70,229,0.3),rgba(139,92,246,0.2),transparent_70%)]" />
-      <svg className="h-full w-full opacity-60" viewBox="0 0 1000 1000" preserveAspectRatio="none">
-        {[...Array(60)].map((_, i) => (
-          <motion.circle
-            key={`star-${i}`}
-            r={Math.random() * 2 + 0.5}
+      <svg className="h-full w-full" viewBox="0 0 1000 1000" preserveAspectRatio="none">
+        {/* Static connection lines */}
+        <line x1="120" y1="80"  x2="450" y2="320" stroke="white" strokeWidth="0.2" strokeOpacity="0.07" />
+        <line x1="450" y1="320" x2="780" y2="150" stroke="white" strokeWidth="0.2" strokeOpacity="0.07" />
+        <line x1="780" y1="150" x2="920" y2="480" stroke="white" strokeWidth="0.2" strokeOpacity="0.07" />
+        <line x1="200" y1="600" x2="560" y2="750" stroke="white" strokeWidth="0.2" strokeOpacity="0.07" />
+        <line x1="560" y1="750" x2="850" y2="680" stroke="white" strokeWidth="0.2" strokeOpacity="0.07" />
+        {/* CSS-pulsing stars — no JS timers */}
+        {STARS.map((s) => (
+          <circle
+            key={s.id}
+            cx={s.cx}
+            cy={s.cy}
+            r={s.r}
             fill="white"
-            initial={{ cx: Math.random() * 1000, cy: Math.random() * 1000 }}
-            animate={{ 
-              opacity: [0.2, 1, 0.2], 
-              scale: [1, 1.8, 1],
-              fill: ["#fff", "#8b5cf6", "#fff"]
-            }}
-            transition={{ 
-              duration: 2 + Math.random() * 3, 
-              repeat: Infinity, 
-              delay: Math.random() * 5 
-            }}
-          />
-        ))}
-        {[...Array(20)].map((_, i) => (
-          <motion.line
-            key={`line-${i}`}
-            x1={Math.random() * 1000} y1={Math.random() * 1000}
-            x2={Math.random() * 1000} y2={Math.random() * 1000}
-            stroke="white" strokeWidth="0.2" strokeOpacity="0.1"
-            animate={{ x1: [null, Math.random() * 1000], y1: [null, Math.random() * 1000] }}
-            transition={{ duration: 30 + Math.random() * 30, repeat: Infinity, ease: "linear" }}
+            className="animate-sparkle"
+            style={{
+              "--sparkle-opacity": s.opacity,
+              "--sparkle-delay": s.delay + "s",
+              "--sparkle-duration": s.dur + "s",
+            } as React.CSSProperties}
           />
         ))}
       </svg>
