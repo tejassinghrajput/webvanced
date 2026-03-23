@@ -1,7 +1,11 @@
 import { motion } from "motion/react";
-import * as Icons from "lucide-react";
-import { LabelInputContainer, FormInput, FormTextarea } from "@/components/ui/FormInput";
+import { Compass, Cloud, Code } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
+import { LabelInputContainer, FormInput, FormTextarea } from "@/components/ui/FormInput";
+
+const STEP_OPTION_ICONS: Record<string, LucideIcon> = {
+  Compass, Cloud, Code,
+};
 
 interface StepField { id: string; label: string; placeholder: string; type: string }
 interface StepOption { id: string; icon: string; label: string }
@@ -43,7 +47,7 @@ export function QuoteFormStep({ step, values, selectedServices, onChange, onServ
       {step.options && (
         <div className="grid gap-4 sm:grid-cols-3">
           {step.options.map((opt, idx) => {
-            const Icon = ((Icons as unknown as Record<string, LucideIcon>)[opt.icon]) ?? Icons.Code;
+            const Icon = STEP_OPTION_ICONS[opt.icon] ?? Code;
             const checked = selectedServices.includes(opt.id);
             return (
               <motion.label key={opt.id} whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}

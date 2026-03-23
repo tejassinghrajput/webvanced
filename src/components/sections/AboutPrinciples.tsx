@@ -1,6 +1,12 @@
 import { motion } from "motion/react";
-import * as Icons from "lucide-react";
+import { Layers, Code2, TrendingUp, Smartphone, Cpu, BarChart2, Sparkles as SparklesIcon } from "lucide-react";
+import type { LucideProps } from "lucide-react";
+import type { ComponentType } from "react";
 import aboutData from "@/mockData/about.json";
+
+const PRINCIPLES_ICONS: Record<string, ComponentType<LucideProps>> = {
+  Layers, Code2, TrendingUp, Smartphone, Cpu, BarChart2,
+};
 
 const COLOR_MAP: Record<string, { bg: string; text: string; bar: string; glow: string }> = {
   indigo:  { bg: "bg-indigo-50",  text: "text-indigo-600",  bar: "bg-indigo-500",  glow: "group-hover:shadow-indigo-100" },
@@ -40,7 +46,7 @@ export function AboutPrinciples() {
 
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((item, i) => {
-            const Icon = (Icons as any)[item.icon] ?? Icons.Sparkles;
+            const Icon = PRINCIPLES_ICONS[item.icon] ?? SparklesIcon;
             const c = COLOR_MAP[item.color] ?? COLOR_MAP.indigo;
             return (
               <motion.div

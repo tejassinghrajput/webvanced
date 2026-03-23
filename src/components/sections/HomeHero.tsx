@@ -165,11 +165,16 @@ function MagneticField() {
   return <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />;
 }
 
+// Skip the canvas on touch/pointer-coarse devices — no mouse = no magnetic effect,
+// and the O(n²) particle physics burns mobile CPU for zero UX gain.
+const SUPPORTS_FINE_POINTER =
+  typeof window !== "undefined" && window.matchMedia("(pointer: fine)").matches;
+
 // ── hero ──────────────────────────────────────────────────────────────────────
 export function HomeHero() {
   return (
     <section className="relative overflow-hidden bg-[#03070e] min-h-[65vh] flex items-center pt-14 md:pt-16">
-      <MagneticField />
+      {SUPPORTS_FINE_POINTER && <MagneticField />}
 
       {/* Left-side dark fade so text is readable over the particles */}
       <div

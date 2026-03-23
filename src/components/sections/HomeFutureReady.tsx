@@ -1,7 +1,13 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import * as Icons from "lucide-react";
+import { Brain, Cloud, Cpu, Database, HelpCircle } from "lucide-react";
+import type { LucideProps } from "lucide-react";
+import type { ComponentType } from "react";
 import data from "@/mockData/futureReady.json";
+
+const FUTURE_ICONS: Record<string, ComponentType<LucideProps>> = {
+  Brain, Cloud, Cpu, Database,
+};
 import { NetworkBackground } from "../ui/VisualDecorations";
 import { cn } from "@/lib/utils";
 import { ShimmerEffect, GlowText, GlitterCard, Sparkles } from "../ui/Sparkles";
@@ -47,7 +53,7 @@ export function HomeFutureReady() {
         {/* Desktop Grid Layout */}
         <div className="hidden md:grid grid-cols-2 lg:grid-cols-4 gap-8">
           {data.cards.map((card, idx) => {
-            const IconComponent = (Icons as any)[card.icon] || Icons.HelpCircle;
+            const IconComponent = FUTURE_ICONS[card.icon] || HelpCircle;
             const colors: Record<string, string> = {
               indigo: "text-blue-600",
               emerald: "text-emerald-500",
@@ -155,7 +161,7 @@ export function HomeFutureReady() {
         <div className="md:hidden relative h-[500px] w-full flex items-center justify-center perspective-1000">
           <AnimatePresence mode="popLayout">
             {cards.map((card, idx) => {
-              const IconComponent = (Icons as any)[card.icon] || Icons.HelpCircle;
+              const IconComponent = FUTURE_ICONS[card.icon] || HelpCircle;
               const isTop = idx === 0;
               const colors: Record<string, string> = {
                 indigo: "text-indigo-500",

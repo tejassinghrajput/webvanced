@@ -1,6 +1,12 @@
 import { motion } from "motion/react";
-import * as Icons from "lucide-react";
+import { ShieldCheck, Eye } from "lucide-react";
+import type { LucideProps } from "lucide-react";
+import type { ComponentType } from "react";
 import quoteData from "@/mockData/quote.json";
+
+const FEATURE_ICONS: Record<string, ComponentType<LucideProps>> = {
+  ShieldCheck, Eye,
+};
 
 export function QuoteFeatures() {
   const { features } = quoteData;
@@ -9,7 +15,7 @@ export function QuoteFeatures() {
     <section className="mx-auto max-w-4xl px-6 pb-32">
       <div className="grid gap-8 sm:grid-cols-2">
         {features.map((feature, idx) => {
-          const Icon = (Icons as any)[feature.icon] || Icons.ShieldCheck;
+          const Icon = FEATURE_ICONS[feature.icon] || ShieldCheck;
           return (
             <motion.div
               key={feature.title}

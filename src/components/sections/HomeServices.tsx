@@ -1,6 +1,12 @@
 import { motion } from "motion/react";
-import * as Icons from "lucide-react";
+import { Cpu, Layout, TrendingUp, Zap, Smartphone, HelpCircle } from "lucide-react";
+import type { LucideProps } from "lucide-react";
+import type { ComponentType } from "react";
 import data from "@/mockData/homeServices.json";
+
+const SERVICE_ICONS: Record<string, ComponentType<LucideProps>> = {
+  Cpu, Layout, TrendingUp, Zap, Smartphone,
+};
 import { DecorativeCircle } from "../ui/VisualDecorations";
 import { GlitterCard } from "../ui/Sparkles";
 
@@ -35,7 +41,7 @@ export function HomeServices() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {data.cards.map((card, idx) => {
-            const IconComponent = (Icons as any)[card.icon] || Icons.HelpCircle;
+            const IconComponent = SERVICE_ICONS[card.icon] || HelpCircle;
             return (
               <div key={card.title}>
                 <GlitterCard className="rounded-[3rem] h-full">

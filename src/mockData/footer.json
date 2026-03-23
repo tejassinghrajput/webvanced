@@ -4,18 +4,34 @@
   "columns": [
     {
       "title": "Services",
-      "links": ["Web Design and Development", "AI Integrations", "SEO and Marketing", "Business Automation", "Mobile Apps"]
+      "links": [
+        { "label": "Web Development",       "href": "/services/web-development" },
+        { "label": "SEO",                    "href": "/services/seo" },
+        { "label": "Digital Marketing",      "href": "/services/digital-marketing" },
+        { "label": "Mobile App Development", "href": "/services/mobile-app" },
+        { "label": "PPC Advertising",        "href": "/services/ppc" },
+        { "label": "Content Writing",        "href": "/services/content-writing" },
+        { "label": "Graphic Design",         "href": "/services/graphic-design" }
+      ]
     },
     {
       "title": "Company",
-      "links": ["About", "How We Work", "Industries", "Team", "Contact"]
+      "links": [
+        { "label": "About Us",    "href": "/about" },
+        { "label": "How We Work", "href": "/how-we-work" },
+        { "label": "Industries",  "href": "/industries" },
+        { "label": "FAQ",         "href": "/faq" },
+        { "label": "Get a Quote", "href": "/quote" },
+        { "label": "Contact",     "href": "/contact" }
+      ]
     },
     {
       "title": "Get In Touch",
       "email": "webvance.tech@gmail.com",
       "phone": "+91 76520 50611",
+      "phoneDial": "+917652050611",
       "location": "New Delhi, Delhi 110037"
     }
   ],
-  "copyright": "2025 Webvance. All rights reserved."
+  "copyright": "2026 Webvance. All rights reserved."
 }

@@ -1,6 +1,12 @@
 import { motion } from "motion/react";
-import * as Icons from "lucide-react";
+import { Target, Heart, Mountain, Sparkles as SparklesIcon } from "lucide-react";
+import type { LucideProps } from "lucide-react";
+import type { ComponentType } from "react";
 import aboutData from "@/mockData/about.json";
+
+const MISSION_ICONS: Record<string, ComponentType<LucideProps>> = {
+  Target, Heart, Mountain,
+};
 
 /** Slowly rotating concentric rings in the top-right corner */
 function RotatingRings() {
@@ -100,7 +106,7 @@ export function AboutMission() {
         {/* Reason cards — left-border minimal style */}
         <div className="grid gap-5 md:grid-cols-3">
           {reasons.map((r, i) => {
-            const Icon = (Icons as any)[r.icon] ?? Icons.Sparkles;
+            const Icon = MISSION_ICONS[r.icon] ?? SparklesIcon;
             return (
               <motion.div
                 key={r.title}

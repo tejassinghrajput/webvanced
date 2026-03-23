@@ -20,13 +20,14 @@ export function Footer() {
           </motion.div>
           {footerData.columns.map((col: any, idx) => (
             <div key={col.title}>
-              <FooterColumn 
+              <FooterColumn
                 title={col.title}
                 links={col.links}
                 email={col.email}
                 phone={col.phone}
+                phoneDial={col.phoneDial}
                 location={col.location}
-                idx={idx} 
+                idx={idx}
               />
             </div>
           ))}

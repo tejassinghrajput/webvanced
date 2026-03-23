@@ -10,7 +10,7 @@ export function PageLayout({ children }: PageLayoutProps) {
     <motion.main
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
+      transition={{ duration: 0.25, ease: "easeOut" }}
       className="flex-1 pt-14 md:pt-16"
     >
       {children}
