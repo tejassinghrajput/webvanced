@@ -1,9 +1,9 @@
 /** Central source of truth for all contact information used throughout the site. */
 export const CONTACT = {
   email: {
-    address: "webvance.tech@gmail.com",
-    href: "mailto:webvance.tech@gmail.com",
-    display: "webvance.tech@gmail.com",
+    address: "contact@webvance.in",
+    href: "mailto:contact@webvance.in",
+    display: "contact@webvance.in",
   },
   phone: {
     number: "+917652050611",
